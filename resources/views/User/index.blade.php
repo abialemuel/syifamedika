@@ -8,30 +8,30 @@
 	<title>Medico - Homepage (Main Layout)</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
 	<!-- Smallipop CSS - Tooltips -->
-	<link rel="stylesheet" href="plugins/user/smallipop/css/contrib/animate.min.css" type="text/css" media="all" title="Screen" />
-	<link rel="stylesheet" href="plugins/user/smallipop/css/jquery.smallipop.css" type="text/css" media="all" title="Screen" />
+	<link rel="stylesheet" href="user/plugins/smallipop/css/contrib/animate.min.css" type="text/css" media="all" title="Screen" />
+	<link rel="stylesheet" href="user/plugins/smallipop/css/jquery.smallipop.css" type="text/css" media="all" title="Screen" />
 
 	<!-- Default CSS -->
-	<link rel="stylesheet" href="css/user/normalize.css" />
-	<link rel="stylesheet" href="css/user/foundation.css" />
-	<link rel="stylesheet" href="css/user/fgx-foundation.css" />
+	<link rel="stylesheet" href="user/css/normalize.css" />
+	<link rel="stylesheet" href="user/css/foundation.css" />
+	<link rel="stylesheet" href="user/css/fgx-foundation.css" />
 	<!--[if IE 8]>
-		<link rel="stylesheet" href="css/user/ie8-grid-foundation-4.css" />
+		<link rel="stylesheet" href="user/css/ie8-grid-foundation-4.css" />
 
 	<![endif]-->
 
 	<!-- Font Awesome - Retina Icons -->
-	<link rel="stylesheet" href="plugins/user/fontawesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/user/nivo-slider.css" />
-	<link rel="stylesheet" href="css/user/themes/default/default.css" />
-	<link rel="stylesheet" href="css/user/datepicker/metallic.css" />
+	<link rel="stylesheet" href="user/plugins/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="user/css/nivo-slider.css" />
+	<link rel="stylesheet" href="user/css/themes/default/default.css" />
+	<link rel="stylesheet" href="user/css/datepicker/metallic.css" />
 	<!-- Google Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/user/style.css" />
+	<link rel="stylesheet" href="user/css/style.css" />
 
 	<!-- Included JS Files -->
-	<script src="js/user/vendor/jquery.js"></script>
-	<script src="js/user/vendor/custom.modernizr.js"></script>
+	<script src="user/js/vendor/jquery.js"></script>
+	<script src="user/js/vendor/custom.modernizr.js"></script>
 </head>
 <body>
 
@@ -40,7 +40,7 @@
 	<!-- Main Navigation -->
 	<header class="row main-navigation">
 		<div class="large-3 columns">
-			<a href="index.html" id="logo"><img src="images/user/logo.png" alt="Medico Logo" /></a>
+			<a href="index.html" id="logo"><img src="user/images/logo.png" alt="Medico Logo" /></a>
 		</div>
 		<div class="large-9 columns">
 			<nav class="top-bar">
@@ -129,9 +129,9 @@
 
 <div class="slider-wrapper theme-default">
     <div id="slider" class="nivoSlider">
-		<img src="images/user/demo/slider/1.jpg" data-thumb="images/user/demo/news/1.jpg" alt="" title="#caption1" />
-		<a href="http://www.google.com"><img src="images/user/demo/slider/2.jpg" data-thumb="images/user/demo/news/2.jpg" alt="" title="#caption2"  /></a>
-		<img src="images/user/demo/slider/3.jpg" data-thumb="images/user/demo/news/3.jpg" alt="" title="#caption3" />
+		<img src="user/images/demo/slider/1.jpg" data-thumb="user/images/demo/news/1.jpg" alt="" title="#caption1" />
+		<a href="http://www.google.com"><img src="user/images/demo/slider/2.jpg" data-thumb="user/images/demo/news/2.jpg" alt="" title="#caption2"  /></a>
+		<img src="user/images/demo/slider/3.jpg" data-thumb="user/images/demo/news/3.jpg" alt="" title="#caption3" />
 	</div>
 	<div id="caption1" class="nivo-html-caption">
 		<p class="nivotitle v1">Medicine definition</p>
@@ -245,7 +245,7 @@
 				<ul id="work_slide">
 					<li>
 						<div class="view view-two">
-							<img src="images/user/demo/doctors/1.jpg" alt="" />
+							<img src="user/images/demo/doctors/1.jpg" alt="" />
 							<div class="mask">
 								<h3>Specialties</h3>
 								<p>Colon and rectal surgery, Dental surgery, Oral and maxillofacial surgery.</p>
@@ -256,7 +256,7 @@
 					</li>
 					<li>
 						<div class="view view-two">
-							<img src="images/user/demo/doctors/2.jpg" alt="" />
+							<img src="user/images/demo/doctors/2.jpg" alt="" />
 							<div class="mask">
 								<h3>Specialties</h3>
 								<p>Pediatric surgery, Plastic surgery, Podiatric surgery.</p>
@@ -267,7 +267,7 @@
 					</li>
 					 <li>
 						<div class="view view-two">
-							<img src="images/user/demo/doctors/3.jpg" alt="" />
+							<img src="user/images/demo/doctors/3.jpg" alt="" />
 							<div class="mask">
 								<h3>Specialties</h3>
 								<p>Trauma surgery, Thoracic surgery, Urology, Veterinary surgery.</p>
@@ -278,7 +278,7 @@
 					</li>
 					<li>
 						<div class="view view-two">
-							<img src="images/user/demo/doctors/4.jpg" alt="" />
+							<img src="user/images/demo/doctors/4.jpg" alt="" />
 							<div class="mask">
 								<h3>Specialties</h3>
 								<p>All in one master, the genius, the man behind the curtain.</p>
@@ -289,7 +289,7 @@
 					</li>
 					 <li>
 						<div class="view view-two">
-							<img src="images/user/demo/doctors/5.jpg" alt="" />
+							<img src="user/images/demo/doctors/5.jpg" alt="" />
 							<div class="mask">
 								<h3>Specialties</h3>
 								<p>Aenean eget mauris nibh, eu pellentesque ipsum. The lorem is totally site amet.</p>
@@ -300,7 +300,7 @@
 					</li>
 					 <li>
 						<div class="view view-two">
-							<img src="images/user/demo/doctors/6.jpg" alt="" />
+							<img src="user/images/demo/doctors/6.jpg" alt="" />
 							<div class="mask">
 								<h3>Specialties</h3>
 								<p>Aenean eget mauris nibh, eu pellentesque ipsum. The lorem is totally site amet.</p>
@@ -312,8 +312,8 @@
 				</ul>
 
 				<div class="clearfix"></div>
-				<a class="prev" id="slide_prev" href="#"><img src="images/user/arrow_left.png" alt="Previous" /></a>
-				<a class="next" id="slide_next" href="#"><img src="images/user/arrow_right.png" alt="Next" /></a>
+				<a class="prev" id="slide_prev" href="#"><img src="user/images/arrow_left.png" alt="Previous" /></a>
+				<a class="next" id="slide_next" href="#"><img src="user/images/arrow_right.png" alt="Next" /></a>
 			</div>
 		</div>
 		<div class="clearfix"></div>
@@ -326,7 +326,7 @@
             <div class="row">
                 <article class="large-3 columns">
                     <div class="mod_con_img">
-                     	<img src="images/user/demo/news/1.jpg" alt="" />
+                     	<img src="user/images/demo/news/1.jpg" alt="" />
                         <ul class="meta">
                             <li><i class="icon-time"></i>Apr 22, 2013</li>
                         </ul>
@@ -340,22 +340,7 @@
                 </article>
                 <article class="large-3 columns">
                     <div class="mod_con_img">
-                        	<img src="images/user/demo/news/2.jpg" alt="" />
-                        <ul class="meta">
-                            <li><i class="icon-time"></i>Apr 22, 2013</li>
-                        </ul>
-                    </div>
-
-                    <div class="mod_con_text">
-                        <h5>Will 2013 be the year of the smartwatch?</h5>
-                        <div class="divline"><span></span></div>
-                        <p>Lorem quis bibendum auctor, nisi elit consequat ipsum, nec </p>
-                        <a href="#" class="button">Read More</a>
-                    </div>
-                </article>
-                <article class="large-3 columns">
-                    <div class="mod_con_img">
-                      	<img src="images/user/demo/news/3.jpg" alt="" />
+                        	<img src="user/images/demo/news/2.jpg" alt="" />
                         <ul class="meta">
                             <li><i class="icon-time"></i>Apr 22, 2013</li>
                         </ul>
@@ -370,7 +355,22 @@
                 </article>
                 <article class="large-3 columns">
                     <div class="mod_con_img">
-                       	<img src="images/user/demo/news/4.jpg" alt="" />
+                      	<img src="user/images/demo/news/3.jpg" alt="" />
+                        <ul class="meta">
+                            <li><i class="icon-time"></i>Apr 22, 2013</li>
+                        </ul>
+                    </div>
+
+                    <div class="mod_con_text">
+                        <h5>Will 2013 be the year of the smartwatch?</h5>
+                        <div class="divline"><span></span></div>
+                        <p>Lorem quis bibendum auctor, nisi elit consequat ipsum, nec </p>
+                        <a href="#" class="button">Read More</a>
+                    </div>
+                </article>
+                <article class="large-3 columns">
+                    <div class="mod_con_img">
+                       	<img src="user/images/demo/news/4.jpg" alt="" />
                         <ul class="meta">
                             <li><i class="icon-time"></i>Apr 22, 2013</li>
                         </ul>
@@ -393,7 +393,7 @@
 				<div class="large-3 columns">
 					<h4 class="footer-title">About Us</h4>
 					<div class="divdott"></div>
-					<img class="botlogo" src="images/user/botlogo.png" alt="" />
+					<img class="botlogo" src="user/images/botlogo.png" alt="" />
 					<div class="footer_part_content">
 						<p>Medico Theme Bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate</p>
 					</div>
@@ -478,18 +478,18 @@
 	</div>
 </footer>
 <!-- carouFredSel plugin -->
-<script src="plugins/user/carouFredSel/jquery.carouFredSel-6.2.0-packed.js"></script>
-<script src="plugins/user/carouFredSel/helper-plugins/jquery.touchSwipe.min.js"></script>
+<script src="user/plugins/carouFredSel/jquery.carouFredSel-6.2.0-packed.js"></script>
+<script src="user/plugins/carouFredSel/helper-plugins/jquery.touchSwipe.min.js"></script>
 
 <!-- Scripts Initialize -->
-<script type="text/javascript" src="js/user/app-head-calls.js"></script>
-<script type="text/javascript" src="js/user/jquery.nivo.slider.pack.js"></script>
-<script type="text/javascript" src="js/user/datepicker.js"></script>
-<script src="js/user/foundation.min.js"></script>
+<script type="text/javascript" src="user/js/app-head-calls.js"></script>
+<script type="text/javascript" src="user/js/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="user/js/datepicker.js"></script>
+<script src="user/js/foundation.min.js"></script>
 <script>$(document).foundation();</script>
 <!-- Smallipop JS - Tooltips -->
-<script type="text/javascript" src="plugins/user/smallipop/lib/contrib/prettify.js"></script>
-<script type="text/javascript" src="plugins/user/smallipop/lib/jquery.smallipop.js"></script>
+<script type="text/javascript" src="user/plugins/smallipop/lib/contrib/prettify.js"></script>
+<script type="text/javascript" src="user/plugins/smallipop/lib/jquery.smallipop.js"></script>
 <script>
 /*jshint jquery:true */
 jQuery.noConflict();
@@ -548,7 +548,7 @@ jQuery(document).ready(function() {
 
 </script>
 <!-- Initialize JS Plugins -->
-<script src="js/user/app-bottom-calls.js"></script>
+<script src="user/js/app-bottom-calls.js"></script>
 
 <!-- End Main Wrapper -->
 </body>
