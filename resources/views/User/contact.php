@@ -9,29 +9,29 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-	<link rel="stylesheet" href="css/foundation.min.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/fgx-foundation.css" />
+	<link rel="stylesheet" href="css/userfoundation.min.css">
+	<link rel="stylesheet" href="css/usernormalize.css">
+	<link rel="stylesheet" href="css/userfgx-foundation.css" />
 	<!--[if IE 8]>
-	<link rel="stylesheet" href="css/ie8-grid-foundation-4.css" />
+	<link rel="stylesheet" href="css/userie8-grid-foundation-4.css" />
 	<![endif]-->
 	<!-- Font Awesome - Retina Icons -->
-	<link rel="stylesheet" href="plugins/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="plugins/user/fontawesome/css/userfont-awesome.min.css">
 
 	<!-- Google Fonts -->
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/userstyle.css" />
 	
-	<script src="js/vendor/jquery.js"></script>
+	<script src="js/user/vendor/jquery.js"></script>
 
-	<script src="js/vendor/custom.modernizr.js"></script>
-	<script src="js/foundation.min.js"></script>
-	<script src="js/foundation/foundation.js"></script>
-	<script src="js/foundation/foundation.topbar.js"></script>
+	<script src="js/user/vendor/custom.modernizr.js"></script>
+	<script src="js/user/foundation.min.js"></script>
+	<script src="js/user/foundation/foundation.js"></script>
+	<script src="js/user/foundation/foundation.topbar.js"></script>
 
 	<!-- Scripts Initialize -->
-	<script src="js/app-head-calls.js"></script>
-	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/user/app-head-calls.js"></script>
+	<script src="js/user/jquery.validate.min.js"></script>
 	
 	<!-- for Google Map-->
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTSJ4nigiCUcS_KdUEvTfegUWC2EPbP_Q&amp;sensor=false"></script>
@@ -63,7 +63,7 @@
 	<!-- Main Navigation -->  
 	<header class="row main-navigation">
 		<div class="large-3 columns">	
-			<a href="index.html" id="logo"><img src="images/logo.png" alt="Medico Logo" /></a>
+			<a href="index.html" id="logo"><img src="images/user/logo.png" alt="Medico Logo" /></a>
 		</div>
 		<div class="large-9 columns">			
 			<nav class="top-bar">
@@ -210,7 +210,7 @@
 				<div class="large-3 columns">
 					<h4 class="footer-title">About Us</h4>
 					<div class="divdott"></div>
-					<img class="botlogo" src="images/botlogo.png" alt="" />
+					<img class="botlogo" src="images/user/botlogo.png" alt="" />
 					<div class="footer_part_content">
 						<p>Medico Theme Bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate</p>
 					</div>
