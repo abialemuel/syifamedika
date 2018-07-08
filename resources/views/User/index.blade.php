@@ -69,7 +69,7 @@
 							<li><a href="grid.html">Grid</a></li>
 							<li><a href="navigation.html">Navigation</a></li>
 							<li><a href="buttons.html">Buttons</a></li>
-							<li><a href="forms.html">Forms</a></li>
+							<li><a href="forms">Forms</a></li>
 							<li><a href="typography.html">Typography</a></li>
 							<li><a href="orbit.html">Orbit - Foundation Slider</a></li>
 							<li><a href="clearing.html">Clearing -  Responsive Lightboxes</a></li>

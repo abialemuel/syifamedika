@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('user.index');
 });
 
-Auth::routes();
+// Route for users
+Route::view('/forms', 'user.forms');
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');
