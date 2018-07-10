@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 // Route for users
-Route::view('/forms', 'user.forms');
+Route::get('/forms', 'User\PasienController@create');
 
 // Auth::routes();
 
