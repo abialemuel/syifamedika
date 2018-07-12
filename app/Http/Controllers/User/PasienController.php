@@ -14,7 +14,8 @@ class PasienController extends Controller
     {
       return view('User.forms');
     }
-    //
+
+    //create new pasien
     public function store(Request $request)
     {
       return Pasien::create([
