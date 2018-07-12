@@ -12,7 +12,7 @@ class PasienController extends Controller
     //return to form create pasien
     public function create()
     {
-      return view('user.forms');
+      return view('User.forms');
     }
     //
     public function store(Request $request)

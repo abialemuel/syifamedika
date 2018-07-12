@@ -16,7 +16,25 @@ Route::get('/', function () {
 });
 
 // Route for users
-Route::get('/forms', 'User\PasienController@create');
+Route::namespace('User')->group(function () {
+    // Controllers Within The "App\Http\Controllers\Admin" Namespace
+    Route::get('/forms', 'PasienController@create');
+});
+
+//Route for admin
+Route::prefix('private')->group(function () {
+    Route::get('/', function () {
+        #auth for admin redirect to login page
+        if (Auth::guest())
+        return Redirect::guest('private/login');
+        else {
+          return view('admin.index');
+        }
+    });
+    Route::get('/login', function () {
+        return view('admin.login');
+    });
+});
 
 // Auth::routes();
 
