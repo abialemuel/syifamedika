@@ -28,10 +28,9 @@ Route::prefix('private')->group(function () {
     // Route for admin (controller)
     Route::namespace('admin')->group(function () {
         // Controllers Within The "App\Http\Controllers\admin" Namespace
-        Route::get('/', 'AdminController@index');
-    });
-    Route::get('/login', function () {
-        return view('admin.login');
+        Route::get('/', 'AdminController@index')->name('admin.dashboard');
+        Route::get('/login', 'auth\AdminLoginController@showLoginForm')->name('admin.login');
+        Route::post('/login', 'auth\AdminLoginController@login')->name('admin.login.submit');
     });
 });
 

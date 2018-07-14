@@ -17,7 +17,7 @@ trait AuthenticatesUsers
      */
     public function showLoginForm()
     {
-        return redirect('/private/login');
+        return redirect('/auth/login');
     }
 
     /**

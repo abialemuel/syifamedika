@@ -28,20 +28,21 @@
     <div class="card-body login-card-body">
       <p class="login-box-msg">Sign in to start your session</p>
 
-      <form action="../../index2.html" method="post">
+      <form action="{{ route('admin.login.submit') }}" method="post">
+        {{ csrf_field() }}
         <div class="form-group has-feedback">
-          <input type="email" class="form-control" placeholder="Email">
+          <input type="email" class="form-control" placeholder="Email" name="email">
           <span class="fa fa-envelope form-control-feedback"></span>
         </div>
         <div class="form-group has-feedback">
-          <input type="password" class="form-control" placeholder="Password">
+          <input type="password" class="form-control" placeholder="Password" name="password">
           <span class="fa fa-lock form-control-feedback"></span>
         </div>
         <div class="row">
           <div class="col-8">
             <div class="checkbox icheck">
               <label>
-                <input type="checkbox"> Remember Me
+                <input type="checkbox" name="remember"> Remember Me
               </label>
             </div>
           </div>
