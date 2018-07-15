@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('user.index');
-});
+})->name('user.index');
 
 // Route for users (controller)
 Route::namespace('user')->group(function () {
@@ -35,6 +35,6 @@ Route::prefix('private')->group(function () {
 });
 
 
-Auth::routes();
+// Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');

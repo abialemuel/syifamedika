@@ -26,35 +26,38 @@
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
-      <p class="login-box-msg">Sign in to start your session</p>
+      <p class="login-box-msg">Login in here</p>
 
       <form action="{{ route('admin.login.submit') }}" method="post">
-        {{ csrf_field() }}
+        @csrf
         <div class="form-group has-feedback">
-          <input type="email" class="form-control" placeholder="Email" name="email">
-          <span class="fa fa-envelope form-control-feedback"></span>
+          <span class="fa fa-user form-control-feedback"></span>
+          <input type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="ID Karyawan" name="id_karyawan" value="{{ old('id_karyawan') }}" required>
+          @if ($errors->has('email'))
+              <span class="invalid-feedback" role="alert">
+                <strong>{{ $errors->first('id_karyawan') }}</strong>
+              </span>
+          @endif
         </div>
         <div class="form-group has-feedback">
-          <input type="password" class="form-control" placeholder="Password" name="password">
           <span class="fa fa-lock form-control-feedback"></span>
+          <input type="password" class="form-control" placeholder="Password" name="password" required>
+          @if ($errors->has('password'))
+              <span class="invalid-feedback" role="alert">
+                <strong>{{ $errors->first('password') }}</strong>
+              </span>
+          @endif
         </div>
         <div class="row">
-          <div class="col-8">
-            <div class="checkbox icheck">
-              <label>
-                <input type="checkbox" name="remember"> Remember Me
-              </label>
-            </div>
-          </div>
           <!-- /.col -->
-          <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary btn-block btn-flat">{{ __('Login') }}</button>
           </div>
           <!-- /.col -->
         </div>
       </form>
 
-      <div class="social-auth-links text-center mb-3">
+      {{-- <div class="social-auth-links text-center mb-3">
         <p>- OR -</p>
         <a href="#" class="btn btn-block btn-primary">
           <i class="fa fa-facebook mr-2"></i> Sign in using Facebook
@@ -70,7 +73,7 @@
       </p>
       <p class="mb-0">
         <a href="register.html" class="text-center">Register a new membership</a>
-      </p>
+      </p> --}}
     </div>
     <!-- /.login-card-body -->
   </div>
