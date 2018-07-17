@@ -15,4 +15,8 @@ class DokterController extends Controller
         $dokters = Dokter::all();
         return view('admin.dokter.index', compact('dokters'));
     }
+    public function edit($id_dokter)
+    {
+        return view('admin.dokter.edit');
+    }
 }

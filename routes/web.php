@@ -31,11 +31,13 @@ Route::prefix('private')->group(function () {
         Route::get('/', 'AdminController@index')->name('admin.dashboard');
         Route::get('/login', 'auth\AdminLoginController@showLoginForm')->name('admin.login');
         Route::post('/login', 'auth\AdminLoginController@login')->name('admin.login.submit');
+
         Route::prefix('dokter')->group(function () {
             // Router for dokter
             Route::get('/', 'DokterController@index')->name('dokter.index');
-
+            Route::get('/{id_dokter}/edit', 'DokterController@edit')->name('dokter.edit');
         });
+
     });
 });
 
