@@ -5,6 +5,7 @@ namespace App\Http\Controllers\admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Dokter;
+use App\Spesialis;
 
 
 class DokterController extends Controller
@@ -17,6 +18,8 @@ class DokterController extends Controller
     }
     public function edit($id_dokter)
     {
-        return view('admin.dokter.edit');
+        $dokters = Dokter::where('id_dokter', '=', $id_dokter)->firstOrFail();
+        $spesialis = Spesialis::all();
+        return view('admin.dokter.edit',compact('dokters','spesialis'));
     }
 }
