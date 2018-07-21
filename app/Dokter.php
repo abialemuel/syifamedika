@@ -14,4 +14,12 @@ class Dokter extends Model
     {
       return $this->belongsTo('App\Spesialis','id_spesialis','id_spesialis');
     }
+    public function agama()
+    {
+      return $this->belongsTo('App\Agama','agama','no');
+    }
+    public function status()
+    {
+      return $this->belongsTo('App\Status','status','no');
+    }
 }

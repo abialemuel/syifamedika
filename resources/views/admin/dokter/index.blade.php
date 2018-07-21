@@ -22,49 +22,43 @@
               <div class="card">
                 <div class="card-header">
                   <h3 class="card-title">List Dokter</h3>
-
-                  <div class="card-tools">
-                    <div class="input-group input-group-sm" style="width: 150px;">
-                      <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
-
-                      <div class="input-group-append">
-                        <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                      </div>
-                    </div>
-                  </div>
                 </div>
                 <!-- /.card-header -->
-                <div class="card-body table-responsive p-0">
-                  <table class="table table-hover">
-                    <tr>
-                      <th>ID</th>
-                      <th>Nama</th>
-                      <th>Tempat Lahir</th>
-                      <th>Alamat</th>
-                      <th>Agama</th>
-                      <th>Aksi</th>
-                    </tr>
-                    @foreach ($dokters as $dokter)
+                <div class="card-body">
+                  <table id="datadokter" class="table table-bordered table-striped">
+                    <thead>
                       <tr>
-                        <td>{{ $dokter->id_dokter }}</td>
-                        <td>{{ $dokter->nama_dokter }}</td>
-                        <td>{{ $dokter->tempat_lahir }}</td>
-                        <td>{{ $dokter->alamat }}</td>
-                        <td>{{ $dokter->agama }}</td>
-                        <td>
-                          <a href="dokter/{{$dokter->id_dokter}}/edit">
-                            <button class="btn btn-primary btn-sm">
-                              <i class="fa fa-edit">Edit</i>
-                            </button>
-                          </a>
-                          <a href="dokter/{{$dokter->id_dokter}}/hapus">
-                            <button class="btn btn-danger btn-sm">
-                              <i class="fa fa-trash">Hapus</i>
-                            </button>
-                          </a>
-                        </td>
+                        <th>ID</th>
+                        <th>Nama</th>
+                        <th>Spesialis</th>
+                        <th>No Telp</th>
+                        <th>No SIP</th>
+                        <th>Aksi</th>
                       </tr>
-                    @endforeach
+                    </thead>
+                    <tbody>
+                      @foreach ($dokters as $dokter)
+                        <tr>
+                          <td>{{ $dokter->id_dokter }}</td>
+                          <td>{{ $dokter->nama_dokter }}</td>
+                          <td>{{ $dokter->spesialis['nama_spesialis'] }}</td>
+                          <td>{{ $dokter->no_telp }}</td>
+                          <td>{{ $dokter->no_izin }}</td>
+                          <td>
+                            <a href="dokter/{{$dokter->id_dokter}}/edit">
+                              <button class="btn btn-primary btn-sm">
+                                <i class="fa fa-edit">Edit</i>
+                              </button>
+                            </a>
+                            <a href="dokter/{{$dokter->id_dokter}}/hapus">
+                              <button class="btn btn-danger btn-sm">
+                                <i class="fa fa-trash">Hapus</i>
+                              </button>
+                            </a>
+                          </td>
+                        </tr>
+                      @endforeach
+                    </tbody>
                   </table>
                 </div>
                 <!-- /.card-body -->
@@ -76,5 +70,6 @@
 
 
       @section('script')
+
 
       @endsection

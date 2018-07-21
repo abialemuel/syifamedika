@@ -36,6 +36,7 @@ Route::prefix('private')->group(function () {
             // Router for dokter
             Route::get('/', 'DokterController@index')->name('dokter.index');
             Route::get('/{id_dokter}/edit', 'DokterController@edit')->name('dokter.edit');
+            Route::get('/{id_dokter}/hapus', 'DokterController@destroy')->name('dokter.edit');
         });
 
     });

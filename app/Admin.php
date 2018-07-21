@@ -10,7 +10,6 @@ class Admin extends Authenticatable
     // declare model to tablename
 
     //
-    protected $guard = 'admin';
     protected $table = 'dm_admin';
 
 

@@ -22,9 +22,7 @@
   <!-- Bootstrap time Picker -->
   <link rel="stylesheet" href="/admin/plugins/timepicker/bootstrap-timepicker.min.css">
   <!-- Select2 -->
-  <link rel="stylesheet" href="/admin/plugins/select2/select2.css">
   <link rel="stylesheet" href="/admin/plugins/select2/select2.min.css">
-  <link rel="stylesheet" href="/admin/plugins/select2/select2.full.min.css">
   <!-- jvectormap -->
   <link rel="stylesheet" href="/admin/plugins/jvectormap/jquery-jvectormap-1.2.2.css">
   <!-- Date Picker -->
@@ -35,6 +33,7 @@
   <link rel="stylesheet" href="/admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -78,16 +77,13 @@
 
 <!-- jQuery -->
 @yield('script')
-<!-- jQuery -->
+<!-- datatable -->
 <script src="/admin/plugins/jquery/jquery.min.js"></script>
+<script src="/admin/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="/admin/plugins/datatables/jquery.dataTables.min.js"></script>
 <!-- Select2 -->
 <script src="/admin/plugins/select2/select2.full.min.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script>
-  $.widget.bridge('uibutton', $.ui.button)
-</script>
 <!-- Bootstrap 4 -->
 <script src="/admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Morris.js charts -->
@@ -113,8 +109,6 @@
 <script src="/admin/dist/js/adminlte.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="/admin/dist/js/pages/dashboard.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="/admin/dist/js/demo.js"></script>
 <!-- InputMask -->
 <script src="/admin/plugins/input-mask/jquery.inputmask.js"></script>
 <script src="/admin/plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
@@ -195,6 +189,19 @@
     $('.timepicker').timepicker({
       showInputs: false
     })
+
+    //DataTable
+    $("#datadokter").DataTable({
+      "paging": false
+    });
+    $('#ex').DataTable({
+      "paging": false,
+      "lengthChange": true,
+      "searching": true,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false
+    });
   })
 </script>
 

@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Dokter;
 use App\Spesialis;
+use App\Agama;
+use App\Status;
 
 
 class DokterController extends Controller
@@ -20,6 +22,13 @@ class DokterController extends Controller
     {
         $dokters = Dokter::where('id_dokter', '=', $id_dokter)->firstOrFail();
         $spesialis = Spesialis::all();
-        return view('admin.dokter.edit',compact('dokters','spesialis'));
+        $agamas = Agama::all();
+        $status = Status::all();
+        return view('admin.dokter.edit',compact('dokters','spesialis','agamas','status'));
+    }
+    public function destroy($id_dokter)
+    {
+        $dokters = Dokter::where('id_dokter', '=', $id_dokter)->delete();
+        return redirect(route('dokter.index'));
     }
 }
