@@ -8,7 +8,7 @@ class Dokter extends Model
 {
     //
     protected $table = 'dm_dokter';
-    protected $guarded = [ 'id_dokter' ];
+    protected $guarded = [ ];
 
     public function spesialis()
     {
