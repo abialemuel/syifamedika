@@ -9,6 +9,7 @@ class Dokter extends Model
     //
     protected $table = 'dm_dokter';
     protected $guarded = [ ];
+    public $timestamps = false;
 
     public function spesialis()
     {

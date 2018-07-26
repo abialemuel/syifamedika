@@ -31,6 +31,7 @@
   <link rel="stylesheet" href="/admin/plugins/daterangepicker/daterangepicker-bs3.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="/admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+  <link rel="stylesheet" href="/admin/plugins/datatables/dataTables.bootstrap4.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
@@ -77,15 +78,15 @@
 
 <!-- jQuery -->
 @yield('script')
-<!-- datatable -->
 <script src="/admin/plugins/jquery/jquery.min.js"></script>
-<script src="/admin/plugins/datatables/dataTables.bootstrap4.min.js"></script>
-<script src="/admin/plugins/datatables/jquery.dataTables.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="/admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- datatable -->
+<script src="{{ URL::asset('admin/plugins/datatables/dataTables.bootstrap4.min.js')}}"></script>
+<script src="{{ URL::asset('admin/plugins/datatables/jquery.dataTables.min.js')}}"></script>
 <!-- Select2 -->
 <script src="/admin/plugins/select2/select2.full.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<!-- Bootstrap 4 -->
-<script src="/admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Morris.js charts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
 <script src="/admin/plugins/morris/morris.min.js"></script>
@@ -193,10 +194,9 @@
 
     //DataTable
     $("#datadokter").DataTable({
-      "paging": false
     });
     $('#ex').DataTable({
-      "paging": false,
+      "paging": true,
       "lengthChange": true,
       "searching": true,
       "ordering": true,

@@ -41,6 +41,12 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
+              <a href="{{ route('dokter.create') }}" class="nav-link">
+                <i class="fa fa-plus-square nav-icon"></i>
+                <p>Tambah</p>
+              </a>
+            </li>
+            <li class="nav-item">
               <a href="{{ route('dokter.index') }}" class="nav-link">
                 <i class="fa fa-list nav-icon"></i>
                 <p>List</p>
@@ -77,12 +83,17 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
+              <a href="" class="nav-link">
+                <i class="fa fa-plus-square nav-icon"></i>
+                <p>Tambah</p>
+              </a>
+            </li>
+            <li class="nav-item">
               <a href="./index.html" class="nav-link">
                 <i class="fa fa-list nav-icon"></i>
                 <p>List</p>
               </a>
             </li>
-
           </ul>
         </li>
       </ul>
