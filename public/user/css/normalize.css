@@ -394,3 +394,55 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+
+
+/*------------------------------------------------------------------------*/
+/*--------Gallery Showcases--------*/
+/*------------------------------------------------------------------------*/
+.section-gallery {
+  padding: 0;
+}
+
+.gallery-showcase {
+  background-color: rgba(0, 0, 0, 1);
+  list-style: none;
+}
+
+.gallery-showcase li{
+  float: left;
+  display: block;
+  width: 25%
+}
+
+.gallery-photo {
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.gallery-photo img {
+  width: 100%;
+  opacity: 0.5;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s
+}
+
+.gallery-photo img:hover {
+  transform: scale(1);
+  opacity: 1
+}
+
+/* ------------------------------------------------------
+  Additional by Krian
+------------------------------------------------------ */
+.aboutrs {
+	width: 100%
+}
+
+
+.cs-bg{
+	background-image: url('user/images/rsp-1.png');
+	margin-bottom: 50px;
+}

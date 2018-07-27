@@ -19,6 +19,9 @@ Route::get('/', function () {
 Route::namespace('user')->group(function () {
     // Controllers Within The "App\Http\Controllers\user" Namespace
     Route::get('/forms', 'PasienController@create');
+    Route::get('/blog', function () {
+        return view('user.blog');
+    });
 });
 
 

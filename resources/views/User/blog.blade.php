@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
 <head>
 	<meta name="viewport" content="width=device-width" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Medico - Portfolio inner page</title>
+	<title>Kerjasama Kesehatan - Syifa Medika</title>
+	<link rel="icon" href="user/images/logo1.png">
 	<link rel="stylesheet" href="user/css/foundation.min.css">
 	<link rel="stylesheet" href="user/css/normalize.css">
 	<link rel="stylesheet" href="user/css/fgx-foundation.css" />
-
+	<link rel="stylesheet" href="user/plugins/prettyphoto/prettyPhoto.css" />
 	<!--[if IE 8]><link rel="stylesheet" href="user/css/ie8-grid-foundation-4.css" /><![endif]-->
 
 	<!-- Font Awesome - Retina Icons -->
@@ -25,7 +26,6 @@
 
 </head>
 <body>
-
 <!-- Begin Main Wrapper -->
 <div class="main-wrapper">
 	<!-- Main Navigation -->
@@ -36,26 +36,26 @@
 		<div class="large-9 columns">
 			<nav class="top-bar">
 				<ul class="title-area">
-				  <!-- Title Area -->
-				  <li class="name"></li>
-				  <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-				  <li class="toggle-topbar menu-icon"><a href="#"><span>Main Menu</span></a></li>
+					<!-- Title Area -->
+					<li class="name"></li>
+					<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+					<li class="toggle-topbar menu-icon"><a href="#"><span>Main Menu</span></a></li>
 				</ul>
 
 				<section class="top-bar-section">
 					<!-- Left Nav Section -->
-					  <ul class="right">
-						<li class=""><a href="#" class="active">Beranda</a></li>
+						<ul class="right">
+						<li class=""><a href="#" class="">Beranda</a></li>
 						<li class="has-dropdown"><a href="#">Profil</a>
-						  <ul class="dropdown">
+							<ul class="dropdown">
 							<li><a href="about.html">Profil Rumah Sakit</a></li>
 							<li><a href="grid.html">Profil Dokter</a></li>
 							<li><a href="navigation.html">Dokter Spesialis</a></li>
-						  </ul>
+							</ul>
 						</li>
 						<li class="has-dropdown"><a href="#">Rawat Jalan</a>
-						  <ul class="dropdown">
-            	<li><a href="shortcodes.html">Klinik Mata</a></li>
+							<ul class="dropdown">
+							<li><a href="shortcodes.html">Klinik Mata</a></li>
 							<li><a href="alert-boxes.html">Klinik Gigi</a></li>
 							<li><a href="panels.html">Klinik Jantung & Pembuluh Darah</a></li>
 							<li><a href="pricing-tables.html">Klinik Anak</a></li>
@@ -65,19 +65,11 @@
 							<li><a href="flex-video.html">Klinik Penyakit Dalam</a></li>
 							<li><a href="bars.html">Klinik Kebidanan dan Kandungan</a></li>
 							<li><a href="tables.html">Klinik Umum</a></li>
-						  </ul>
+							</ul>
 						</li>
-						<li class="has-dropdown"><a href="#">Rawat Inap</a>
-							<ul class="dropdown">
-            	<li><a href="shortcodes.html">Kamar VVIP</a></li>
-							<li><a href="alert-boxes.html">Kamar VIP</a></li>
-							<li><a href="panels.html">Kamar Kelas I</a></li>
-							<li><a href="pricing-tables.html">Kamar Kelas II</a></li>
-							<li><a href="bars.html">Kamar Kelas III</a></li>
-						  </ul>
-						</li>
-					  </ul>
-					  <!-- End Left Nav Section -->
+						<li class=""><a href="#">Rawat Inap</a></li>
+						</ul>
+						<!-- End Left Nav Section -->
 				</section>
 			</nav>
 		</div>
@@ -87,13 +79,13 @@
 	<div class="main-wrapper">
 		<div class="row">
 			<div class="large-6 columns">
-				<h2>Kamar VVIP</h2>
+				<h2>Daftar Perusahaan - Kerjasama Kesehatan</h2>
 			</div>
 			<div class="large-6 columns">
 				<ul class="breadcrumbs right">
 					<li>Direktori: </li>
 					<li><a href="index.html">Beranda</a></li>
-					<li><a href="portfolio.html">Rawat Inap</a></li>
+					<li><span>Kerjasama Kesehatan</span></li>
 				</ul>
 			</div>
 		</div>
@@ -103,96 +95,74 @@
 <div class="main-wrapper">
 	<div class="content_wrapper">
 		<div class="row">
-			<img class="post_image" src="user/images/demo/slider/1.jpg" alt="post title">
-		</div>
 
-		<div class="row">
-			<h3>Fasilitas</h3>
-			<div class="large-4 columns">
-				<ul>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-				</ul>
-			</div>
-			<div class="large-4 columns">
-				<ul>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-				</ol>
-			</div>
-			<div class="large-4 columns">
-				<ul>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<div class="main-content-top" style="margin-top:70px;">
-	<div class="main-wrapper">
-		<div class="row">
 			<div class="large-12 columns">
-				<h2>Kamar VIP</h2>
+				<ul class="portfolio-content large-block-grid-3">
+        	<li data-id="1" data-type="people">
+						<div class="view view-one">
+							<img src="user/images/demo/doctors/1.jpg" alt="" />
+						</div>
+						<div class="project-info">
+							<h3>PT.PLN Distribusi Persero</h3>
+						</div>
+					</li>
+					<li data-id="2" data-type="nature">
+						<div class="view-one">
+							<img src="user/images/demo/doctors/2.jpg" alt="" />
+						</div>
+						<div class="project-info">
+							<h3>In-house treatment</h3>
+
+						</div>
+					</li>
+					<li data-id="3" data-type="technology">
+						<div class="view-one">
+							<img src="user/images/demo/doctors/3.jpg" alt="" />
+						</div>
+						<div class="project-info">
+							<h3>In-house treatment</h3>
+						</div>
+					</li>
+					<li data-id="4" data-type="devices">
+						<div class="view-one">
+							<img src="user/images/demo/doctors/4.jpg" alt="" />
+						</div>
+						<div class="project-info">
+							<h3>In-house treatment</h3>
+						</div>
+					</li>
+					 <li data-id="5" data-type="buildings">
+						<div class="view-one">
+							<img src="user/images/demo/doctors/5.jpg" alt="" />
+						</div>
+						<div class="project-info">
+							<h3>In-house treatment</h3>
+						</div>
+					</li>
+					<li data-id="6" data-type="websites">
+						<div class="view-one">
+							<img src="user/images/demo/doctors/6.jpg" alt="" />
+						</div>
+						<div class="project-info">
+							<h3>In-house treatment</h3>
+
+						</div>
+					</li>
+				</ul>
+
+				<div class="pagination-wrapper">
+					<ul class="pagination">
+						<li class="current"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+					</ul>
+					<div class="clearfix"></div>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- End Main Content Top -->
-<div class="main-wrapper">
-	<div class="content_wrapper">
-			<img class="post_image" src="user/images/gallery/kelas1a-min.png" alt="post title" style="height:450px; width:90%;">
-
-		<div class="row">
-			<h3>Fasilitas</h3>
-			<div class="large-4 columns">
-				<ul>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-				</ul>
-			</div>
-			<div class="large-4 columns">
-				<ul>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-				</ol>
-			</div>
-			<div class="large-4 columns">
-				<ul>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-					<li><h5>Bed pasien</h5></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
-
 <footer class="footer_wrapper">
 	<div class="row footer-part">
 		<div class="large-12 columns">
@@ -200,7 +170,7 @@
 				<div class="large-3 columns">
 					<h4 class="footer-title">About Us</h4>
 					<div class="divdott"></div>
-					<img class="botlogo" src="user/images/botlogo.png" alt="" />
+					<img class="botlogo" src="user/images/logo.png" alt="" />
 					<div class="footer_part_content">
 						<p>Medico Theme Bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate</p>
 					</div>
@@ -284,27 +254,44 @@
 		</div>
 	</div>
 </footer>
-
-<script src="user/js/foundation.min.js"></script>
-<!-- carouFredSel plugin -->
-<script src="user/plugins/carouFredSel/jquery.carouFredSel-6.2.0-packed.js"></script>
-<script src="user/plugins/carouFredSel/helper-plugins/jquery.touchSwipe.min.js"></script>
-<!-- Related projects -->
+<!--Quicksand-->
+<script type="text/javascript" src="user/plugins/prettyphoto/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="user/js/jquery.quicksand.js"></script>
 <script type="text/javascript">
-	jQuery(document).ready(function(){
-		$(".related-projects").carouFredSel({
-			circular: false,
-			infinite: true,
-			auto: false,
-			scroll:{items:1},
-			prev: {	button: "#slide_prev", key: "left"},
-			next: { button: "#slide_next",key: "right"}
-		});
-	});
-</script>
 
+$(document).ready(function() {
+	//$("a[rel^='prettyPhoto']").click(function() {alert ('gag') });
+	$("a[rel^='prettyPhoto']").prettyPhoto({theme: 'dark_square'});
+
+	var $filterType = $('.portfolio-main li.active a').attr('class');
+	var $holder = $('ul.portfolio-content');
+	var $data = $holder.clone();
+	jQuery('.portfolio-main li a').click(function(e) {
+
+		$('.portfolio-main li').removeClass('active');
+		var $filterType = $(this).attr('class');
+		$(this).parent().addClass('active');
+
+		if ($filterType == 'all') {
+			var $filteredData = $data.find('li');
+		}
+		else {
+			var $filteredData = $data.find('li[data-type=' + $filterType + ']');
+		}
+		$holder.quicksand($filteredData,
+			{duration: 800,easing: 'easeInOutQuad'},
+			function() {
+				$("a[rel^='prettyPhoto']").prettyPhoto({theme: 'dark_square'});
+
+			}
+		);
+		return false;
+	});
+});
+</script>
 <!-- Scripts Initialize -->
 <script src="user/js/app-head-calls.js"></script>
+<script src="user/js/foundation.min.js"></script>
 <script>
 $(document).foundation();
 </script>

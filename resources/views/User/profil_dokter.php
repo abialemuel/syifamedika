@@ -2,10 +2,11 @@
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
-<head>	
+<head>
 	<meta name="viewport" content="width=device-width" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Medico - Portfolio (4 columns)</title>  
+	<title>Profil Dokter - Syifa Medika</title>
+	<link rel="icon" href="user/images/logo1.png">
 	<link rel="stylesheet" href="user/css/foundation.min.css">
 	<link rel="stylesheet" href="user/css/normalize.css">
 	<link rel="stylesheet" href="user/css/fgx-foundation.css" />
@@ -19,7 +20,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="user/css/style.css">
-	
+
 	<!-- Main scripts -->
 	<script src="user/js/vendor/jquery.js"></script>
 	<script src="user/js/vendor/custom.modernizr.js"></script>
@@ -27,12 +28,12 @@
 <body>
 <!-- Begin Main Wrapper -->
 <div class="main-wrapper">
-	<!-- Main Navigation -->  
+	<!-- Main Navigation -->
 	<header class="row main-navigation">
-		<div class="large-3 columns">	
+		<div class="large-3 columns">
 			<a href="index.html" id="logo"><img src="user/images/logo.png" alt="Medico Logo" /></a>
 		</div>
-		<div class="large-9 columns">			
+		<div class="large-9 columns">
 			<nav class="top-bar">
 				<ul class="title-area">
 				  <!-- Title Area -->
@@ -44,92 +45,52 @@
 				<section class="top-bar-section">
 					<!-- Left Nav Section -->
 					  <ul class="right">
-						<li class="has-dropdown"><a href="#" class="active">Home</a>
+						<li class=""><a href="#" class="active">Beranda</a></li>
+						<li class="has-dropdown"><a href="#">Profil</a>
 						  <ul class="dropdown">
-							<li><a href="index2.html">Variation 2</a></li>
-							<li><a href="index3.html">Variation 3</a></li>
-							<li><a href="index4.html">Variation 4</a></li>
-							<li><a href="index5.html">Variation 5</a></li>
-							<li><a href="index6.html">Variation 6</a></li>
+							<li><a href="about.html">Profil Rumah Sakit</a></li>
+							<li><a href="grid.html">Profil Dokter</a></li>
+							<li><a href="navigation.html">Dokter Spesialis</a></li>
 						  </ul>
 						</li>
-						<li class="has-dropdown"><a href="#">Features</a>
+						<li class="has-dropdown"><a href="#">Rawat Jalan</a>
 						  <ul class="dropdown">
-                          	<li><a href="about.html">About page</a></li>
-							<li><a href="grid.html">Grid</a></li>
-							<li><a href="navigation.html">Navigation</a></li>
-							<li><a href="buttons.html">Buttons</a></li>
-							<li><a href="forms.html">Forms</a></li>
-							<li><a href="typography.html">Typography</a></li>
-							<li><a href="orbit.html">Orbit - Foundation Slider</a></li>
-							<li><a href="clearing.html">Clearing -  Responsive Lightboxes</a></li>
-							<li><a href="dropdown.html">Dropdown</a></li>
-							<li><a href="joyride.html">Joyride</a></li>
-							<li><a href="magellan.html">Magellan</a></li>
-							<li><a href="reveal.html">Reveal - Modal dialogs / pop-up windows</a></li>
-							<li><a href="section.html">Section - Accordion, Tabs &amp; Vertical Nav</a></li>
-							<li><a href="tooltips.html">Info tooltips</a></li>
+            	<li><a href="shortcodes.html">Klinik Mata</a></li>
+							<li><a href="alert-boxes.html">Klinik Gigi</a></li>
+							<li><a href="panels.html">Klinik Jantung & Pembuluh Darah</a></li>
+							<li><a href="pricing-tables.html">Klinik Anak</a></li>
+							<li><a href="bars.html">Klinik Bedah</a></li>
+							<li><a href="tables.html">Klinik Syaraf</a></li>
+							<li><a href="thumbnails.html">Klinik Rehabilitasi Medis</a></li>
+							<li><a href="flex-video.html">Klinik Penyakit Dalam</a></li>
+							<li><a href="bars.html">Klinik Kebidanan dan Kandungan</a></li>
+							<li><a href="tables.html">Klinik Umum</a></li>
 						  </ul>
 						</li>
-						
-						<li class="has-dropdown"><a href="#">Shortcodes</a>
-						  <ul class="dropdown">
-                          	<li><a href="shortcodes.html">Main elements</a></li>
-							<li><a href="alert-boxes.html">Alert Boxes</a></li>
-							<li><a href="panels.html">Panels</a></li>
-							<li><a href="pricing-tables.html">Pricing Tables</a></li>
-							<li><a href="bars.html">Progress Bars</a></li>
-							<li><a href="tables.html">Tables</a></li>
-							<li><a href="thumbnails.html">Thumbnails</a></li>
-							<li><a href="flex-video.html">Flex Video</a></li>
-							
-						  </ul>
-						</li>                    
-						<li class="has-dropdown"><a href="#">Add-ons</a>
-						  <ul class="dropdown">
-							<li><a href="icons.html">Retina Icons - Font Awesome</a></li>
-						  </ul>
-						</li>
-						<li class="has-dropdown"><a href="#">Portfolio</a>                                       
-						  <ul class="dropdown"> 
-                          		<li><a href="portfolio.html">Portfolio 4 Columns</a> </li>                       
-								<li><a href="portfolio2.html">Portfolio 3 Columns</a></li>
-								<li><a href="portfolio-single.html">Single item</a></li>
-							</ul>
-						</li>
-						<li class="has-dropdown"><a href="#">Blog</a>                    
-						  <ul class="dropdown">
-							<li><a href="blog.html">1 Column, Default</a></li>
-							<li><a href="blogalt.html">1 Column, Alternative</a></li>
-							<li><a href="blog-2column.html">2 Columns</a></li>
-							<li><a href="blog-3column-no-sidebar.html">3 Columns, No sidebar</a></li>
-							<li><a href="blog-4column-no-sidebar.html">4 Columns, No sidebar</a></li>
-							<li><a href="blog-single.html">Blog Inner</a></li>
-						  </ul>
-						</li>
-						<li><a href="contact.html">Contact</a></li>
+						<li class=""><a href="#">Rawat Inap</a></li>
 					  </ul>
-					  <!-- End Left Nav Section -->					 
+					  <!-- End Left Nav Section -->
 				</section>
 			</nav>
 		</div>
 	</header>
+
 </div><!-- End Main Navigation -->
-<div class="main-content-top">	
-	<div class="main-wrapper">	
+<div class="main-content-top">
+	<div class="main-wrapper">
 		<div class="row">
 			<div class="large-6 columns">
-				<h2>Portfolio (4 columns)</h2>
-			</div>        
+				<h2>Profil Dokter di RS Syifa Medika</h2>
+			</div>
 			<div class="large-6 columns">
 				<ul class="breadcrumbs right">
-					<li>You are here: </li>
-					<li><a href="index.html">Home</a></li>
-					<li><span>Portfolio</span></li>
+					<li>Posisi Anda: </li>
+					<li><a href="index.html">Beranda</a></li>
+					<li><span>Profil Dokter</span></li>
 				</ul>
 			</div>
 		</div>
-	</div>		
+	</div>
 </div>
 <!-- End Main Content Top -->
 <div class="main-wrapper">
@@ -137,312 +98,308 @@
 		<div class="row">
 			 <div class="large-12 columns">
 				<ul class="splitter portfolio-main filter portmenu">
-					<li class="segment-0 selected-1 active"><a href="#" class="all">All</a></li>
-					<li class="segment-1"><a href="#" class="people">Children</a></li>
-					<li class="segment-2"><a href="#" class="nature">Heart</a></li>
-					<li class="segment-3"><a href="#" class="technology">Diabet</a></li>
-					<li class="segment-4"><a href="#" class="devices">Treatments</a></li> 
-					<li class="segment-5"><a href="#" class="buildings">Health</a></li>
-					<li class="segment-6"><a href="#" class="websites">Medical Devices</a></li>						
+					<li class="segment-0 selected-1 active"><a href="#" class="all">Semua</a></li>
+					<li class="segment-1"><a href="#" class="people">Umum</a></li>
+					<li class="segment-2"><a href="#" class="nature">Spesialis</a></li>
 				</ul>
 			 </div>
 			<div class="large-12 columns">
 				<ul class="portfolio-content large-block-grid-4">
                     <li data-id="1" data-type="people">
-						<div class="view view-one"> 
-							<img src="user/images/demo/portfolio/1.jpg" alt="" /> 
+						<div class="view view-one">
+							<img src="user/images/demo/portfolio/1.jpg" alt="" />
 							<div class="mask">
 								<p>Researchers can identify modifications to the chemical structure.</p>
 								<a href="user/images/demo/slider/1.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
 									<i class="icon-zoom-in icon-large"></i>
-								</a>	
+								</a>
 								<a href="portfolio-single.html" class="picon-info">
 									<i class="icon-info icon-large"></i>
-								</a>									
+								</a>
 							</div>
 						</div>
 						<div class="project-info">
-							<h3>Heart Surgery</h3>   
+							<h3>Heart Surgery</h3>
 							<p>Heart, people</p>
 						</div>
 					</li>
 					<li data-id="2" data-type="nature">
-						<div class="view view-one"> 
-							<img src="user/images/demo/portfolio/2.jpg" alt="" /> 
+						<div class="view view-one">
+							<img src="user/images/demo/portfolio/2.jpg" alt="" />
 							<div class="mask">
 								<p>such people are John Steed, top professional; Avengers.</p>
 								<a href="user/images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
 									<i class="icon-zoom-in icon-large"></i>
-								</a>	
+								</a>
 								<a href="portfolio-single.html" class="picon-info">
 									<i class="icon-info icon-large"></i>
-								</a>									
+								</a>
 							</div>
 						</div>
 						<div class="project-info">
-							<h3>In-house treatment</h3>   
-							<p>Diabet, treatments</p>
+							<h3>Spesialis Anak</h3>
+							<p>Dr. dr. H. Parlindungan Ringoringo, Sp.A(K)</p>
 						</div>
 					</li>
 					<li data-id="3" data-type="technology">
-						<div class="view view-one"> 
-							<img src="user/images/demo/portfolio/3.jpg" alt="" /> 
+						<div class="view view-one">
+							<img src="user/images/demo/portfolio/3.jpg" alt="" />
 							<div class="mask">
 								<p>Is a selective serotonin reuptake inhibitor.</p>
 								<a href="user/images/demo/slider/3.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
 									<i class="icon-zoom-in icon-large"></i>
-								</a>	
+								</a>
 								<a href="portfolio-single.html" class="picon-info">
 									<i class="icon-info icon-large"></i>
-								</a>									
+								</a>
 							</div>
 						</div>
 						<div class="project-info">
-							<h3>Paroxetine</h3>   
+							<h3>Paroxetine</h3>
 							<p>Medical preparations</p>
 						</div>
 					</li>
 					<li data-id="4" data-type="devices">
-						<div class="view view-one"> 
-							<img src="user/images/demo/portfolio/4.jpg" alt="" /> 
+						<div class="view view-one">
+							<img src="user/images/demo/portfolio/4.jpg" alt="" />
 							<div class="mask">
 								<p>The preparation and administration of a medicine, therapeutic regimen.</p>
 								<a href="user/images/demo/slider/3.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
 									<i class="icon-zoom-in icon-large"></i>
-								</a>	
+								</a>
 								<a href="portfolio-single.html" class="picon-info">
 									<i class="icon-info icon-large"></i>
-								</a>									
+								</a>
 							</div>
 						</div>
 						<div class="project-info">
-							<h3>Prescription </h3>   
+							<h3>Prescription </h3>
 							<p>Medical preparations, Health</p>
 						</div>
 					</li>
 					 <li data-id="5" data-type="buildings">
-						<div class="view view-one"> 
-							<img src="user/images/demo/portfolio/5.jpg" alt="" /> 
+						<div class="view view-one">
+							<img src="user/images/demo/portfolio/5.jpg" alt="" />
 							<div class="mask">
 								<p>Researchers can identify modifications to the chemical structure.</p>
 								<a href="user/images/demo/slider/1.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
 									<i class="icon-zoom-in icon-large"></i>
-								</a>	
+								</a>
 								<a href="portfolio-single.html" class="picon-info">
 									<i class="icon-info icon-large"></i>
-								</a>									
+								</a>
 							</div>
 						</div>
 						<div class="project-info">
-							<h3>Heart Surgery</h3>   
+							<h3>Heart Surgery</h3>
 							<p>Heart, people</p>
 						</div>
 					</li>
 					<li data-id="6" data-type="websites">
-						<div class="view view-one"> 
-							<img src="user/images/demo/portfolio/6.jpg" alt="" /> 
+						<div class="view view-one">
+							<img src="user/images/demo/portfolio/6.jpg" alt="" />
 							<div class="mask">
 								<p>such people are John Steed, top professional; Avengers.</p>
 								<a href="user/images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
 									<i class="icon-zoom-in icon-large"></i>
-								</a>	
+								</a>
 								<a href="portfolio-single.html" class="picon-info">
 									<i class="icon-info icon-large"></i>
-								</a>									
+								</a>
 							</div>
 						</div>
 						<div class="project-info">
-							<h3>In-house treatment</h3>   
+							<h3>In-house treatment</h3>
 							<p>Diabet, treatments</p>
 						</div>
 					</li>
 					 <li data-id="7" data-type="people">
-						<div class="view view-one"> 
-							<img src="user/images/demo/portfolio/7.jpg" alt="" /> 
+						<div class="view view-one">
+							<img src="user/images/demo/portfolio/7.jpg" alt="" />
 							<div class="mask">
 								<p>such people are John Steed, top professional; Avengers.</p>
 								<a href="user/images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
 									<i class="icon-zoom-in icon-large"></i>
-								</a>	
+								</a>
 								<a href="portfolio-single.html" class="picon-info">
 									<i class="icon-info icon-large"></i>
-								</a>									
+								</a>
 							</div>
 						</div>
 						<div class="project-info">
-							<h3>In-house treatment</h3>   
+							<h3>In-house treatment</h3>
 							<p>Diabet, treatments</p>
 						</div>
 					</li>
 					<li data-id="8" data-type="people">
-						<div class="view view-one"> 
-							<img src="user/images/demo/portfolio/8.jpg" alt="" /> 
+						<div class="view view-one">
+							<img src="user/images/demo/portfolio/8.jpg" alt="" />
 							<div class="mask">
 								<p>such people are John Steed, top professional; Avengers.</p>
 								<a href="user/images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
 									<i class="icon-zoom-in icon-large"></i>
-								</a>	
+								</a>
 								<a href="portfolio-single.html" class="picon-info">
 									<i class="icon-info icon-large"></i>
-								</a>									
+								</a>
 							</div>
 						</div>
 						<div class="project-info">
-							<h3>In-house treatment</h3>   
+							<h3>In-house treatment</h3>
 							<p>Diabet, treatments</p>
 						</div>
 					</li>
 					 <li data-id="9" data-type="devices">
-						<div class="view view-one"> 
-							<img src="user/images/demo/portfolio/9.jpg" alt="" /> 
+						<div class="view view-one">
+							<img src="user/images/demo/portfolio/9.jpg" alt="" />
 							<div class="mask">
 								<p>such people are John Steed, top professional; Avengers.</p>
 								<a href="user/images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
 									<i class="icon-zoom-in icon-large"></i>
-								</a>	
+								</a>
 								<a href="portfolio-single.html" class="picon-info">
 									<i class="icon-info icon-large"></i>
-								</a>									
+								</a>
 							</div>
 						</div>
 						<div class="project-info">
-							<h3>In-house treatment</h3>   
+							<h3>In-house treatment</h3>
 							<p>Diabet, treatments</p>
 						</div>
 					</li>
 					<li data-id="10" data-type="building">
-						<div class="view view-one"> 
-							<img src="user/images/demo/portfolio/10.jpg" alt="" /> 
+						<div class="view view-one">
+							<img src="user/images/demo/portfolio/10.jpg" alt="" />
 							<div class="mask">
 								<p>such people are John Steed, top professional; Avengers.</p>
 								<a href="user/images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
 									<i class="icon-zoom-in icon-large"></i>
-								</a>	
+								</a>
 								<a href="portfolio-single.html" class="picon-info">
 									<i class="icon-info icon-large"></i>
-								</a>									
+								</a>
 							</div>
 						</div>
 						<div class="project-info">
-							<h3>In-house treatment</h3>   
+							<h3>In-house treatment</h3>
 							<p>Diabet, treatments</p>
 						</div>
 					</li>
 					 <li data-id="11" data-type="people">
-						<div class="view view-one"> 
-							<img src="user/images/demo/portfolio/11.jpg" alt="" /> 
+						<div class="view view-one">
+							<img src="user/images/demo/portfolio/11.jpg" alt="" />
 							<div class="mask">
 								<p>such people are John Steed, top professional; Avengers.</p>
 								<a href="user/images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
 									<i class="icon-zoom-in icon-large"></i>
-								</a>	
+								</a>
 								<a href="portfolio-single.html" class="picon-info">
 									<i class="icon-info icon-large"></i>
-								</a>									
+								</a>
 							</div>
 						</div>
 						<div class="project-info">
-							<h3>In-house treatment</h3>   
+							<h3>In-house treatment</h3>
 							<p>Diabet, treatments</p>
 						</div>
 					</li>
 					<li data-id="12" data-type="websites">
-						<div class="view view-one"> 
-							<img src="user/images/demo/portfolio/12.jpg" alt="" /> 
+						<div class="view view-one">
+							<img src="user/images/demo/portfolio/12.jpg" alt="" />
 							<div class="mask">
 								<p>such people are John Steed, top professional; Avengers.</p>
 								<a href="user/images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
 									<i class="icon-zoom-in icon-large"></i>
-								</a>	
+								</a>
 								<a href="portfolio-single.html" class="picon-info">
 									<i class="icon-info icon-large"></i>
-								</a>									
+								</a>
 							</div>
 						</div>
 						<div class="project-info">
-							<h3>In-house treatment</h3>   
+							<h3>In-house treatment</h3>
 							<p>Diabet, treatments</p>
 						</div>
 					</li>
                     <li data-id="13" data-type="websites">
-						<div class="view view-one"> 
-							<img src="user/images/demo/portfolio/13.jpg" alt="" /> 
+						<div class="view view-one">
+							<img src="user/images/demo/portfolio/13.jpg" alt="" />
 							<div class="mask">
 								<p>such people are John Steed, top professional; Avengers.</p>
 								<a href="user/images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
 									<i class="icon-zoom-in icon-large"></i>
-								</a>	
+								</a>
 								<a href="portfolio-single.html" class="picon-info">
 									<i class="icon-info icon-large"></i>
-								</a>									
+								</a>
 							</div>
 						</div>
 						<div class="project-info">
-							<h3>In-house treatment</h3>   
+							<h3>In-house treatment</h3>
 							<p>Diabet, treatments</p>
 						</div>
 					</li>
                     <li data-id="14" data-type="websites">
-						<div class="view view-one"> 
-							<img src="user/images/demo/portfolio/14.jpg" alt="" /> 
+						<div class="view view-one">
+							<img src="user/images/demo/portfolio/14.jpg" alt="" />
 							<div class="mask">
 								<p>such people are John Steed, top professional; Avengers.</p>
 								<a href="user/images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
 									<i class="icon-zoom-in icon-large"></i>
-								</a>	
+								</a>
 								<a href="portfolio-single.html" class="picon-info">
 									<i class="icon-info icon-large"></i>
-								</a>									
+								</a>
 							</div>
 						</div>
 						<div class="project-info">
-							<h3>In-house treatment</h3>   
+							<h3>In-house treatment</h3>
 							<p>Diabet, treatments</p>
 						</div>
 					</li>
                     <li data-id="15" data-type="websites">
-						<div class="view view-one"> 
-							<img src="user/images/demo/portfolio/15.jpg" alt="" /> 
+						<div class="view view-one">
+							<img src="user/images/demo/portfolio/15.jpg" alt="" />
 							<div class="mask">
 								<p>such people are John Steed, top professional; Avengers.</p>
 								<a href="user/images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
 									<i class="icon-zoom-in icon-large"></i>
-								</a>	
+								</a>
 								<a href="portfolio-single.html" class="picon-info">
 									<i class="icon-info icon-large"></i>
-								</a>									
+								</a>
 							</div>
 						</div>
 						<div class="project-info">
-							<h3>In-house treatment</h3>   
+							<h3>In-house treatment</h3>
 							<p>Diabet, treatments</p>
 						</div>
 					</li>
                     <li data-id="16" data-type="websites">
-						<div class="view view-one"> 
-							<img src="user/images/demo/portfolio/16.jpg" alt="" /> 
+						<div class="view view-one">
+							<img src="user/images/demo/portfolio/16.jpg" alt="" />
 							<div class="mask">
 								<p>such people are John Steed, top professional; Avengers.</p>
 								<a href="user/images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
 									<i class="icon-zoom-in icon-large"></i>
-								</a>	
+								</a>
 								<a href="portfolio-single.html" class="picon-info">
 									<i class="icon-info icon-large"></i>
-								</a>									
+								</a>
 							</div>
 						</div>
 						<div class="project-info">
-							<h3>In-house treatment</h3>   
+							<h3>In-house treatment</h3>
 							<p>Diabet, treatments</p>
 						</div>
 					</li>
-					
-				</ul>	
-			
-			</div>			
+
+				</ul>
+
+			</div>
 		</div>
-	</div>           
-</div>   
+	</div>
+</div>
 <footer class="footer_wrapper">
 	<div class="row footer-part">
 		<div class="large-12 columns">
@@ -475,7 +432,7 @@
 						</ul>
 					</div>
 				</div>
-				
+
 
 				<div class="large-3 columns">
 					<h4 class="footer-title">Contact info</h4>
@@ -494,8 +451,8 @@
 					</ul>
 					</div>
 				</div>
-					
-				<div class="large-3 columns"> 
+
+				<div class="large-3 columns">
 					<h4 class="footer-title">Quick Contact</h4>
 					<div class="divdott"></div>
 					<form method="POST" action="#" id="footer-contact-form">
@@ -512,15 +469,15 @@
 								</div>
 								<div class="large-12 columns text-right">
 									<input type="submit" class="button" value="Send" name="send" />
-								</div>	
+								</div>
 							</div>
 						</div>
 					</form>
-				</div> 
+				</div>
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="privacy footer_bottom">
 		<div class="footer-part">
 			<div class="row">
@@ -534,53 +491,53 @@
 		</div>
 	</div>
 </footer>
-<script src="user/js/foundation.min.js"></script>   
+<script src="user/js/foundation.min.js"></script>
 <!--Quicksand-->
 <script type="text/javascript" src="user/plugins/prettyphoto/jquery.prettyPhoto.js"></script>
 <script type="text/javascript" src="user/js/jquery.quicksand.js"></script>
 <script type="text/javascript">
-	
+
 $(document).ready(function() {
 	//$("a[rel^='prettyPhoto']").click(function() {alert ('gag') });
 	$('a[rel^="prettyPhoto"]').prettyPhoto({theme: "dark_square"});
-	
+
 	var $filterType = $('.portfolio-main li.active a').attr('class');
-	var $holder = $('ul.portfolio-content');		
+	var $holder = $('ul.portfolio-content');
 	var $data = $holder.clone();
 	jQuery('.portfolio-main li a').click(function(e) {
-		
+
 		$('.portfolio-main li').removeClass('active');
 		var $filterType = $(this).attr('class');
 		$(this).parent().addClass('active');
-		
+
 		if ($filterType == 'all') {
 			var $filteredData = $data.find('li');
-		} 
+		}
 		else {
 			var $filteredData = $data.find('li[data-type=' + $filterType + ']');
 		}
-		$holder.quicksand($filteredData, 
+		$holder.quicksand($filteredData,
 			{duration: 800,easing: 'easeInOutQuad'},
 			function() {
 				$("a[rel^='prettyPhoto']").prettyPhoto({theme: 'dark_square'});
-				
-			}		
+
+			}
 		);
 		return false;
 	});
-});	
+});
 </script>
 <!-- Scripts Initialize -->
 <script src="user/js/app-head-calls.js"></script>
- 
+
 <script>
 $(document).foundation();
-</script>  
+</script>
 
 <!-- Smallipop JS - Tooltips -->
 <script type="text/javascript" src="user/plugins/smallipop/lib/contrib/prettify.js"></script>
 <script type="text/javascript" src="user/plugins/smallipop/lib/jquery.smallipop.js"></script>
-<script type="text/javascript" src="user/plugins/smallipop/lib/smallipop.calls.js"></script> 
+<script type="text/javascript" src="user/plugins/smallipop/lib/smallipop.calls.js"></script>
 
 <!-- Initialize JS Plugins -->
 <script src="user/js/app-bottom-calls.js"></script>
