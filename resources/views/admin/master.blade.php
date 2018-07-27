@@ -21,8 +21,6 @@
   <link rel="stylesheet" href="/admin/plugins/colorpicker/bootstrap-colorpicker.min.css">
   <!-- Bootstrap time Picker -->
   <link rel="stylesheet" href="/admin/plugins/timepicker/bootstrap-timepicker.min.css">
-  <!-- Select2 -->
-  <link rel="stylesheet" href="/admin/plugins/select2/select2.min.css">
   <!-- jvectormap -->
   <link rel="stylesheet" href="/admin/plugins/jvectormap/jquery-jvectormap-1.2.2.css">
   <!-- Date Picker -->
@@ -82,8 +80,18 @@
 <!-- Bootstrap 4 -->
 <script src="/admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- datatable -->
-<script src="{{ URL::asset('admin/plugins/datatables/dataTables.bootstrap4.min.js')}}"></script>
 <script src="{{ URL::asset('admin/plugins/datatables/jquery.dataTables.min.js')}}"></script>
+<script src="{{ URL::asset('admin/plugins/datatables/dataTables.bootstrap4.min.js')}}"></script>
+<!-- Slimscroll -->
+<script src="/admin/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="/admin/plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="/admin/dist/js/adminlte.js"></script>
+<!-- AdminLTE App -->
+<script src="/admin/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="/admin/dist/js/pages/dashboard.js"></script>
 <!-- Select2 -->
 <script src="/admin/plugins/select2/select2.full.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
@@ -102,14 +110,7 @@
 <script src="/admin/plugins/datepicker/bootstrap-datepicker.js"></script>
 <!-- Bootstrap WYSIHTML5 -->
 <script src="/admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
-<!-- Slimscroll -->
-<script src="/admin/plugins/slimScroll/jquery.slimscroll.min.js"></script>
-<!-- FastClick -->
-<script src="/admin/plugins/fastclick/fastclick.js"></script>
-<!-- AdminLTE App -->
-<script src="/admin/dist/js/adminlte.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="/admin/dist/js/pages/dashboard.js"></script>
+
 <!-- InputMask -->
 <script src="/admin/plugins/input-mask/jquery.inputmask.js"></script>
 <script src="/admin/plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
@@ -120,10 +121,7 @@
 <script src="/admin/plugins/timepicker/bootstrap-timepicker.min.js"></script>
 <!-- iCheck 1.0.1 -->
 <script src="/admin/plugins/iCheck/icheck.min.js"></script>
-<!-- AdminLTE App -->
-<script src="/admin/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="/admin/dist/js/demo.js"></script>
 
 
 <script>
@@ -196,11 +194,10 @@
     $("#datadokter").DataTable({
     });
     $('#ex').DataTable({
+      "ordering": false,
       "paging": true,
-      "lengthChange": true,
       "searching": true,
-      "ordering": true,
-      "info": true,
+      "info": false,
       "autoWidth": false
     });
   })

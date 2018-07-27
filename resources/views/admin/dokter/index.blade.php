@@ -25,7 +25,7 @@
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
-                  <table id="datadokter" class="table table-bordered table-striped">
+                  <table id="ex" class="table table-bordered table-striped">
                     <thead>
                       <tr>
                         <th>ID</th>
