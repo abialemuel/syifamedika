@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('user.index');
-});
+})->name('user.index');
 
 // Route for users (controller)
 Route::namespace('user')->group(function () {
@@ -31,14 +31,24 @@ Route::prefix('private')->group(function () {
     // Route for admin (controller)
     Route::namespace('admin')->group(function () {
         // Controllers Within The "App\Http\Controllers\admin" Namespace
-        Route::get('/', 'AdminController@index');
-    });
-    Route::get('/login', function () {
-        return view('admin.login');
+        Route::get('/', 'AdminController@index')->name('admin.dashboard');
+        Route::get('/login', 'auth\AdminLoginController@showLoginForm')->name('admin.login');
+        Route::post('/login', 'auth\AdminLoginController@login')->name('admin.login.submit');
+
+        Route::prefix('dokter')->group(function () {
+            // Router for dokter
+            Route::get('/', 'DokterController@index')->name('dokter.index');
+            Route::get('/tambah', 'DokterController@create')->name('dokter.create');
+            Route::post('/tambah', 'DokterController@store')->name('dokter.store');
+            Route::get('/{id_dokter}/edit', 'DokterController@edit')->name('dokter.edit');
+            Route::post('/{id_dokter}/edit', 'DokterController@update');
+            Route::get('/{id_dokter}/hapus', 'DokterController@destroy')->name('dokter.edit');
+        });
+
     });
 });
 
 
-Auth::routes();
+// Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
