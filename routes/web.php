@@ -15,13 +15,39 @@ Route::get('/', function () {
     return view('user.index');
 })->name('user.index');
 
+
 // Route for users (controller)
 Route::namespace('user')->group(function () {
     // Controllers Within The "App\Http\Controllers\user" Namespace
     Route::get('/forms', 'PasienController@create');
-    Route::get('/blog', function () {
-        return view('user.blog');
+    Route::get('/infosehat', function () {
+        return view('user.blogs');
     });
+    Route::get('/dokter', function () {
+        return view('user.dokter');
+    });
+    Route::get('/profilrs', function () {
+        return view('user.infors');
+    });
+    Route::get('/profilrs', function () {
+        return view('user.infors');
+    });
+    Route::get('/rawatinap', function () {
+        return view('user.fasilitaskamar');
+    });
+    Route::get('/layananbpjs', function () {
+        return view('user.bpjs');
+    });
+    Route::get('/rawatjalan', function () {
+        return view('user.rawat_jalan');
+    });
+    Route::get('/jadwalpoliklinik', function () {
+        return view('user.jadwal_poli');
+    });
+    Route::get('/pendaftaranbaru', function () {
+        return view('user.user_register');
+    });
+
 });
 
 

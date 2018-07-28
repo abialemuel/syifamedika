@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
-	<title>Medico - Typography</title>  
+	<title>Layanan BPJS - RS Syifa Medika</title>
 
 	<!-- Smallipop CSS - Tooltips -->
 	<link rel="stylesheet" href="user/plugins/smallipop/css/contrib/animate.min.css" type="text/css" media="all" title="Screen" />
@@ -20,11 +20,11 @@
 
 	<!-- Font Awesome - Retina Icons -->
 	<link rel="stylesheet" href="user/plugins/fontawesome/css/font-awesome.min.css">
-  
+
 	<!-- Google Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="user/css/style.css" />
-  
+
 	<!-- Main JS Files -->
 	<script src="user/js/vendor/jquery.js"></script>
 	<script src="user/js/vendor/custom.modernizr.js"></script>
@@ -35,12 +35,12 @@
 
 <!-- Begin Main Wrapper -->
 <div class="main-wrapper">
-	<!-- Main Navigation -->  
+	<!-- Main Navigation -->
 	<header class="row main-navigation">
-		<div class="large-3 columns">	
+		<div class="large-3 columns">
 			<a href="index.html" id="logo"><img src="user/images/logo.png" alt="Medico Logo" /></a>
 		</div>
-		<div class="large-9 columns">			
+		<div class="large-9 columns">
 			<nav class="top-bar">
 				<ul class="title-area">
 				  <!-- Title Area -->
@@ -79,7 +79,7 @@
 							<li><a href="tooltips.html">Info tooltips</a></li>
 						  </ul>
 						</li>
-						
+
 						<li class="has-dropdown"><a href="#">Shortcodes</a>
 						  <ul class="dropdown">
                           	<li><a href="shortcodes.html">Main elements</a></li>
@@ -90,22 +90,22 @@
 							<li><a href="tables.html">Tables</a></li>
 							<li><a href="thumbnails.html">Thumbnails</a></li>
 							<li><a href="flex-video.html">Flex Video</a></li>
-							
+
 						  </ul>
-						</li>                    
+						</li>
 						<li class="has-dropdown"><a href="#">Add-ons</a>
 						  <ul class="dropdown">
 							<li><a href="icons.html">Retina Icons - Font Awesome</a></li>
 						  </ul>
 						</li>
-						<li class="has-dropdown"><a href="#">Portfolio</a>                                       
-						  <ul class="dropdown"> 
-                          		<li><a href="portfolio.html">Portfolio 4 Columns</a> </li>                       
+						<li class="has-dropdown"><a href="#">Portfolio</a>
+						  <ul class="dropdown">
+                          		<li><a href="portfolio.html">Portfolio 4 Columns</a> </li>
 								<li><a href="portfolio2.html">Portfolio 3 Columns</a></li>
 								<li><a href="portfolio-single.html">Single item</a></li>
 							</ul>
 						</li>
-						<li class="has-dropdown"><a href="#">Blog</a>                    
+						<li class="has-dropdown"><a href="#">Blog</a>
 						  <ul class="dropdown">
 							<li><a href="blog.html">1 Column, Default</a></li>
 							<li><a href="blogalt.html">1 Column, Alternative</a></li>
@@ -117,18 +117,18 @@
 						</li>
 						<li><a href="contact.html">Contact</a></li>
 					  </ul>
-					  <!-- End Left Nav Section -->					 
+					  <!-- End Left Nav Section -->
 				</section>
 			</nav>
 		</div>
 	</header>
 </div><!-- End Main Navigation -->
-<div class="main-content-top">	
-	<div class="main-wrapper">	
+<div class="main-content-top">
+	<div class="main-wrapper">
 		<div class="row">
 			<div class="large-6 columns">
-				<h2>Typography</h2>
-			</div>        
+				<h2>Layanan BPJS - RSU Syifa Medika</h2>
+			</div>
 			<div class="large-6 columns">
 				<ul class="breadcrumbs right">
 					<li>You are here: </li>
@@ -138,74 +138,42 @@
 				</ul>
 			</div>
 		</div>
-	</div>		
+	</div>
 </div>
 <!-- End Main Content Top -->
 <div class="main-wrapper">
 	<div class="row main-content"><!-- Main Content -->
-    	<div class="large-12 columns">  
+    	<div class="large-12 columns">
 			<div class="row"><!-- Row -->
-				<div class="large-9 push-3 columns"> 
-                    <h3>Typography</h3>
-                    <p>Foundation 4 typography is built with ems, making it easier to fine-tune your type across different breakpoints. By default, we include a single breakpoint in typography sizes and styles, but you can add more if you'd like.</p>
-                    <h1>h1. This is a very large header.</h1>
-					<h2>h2. This is a large header.</h2>
-					<h3>h3. This is a medium header.</h3>
-					<h4>h4. This is a moderate header.</h4>
-					<h5>h5. This is a small header. h1.</h5>
-					<h6>h6. This is a tiny header. h1.</h6>
+				<div class="large-9 push-3 columns">
+          <ol>
+          	<li><h3>Daftar dokter spesialis Layanan BPJS RSU Syifa Medika Banjarbaru.</h3></li>
+						<li>
+							<h3>Keterangan layanan BPJS di RSU Syifa Medika Banjarbaru.</h3>
+							<ul>
+								<li><h3>Penanggungan Biaya Berobat BPJS.<br>RSU Syifa Medika TIDAK MEMUNGUT biaya tambahan bagi pasien BPJS, kecuali atas permintaan sendiri, seperti antara lain: Pasien naik kelas Rawat Inap, Permintaan perubahan merek obat, atau kondisi lainnya atas permintaan/persetujuan pasien.</h3></li>
+								<li><h3>Ketentuan Pasien Naik Kelas Rawat Inap BPJS.<br>Merujuk pada ketentuan BPJS, pasien diperbolehkan naik kelas rawat inap atas permintaan pasien sendiri jika pasien bersedia membayar selisih biaya paket BPJS yang telah ditentukan.</h3></li>
+								<li><h3>Ketentuan Penggunaan Obat Paten.<br>Pasien diperbolehkan menggunakan obat-obatan paten (Generic Branded) atas permintaan sendiri jika pasien bersedia membayar biaya obat di luar tanggungan BPJS.</h3></li>
+								<li><h3>Kualitas Layanan BPJS.<br>RSU Syifa Medika TIDAK MEMBEDAKAN kualitas layanan pasien BPJS dengan pasien Non BPJS.</h3></li>
+								<li><h3>Alur Layanan Rawat Jalan BPJS.<br>Pasien yang berobat ke Poliklinik spesialis wajib membawa rujukan dari Fasilitas Kesehatan Tingkat I.</h3></li>
+								<li><h3>Alur Layanan Rawat Inap BPJS.<br>Semua pasien rawat inap melalui Instalasi Gawat Darurat tidak perlu membawa surat rujukan.</h3></li>
+								<li><h3>TIDAK MELAKUKAN praktek “Pengarahan Negatif” dalam rangka mengambil keuntungan Rumah Sakit, misalnya: mengarahkan pasien BPJS untuk naik kelas dengan memberi keterangan tidak benar. Atau mempermainkan pasien BPJS yang mengakibatkan pasien terdesak untuk membeli obat merek lain yg tidak ditanggung BPJS.</h3></li>
 
-					<h1 class="subheader">h1.subheader</h1>
-					<h2 class="subheader">h2.subheader</h2>
-					<h3 class="subheader">h3.subheader</h3>
-					<h4 class="subheader">h4.subheader</h4>
-					<h5 class="subheader">h5.subheader</h5>
-					<h6 class="subheader">h6.subheader</h6>
-
-					<h1>h1. <small>Small segment header.</small></h1>
-					<h2>h2. <small>Small segment header.</small></h2>
-					<h3>h3. <small>Small segment header.</small></h3>
-					<h4>h4. <small>Small segment header.</small></h4>
-					<h5>h5. <small>Small segment header.</small></h5>
-					<h6>h6. <small>Small segment header.</small></h6>
-				</div>                  
-				<div class="large-3 pull-9 columns widgets side-widgets"> 
-					<h3>Side Navigation</h3>                   
+							</ul>
+						</li>
+          </ol>
+				</div>
+				<div class="large-3 pull-9 columns widgets side-widgets">
+					<h3>ini diisi foto mba2nya rssyifa yang pakai hijab</h3>
 					<div class="section-container accordion"><!-- Sidebar Navigation -->
-						<section class="section active">
-						<p class="title"><a href="#">Features Default</a></p>
-							<div class="content">
-								<ul class="side-nav">
-									<li><a href="grid.html">Grid</a></li>
-									<li><a href="navigation.html">Navigation</a></li>
-									<li><a href="buttons.html">Buttons</a></li>
-									<li><a href="forms.html">Forms</a></li>
-									<li><a class="active" href="typography.html">Typography</a></li>
-								</ul>
-							</div>
-						</section>			
-						<section class="section">
-							<p class="title"><a href="#">Javascript Features</a></p>
-							<div class="content">
-								<ul class="side-nav">
-									<li><a href="orbit.html">Orbit slider</a></li>
-									<li><a href="clearing.html">Clearing</a></li>
-									<li><a href="dropdown.html">Dropdown</a></li>
-									<li><a href="joyride.html">Joyride</a></li>
-									<li><a href="magellan.html">Magellan</a></li>
-									<li><a href="reveal.html">Reveal</a></li>
-									<li><a href="section.html">Section</a></li>
-									<li><a href="tooltips.html">Info Tooltips</a></li>
-								</ul>
-							</div>
-						</section>	
-					</div><!-- End Sidebar Navigation -->        					
+						<img src="" alt="">
+					</div><!-- End Sidebar Navigation -->
 				</div>
 			</div><!-- End Row -->
         </div>
 	</div><!-- End Main Content -->
-</div>    
-<!-- Begin Top Footer -->  
+</div>
+<!-- Begin Top Footer -->
 <footer class="footer_wrapper">
 	<div class="row footer-part">
 		<div class="large-12 columns">
@@ -238,7 +206,7 @@
 						</ul>
 					</div>
 				</div>
-				
+
 
 				<div class="large-3 columns">
 					<h4 class="footer-title">Contact info</h4>
@@ -257,8 +225,8 @@
 					</ul>
 					</div>
 				</div>
-					
-				<div class="large-3 columns"> 
+
+				<div class="large-3 columns">
 					<h4 class="footer-title">Quick Contact</h4>
 					<div class="divdott"></div>
 					<form method="POST" action="#" id="footer-contact-form">
@@ -275,15 +243,15 @@
 								</div>
 								<div class="large-12 columns text-right">
 									<input type="submit" class="button" value="Send" name="send" />
-								</div>	
+								</div>
 							</div>
 						</div>
 					</form>
-				</div> 
+				</div>
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="privacy footer_bottom">
 		<div class="footer-part">
 			<div class="row">
@@ -302,15 +270,15 @@
 <script type="text/javascript" src="user/plugins/carouFredSel/helper-plugins/jquery.touchSwipe.min.js"></script>
 
 <!-- Scripts Initialize -->
-<script src="user/js/app-head-calls.js"></script>  
+<script src="user/js/app-head-calls.js"></script>
 <script src="user/js/foundation.min.js"></script>
 <script>
 $(document).foundation();
-</script>   
+</script>
 <!-- Smallipop JS - Tooltips -->
 <script type="text/javascript" src="user/plugins/smallipop/lib/contrib/prettify.js"></script>
 <script type="text/javascript" src="user/plugins/smallipop/lib/jquery.smallipop.js"></script>
-<script type="text/javascript" src="user/plugins/smallipop/lib/smallipop.calls.js"></script> 
+<script type="text/javascript" src="user/plugins/smallipop/lib/smallipop.calls.js"></script>
 <!-- Initialize JS Plugins -->
 <script src="user/js/app-bottom-calls.js"></script>
 </body>

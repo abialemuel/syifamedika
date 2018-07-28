@@ -80,7 +80,7 @@
 	<div class="main-wrapper">
 		<div class="row">
 			<div class="large-6 columns">
-				<h2>Blog</h2>
+				<h2>Info Sehat</h2>
 			</div>
 			<div class="large-6 columns">
 				<ul class="breadcrumbs right">

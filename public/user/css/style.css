@@ -472,17 +472,25 @@ article .mod_con_text p {margin-bottom:10px}
 /*--- Appointment Block ---*/
 .appointment-block {padding-top:20px;  padding-bottom:5px; position: absolute; bottom: 0px; z-index: 999; width:100%}
 .appointment-block input[type="submit"]{padding:40px 20px; margin-bottom:0}
-.appointment-block .red p, #appointment-contact-form input[type="submit"] {font-size:15px; text-align:center}
-.appointment-block .red p{font-size:19px}
+#appointment-contact-form input[type="submit"] {font-size:15px; text-align:center}
+#appointment-contact-form input[type="submit"]:hover {text-decoration: underline; font-style: italic; font-weight: bold;}
+
+.appointment-block .red a{color: #fff; font-size: 19px; line-height: 24px;}
+.appointment-block .red a:hover{text-decoration: underline; font-style: italic;}
+
+
+
 #appointment-contact-form{margin-bottom:0}
 #appointment-contact-form .large-3.columns {padding-right:0;}
-#appointment-contact-form input[type="text"], #appointment-contact-form textarea{box-shadow: #dadada 1px 3px 3px; border-radius:4px; padding:0.4em 1em; margin-bottom:1.4em;  height:40px}
+#appointment-contact-form input[type="text"], #appointment-contact-form select, #appointment-contact-form textarea{box-shadow: #dadada 1px 3px 3px; border-radius:4px; padding:0.4em 1em; margin-bottom:1.4em;  height:40px}
 #appointment-contact-form textarea{height:96px !important; font-size:12px; padding:0.9em}
+#appointment-contact-form select { color: rgba(0, 0, 0, 0.75); font-size: 12px;}
 
 .boxed .appointment-block {position:relative; margin-bottom:20px; z-index:1}
 .divider{position:relative; height:1px;padding-top:4px;  border-bottom:solid 1px #e6e6e6; margin-bottom:20px}
 .divider span{display:block; width:50px; height:3px; background:#da09b3; margin-top:-2px}
 .red { background:#c40105; padding:32px 10px 20px;  border-top-right-radius: 5px;   border-bottom-right-radius: 5px}
+.red:hover {background-color: #fe1c21; transition: 0.3s}
 .boxed .red {padding:32px 10px;}
 .red p { color:#FFF; font-size:14px; margin:auto}
 
