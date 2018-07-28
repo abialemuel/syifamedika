@@ -5,17 +5,19 @@ namespace App\Http\Controllers\admin\auth;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use App\Admin;
+use Session;
 
 class AdminLoginController extends Controller
 {
     //
     public function __construct()
     {
-      $this->middleware('guest');
     }
 
     public function showLoginForm()
     {
+      $this->middleware('guest');
       return view('admin.login');
     }
 
@@ -30,6 +32,11 @@ class AdminLoginController extends Controller
       }
       // if unsuccessful, redirect to admin.login
       return redirect()->back()->withInput($request->only('id_karyawan'));
+    }
+    public function logout()
+    {
+      Session::flush();
+      return redirect(route('admin.login'));
     }
 
 }

@@ -9,5 +9,10 @@
       <a href="index3.html" class="nav-link">Home</a>
     </li>
   </ul>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item d-none d-sm-inline-block">
+      <a href="{{ route('admin.logout') }}" class="nav-link">Logout <i class="fa fa-sign-out"></i></a>
+    </li>
+  </ul>
 </nav>
 <!-- /.navbar -->
