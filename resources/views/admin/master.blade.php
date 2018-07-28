@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="/admin/plugins/daterangepicker/daterangepicker-bs3.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="/admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-  <link rel="stylesheet" href="/admin/plugins/datatables/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="/admin/plugins/datatables/jquery.dataTables.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
@@ -81,17 +81,16 @@
 <script src="/admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- datatable -->
 <script src="{{ URL::asset('admin/plugins/datatables/jquery.dataTables.min.js')}}"></script>
-<script src="{{ URL::asset('admin/plugins/datatables/dataTables.bootstrap4.min.js')}}"></script>
 <!-- Slimscroll -->
 <script src="/admin/plugins/slimScroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
 <script src="/admin/plugins/fastclick/fastclick.js"></script>
 <!-- AdminLTE App -->
-<script src="/admin/dist/js/adminlte.js"></script>
-<!-- AdminLTE App -->
 <script src="/admin/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="/admin/dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="/admin/dist/js/pages/dashboard.js"></script>
+
 <!-- Select2 -->
 <script src="/admin/plugins/select2/select2.full.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
@@ -121,7 +120,7 @@
 <script src="/admin/plugins/timepicker/bootstrap-timepicker.min.js"></script>
 <!-- iCheck 1.0.1 -->
 <script src="/admin/plugins/iCheck/icheck.min.js"></script>
-<!-- AdminLTE for demo purposes -->
+
 
 
 <script>
@@ -191,13 +190,14 @@
     })
 
     //DataTable
-    $("#datadokter").DataTable({
-    });
+    $("#datadokter").DataTable();
     $('#ex').DataTable({
-      "ordering": false,
       "paging": true,
-      "searching": true,
-      "info": false,
+      "pagingType": "full_numbers",
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
       "autoWidth": false
     });
   })
