@@ -30,7 +30,7 @@ Route::prefix('private')->group(function () {
         // Controllers Within The "App\Http\Controllers\admin" Namespace
         Route::get('/', 'AdminController@index')->name('admin.dashboard');
         Route::get('/login', 'auth\AdminLoginController@showLoginForm')->name('admin.login');
-        Route::get('/logout', 'auth\AdminLoginController@logout')->name('admin.logout');
+        Route::get('/logout', 'auth\AdminLogoutController@logout')->name('admin.logout');
         Route::post('/login', 'auth\AdminLoginController@login')->name('admin.login.submit');
 
         Route::prefix('dokter')->group(function () {

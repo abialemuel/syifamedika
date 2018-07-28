@@ -13,11 +13,11 @@ class AdminLoginController extends Controller
     //
     public function __construct()
     {
+      $this->middleware('guest');
     }
 
     public function showLoginForm()
     {
-      $this->middleware('guest');
       return view('admin.login');
     }
 
@@ -33,10 +33,4 @@ class AdminLoginController extends Controller
       // if unsuccessful, redirect to admin.login
       return redirect()->back()->withInput($request->only('id_karyawan'));
     }
-    public function logout()
-    {
-      Session::flush();
-      return redirect(route('admin.login'));
-    }
-
 }
