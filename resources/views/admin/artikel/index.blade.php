@@ -3,12 +3,12 @@
         @section('breadcrumb')
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Dokter</h1>
+            <h1 class="m-0 text-dark">Artikel</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Home</a></li>
-              <li class="breadcrumb-item active">Dokter</li>
+              <li class="breadcrumb-item active">Artikel</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -21,7 +21,7 @@
             <div class="col-12">
               <div class="card">
                 <div class="card-header">
-                  <h3 class="card-title">List Dokter</h3>
+                  <h3 class="card-title">List Artikel</h3>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
@@ -29,28 +29,28 @@
                     <thead>
                       <tr>
                         <th>ID</th>
-                        <th>Nama</th>
-                        <th>Spesialis</th>
-                        <th>No Telp</th>
-                        <th>No SIP</th>
+                        <th>Judul</th>
+                        <th>Status</th>
                         <th>Aksi</th>
                       </tr>
                     </thead>
                     <tbody>
-                      @foreach ($dokters as $dokter)
+                      @foreach ($artikels as $artikel)
                         <tr>
-                          <td>{{ $dokter->id_dokter }}</td>
-                          <td>{{ $dokter->nama_dokter }}</td>
-                          <td>{{ $dokter->spesialis['nama_spesialis'] }}</td>
-                          <td>{{ $dokter->no_telp }}</td>
-                          <td>{{ $dokter->no_izin }}</td>
+                          <td>{{ $artikel->id }}</td>
+                          <td>{{ $artikel->judul }}</td>
+                          @if ($artikel->aktif == 1)
+                            <td>Aktif</td>
+                          @else
+                            <td>Tidak Aktif</td>
+                          @endif
                           <td>
-                            <a href="dokter/{{$dokter->id_dokter}}/edit">
+                            <a href="artikel/{{$artikel->id}}/edit">
                               <button class="btn btn-primary btn-sm">
                                 <i class="fa fa-edit">Edit</i>
                               </button>
                             </a>
-                            <a href="dokter/{{$dokter->id_dokter}}/hapus">
+                            <a href="artikel/{{$artikel->id}}/hapus">
                               <button class="btn btn-danger btn-sm">
                                 <i class="fa fa-trash">Hapus</i>
                               </button>

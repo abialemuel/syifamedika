@@ -37,7 +37,7 @@
                     </div>
                   @endforeach
                   <div class="row">
-                    <div class="col-md-4 form-group">
+                    <div class="col-md-2 form-group">
                       <label for="exampleInputEmail1">ID</label>
                       <input name="id_dokter" type="text" value="{{ $dokters->id_dokter }}" class="form-control" id="exampleInputEmail1" placeholder="ID" disabled>
                     </div>

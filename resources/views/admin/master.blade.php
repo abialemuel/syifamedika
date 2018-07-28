@@ -107,6 +107,8 @@
 <script src="/admin/plugins/daterangepicker/daterangepicker.js"></script>
 <!-- datepicker -->
 <script src="/admin/plugins/datepicker/bootstrap-datepicker.js"></script>
+<!-- ckeditor -->
+<script src="/admin/plugins/ckeditor/ckeditor.js"></script>
 <!-- Bootstrap WYSIHTML5 -->
 <script src="/admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
 
@@ -190,16 +192,36 @@
     })
 
     //DataTable
-    $("#datadokter").DataTable();
-    $('#ex').DataTable({
+    $("#datsa").DataTable();
+    $('#data').DataTable({
       "paging": true,
       "pagingType": "full_numbers",
-      "lengthChange": false,
-      "searching": false,
+      "lengthChange": true,
+      "searching": true,
       "ordering": true,
       "info": true,
-      "autoWidth": false
+      "autoWidth": true
     });
+
+    //editor
+    $(function () {
+      // Replace the <textarea id="editor1"> with a CKEditor
+      // instance, using default configuration.
+      ClassicEditor
+        .create(document.querySelector('#editor1'))
+        .then(function (editor) {
+          // The editor instance
+        })
+        .catch(function (error) {
+          console.error(error)
+        })
+
+      // bootstrap WYSIHTML5 - text editor
+
+      $('.textarea').wysihtml5({
+        toolbar: { fa: true }
+      })
+    })
   })
 </script>
 

@@ -83,13 +83,13 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="" class="nav-link">
+              <a href="{{ route('artikel.create') }}" class="nav-link">
                 <i class="fa fa-plus-square nav-icon"></i>
                 <p>Tambah</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="./index.html" class="nav-link">
+              <a href="{{ route('artikel.index') }}" class="nav-link">
                 <i class="fa fa-list nav-icon"></i>
                 <p>List</p>
               </a>

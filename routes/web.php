@@ -41,6 +41,15 @@ Route::prefix('private')->group(function () {
             Route::post('/{id_dokter}/edit', 'DokterController@update');
             Route::get('/{id_dokter}/hapus', 'DokterController@destroy')->name('dokter.edit');
         });
+        Route::prefix('artikel')->group(function () {
+            // Router for dokter
+            Route::get('/', 'ArtikelController@index')->name('artikel.index');
+            Route::get('/tambah', 'ArtikelController@create')->name('artikel.create');
+            Route::post('/tambah', 'ArtikelController@store')->name('artikel.store');
+            Route::get('/{id_artikel}/edit', 'ArtikelController@edit')->name('artikel.edit');
+            Route::post('/{id_artikel}/edit', 'ArtikelController@update');
+            Route::get('/{id_artikel}/hapus', 'ArtikelController@destroy')->name('artikel.edit');
+        });
 
     });
 });

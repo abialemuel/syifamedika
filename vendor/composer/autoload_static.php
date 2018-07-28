@@ -335,7 +335,10 @@ class ComposerStaticInite926ebb4df8fff70df3f6caf5b80e5f1
 
     public static $classMap = array (
         'App\\Admin' => __DIR__ . '/../..' . '/app/Admin.php',
+        'App\\Agama' => __DIR__ . '/../..' . '/app/Agama.php',
+        'App\\Artikel' => __DIR__ . '/../..' . '/app/Artikel.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+        'App\\Dokter' => __DIR__ . '/../..' . '/app/Dokter.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
@@ -345,6 +348,8 @@ class ComposerStaticInite926ebb4df8fff70df3f6caf5b80e5f1
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\User\\PasienController' => __DIR__ . '/../..' . '/app/Http/Controllers/user/PasienController.php',
         'App\\Http\\Controllers\\admin\\AdminController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/AdminController.php',
+        'App\\Http\\Controllers\\admin\\ArtikelController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/ArtikelController.php',
+        'App\\Http\\Controllers\\admin\\DokterController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/DokterController.php',
         'App\\Http\\Controllers\\admin\\auth\\AdminLoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/auth/AdminLoginController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -358,6 +363,8 @@ class ComposerStaticInite926ebb4df8fff70df3f6caf5b80e5f1
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\Spesialis' => __DIR__ . '/../..' . '/app/Spesialis.php',
+        'App\\Status' => __DIR__ . '/../..' . '/app/Status.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'Barryvdh\\Debugbar\\Console\\ClearCommand' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Console/ClearCommand.php',
         'Barryvdh\\Debugbar\\Controllers\\AssetController' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/Controllers/AssetController.php',

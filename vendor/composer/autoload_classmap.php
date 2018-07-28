@@ -7,7 +7,10 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Admin' => $baseDir . '/app/Admin.php',
+    'App\\Agama' => $baseDir . '/app/Agama.php',
+    'App\\Artikel' => $baseDir . '/app/Artikel.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
+    'App\\Dokter' => $baseDir . '/app/Dokter.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
     'App\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',
@@ -17,6 +20,8 @@ return array(
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
     'App\\Http\\Controllers\\User\\PasienController' => $baseDir . '/app/Http/Controllers/user/PasienController.php',
     'App\\Http\\Controllers\\admin\\AdminController' => $baseDir . '/app/Http/Controllers/admin/AdminController.php',
+    'App\\Http\\Controllers\\admin\\ArtikelController' => $baseDir . '/app/Http/Controllers/admin/ArtikelController.php',
+    'App\\Http\\Controllers\\admin\\DokterController' => $baseDir . '/app/Http/Controllers/admin/DokterController.php',
     'App\\Http\\Controllers\\admin\\auth\\AdminLoginController' => $baseDir . '/app/Http/Controllers/admin/auth/AdminLoginController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
@@ -30,6 +35,8 @@ return array(
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',
     'App\\Providers\\EventServiceProvider' => $baseDir . '/app/Providers/EventServiceProvider.php',
     'App\\Providers\\RouteServiceProvider' => $baseDir . '/app/Providers/RouteServiceProvider.php',
+    'App\\Spesialis' => $baseDir . '/app/Spesialis.php',
+    'App\\Status' => $baseDir . '/app/Status.php',
     'App\\User' => $baseDir . '/app/User.php',
     'Barryvdh\\Debugbar\\Console\\ClearCommand' => $vendorDir . '/barryvdh/laravel-debugbar/src/Console/ClearCommand.php',
     'Barryvdh\\Debugbar\\Controllers\\AssetController' => $vendorDir . '/barryvdh/laravel-debugbar/src/Controllers/AssetController.php',
