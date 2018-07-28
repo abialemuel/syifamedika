@@ -15,6 +15,10 @@ use Illuminate\Support\Facades\Validator;
 class DokterController extends Controller
 {
     //
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
         $dokters = Dokter::all();
