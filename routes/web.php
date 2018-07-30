@@ -23,9 +23,8 @@ Route::namespace('user')->group(function () {
     Route::get('/infosehat', function () {
         return view('user.blogs');
     });
-    Route::get('/dokter', function () {
-        return view('user.dokter');
-    });
+    Route::get('/dokter', 'DokterController@index');
+
     Route::get('/profilrs', function () {
         return view('user.infors');
     });

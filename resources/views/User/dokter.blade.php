@@ -99,303 +99,37 @@
 			 <div class="large-12 columns">
 				<ul class="splitter portfolio-main filter portmenu">
 					<li class="segment-0 selected-1 active"><a href="#" class="all">Semua</a></li>
-					<li class="segment-1"><a href="#" class="people">Umum</a></li>
-					<li class="segment-2"><a href="#" class="nature">Spesialis</a></li>
+					<li class="segment-1"><a href="#" class="Umum">Umum</a></li>
+					<li class="segment-2"><a href="#" class="Spesialis">Spesialis</a></li>
 				</ul>
 			 </div>
 			<div class="large-12 columns">
 				<ul class="portfolio-content large-block-grid-4">
-                    <li data-id="1" data-type="people">
-						<div class="view view-one">
-							<img src="user/images/demo/portfolio/1.jpg" alt="" />
-							<div class="mask">
-								<p>Researchers can identify modifications to the chemical structure.</p>
-								<a href="user/images/demo/slider/1.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
-									<i class="icon-zoom-in icon-large"></i>
-								</a>
-								<a href="portfolio-single.html" class="picon-info">
-									<i class="icon-info icon-large"></i>
-								</a>
+					@foreach ($dokters as $dt=>$dokter)
+						@if ($doktype = $dokter->spesialis['nama_spesialis']=='Umum')
+							<li data-id="{{ $dt }}" data-type="Umum">
+						@else
+							<li data-id="{{ $dt }}" data-type="Spesialis">
+						@endif
+							<div class="view view-one">
+								<img src="user/images/demo/portfolio/1.jpg" alt="" />
+								<div class="mask">
+									{{-- <p>Researchers can identify modifications to the chemical structure.</p> --}}
+									<a href="user/images/demo/slider/1.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
+										<i class="icon-zoom-in icon-large"></i>
+									</a>
+									<a href="portfolio-single.html" class="picon-info">
+										<i class="icon-info icon-large"></i>
+									</a>
+								</div>
 							</div>
-						</div>
-						<div class="project-info">
-							<h3>Heart Surgery</h3>
-							<p>Heart, people</p>
-						</div>
-					</li>
-					<li data-id="2" data-type="nature">
-						<div class="view view-one">
-							<img src="user/images/demo/portfolio/2.jpg" alt="" />
-							<div class="mask">
-								<p>such people are John Steed, top professional; Avengers.</p>
-								<a href="user/images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
-									<i class="icon-zoom-in icon-large"></i>
-								</a>
-								<a href="portfolio-single.html" class="picon-info">
-									<i class="icon-info icon-large"></i>
-								</a>
+							<div class="project-info">
+								<h3>{{ $dokter->nama_dokter }}</h3>
+								<p>{{ $dokter->spesialis['nama_spesialis'] }}</p>
 							</div>
-						</div>
-						<div class="project-info">
-							<h3>Spesialis Anak</h3>
-							<p>Dr. dr. H. Parlindungan Ringoringo, Sp.A(K)</p>
-						</div>
-					</li>
-					<li data-id="3" data-type="technology">
-						<div class="view view-one">
-							<img src="user/images/demo/portfolio/3.jpg" alt="" />
-							<div class="mask">
-								<p>Is a selective serotonin reuptake inhibitor.</p>
-								<a href="user/images/demo/slider/3.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
-									<i class="icon-zoom-in icon-large"></i>
-								</a>
-								<a href="portfolio-single.html" class="picon-info">
-									<i class="icon-info icon-large"></i>
-								</a>
-							</div>
-						</div>
-						<div class="project-info">
-							<h3>Paroxetine</h3>
-							<p>Medical preparations</p>
-						</div>
-					</li>
-					<li data-id="4" data-type="devices">
-						<div class="view view-one">
-							<img src="user/images/demo/portfolio/4.jpg" alt="" />
-							<div class="mask">
-								<p>The preparation and administration of a medicine, therapeutic regimen.</p>
-								<a href="user/images/demo/slider/3.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
-									<i class="icon-zoom-in icon-large"></i>
-								</a>
-								<a href="portfolio-single.html" class="picon-info">
-									<i class="icon-info icon-large"></i>
-								</a>
-							</div>
-						</div>
-						<div class="project-info">
-							<h3>Prescription </h3>
-							<p>Medical preparations, Health</p>
-						</div>
-					</li>
-					 <li data-id="5" data-type="buildings">
-						<div class="view view-one">
-							<img src="user/images/demo/portfolio/5.jpg" alt="" />
-							<div class="mask">
-								<p>Researchers can identify modifications to the chemical structure.</p>
-								<a href="user/images/demo/slider/1.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
-									<i class="icon-zoom-in icon-large"></i>
-								</a>
-								<a href="portfolio-single.html" class="picon-info">
-									<i class="icon-info icon-large"></i>
-								</a>
-							</div>
-						</div>
-						<div class="project-info">
-							<h3>Heart Surgery</h3>
-							<p>Heart, people</p>
-						</div>
-					</li>
-					<li data-id="6" data-type="websites">
-						<div class="view view-one">
-							<img src="user/images/demo/portfolio/6.jpg" alt="" />
-							<div class="mask">
-								<p>such people are John Steed, top professional; Avengers.</p>
-								<a href="user/images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
-									<i class="icon-zoom-in icon-large"></i>
-								</a>
-								<a href="portfolio-single.html" class="picon-info">
-									<i class="icon-info icon-large"></i>
-								</a>
-							</div>
-						</div>
-						<div class="project-info">
-							<h3>In-house treatment</h3>
-							<p>Diabet, treatments</p>
-						</div>
-					</li>
-					 <li data-id="7" data-type="people">
-						<div class="view view-one">
-							<img src="user/images/demo/portfolio/7.jpg" alt="" />
-							<div class="mask">
-								<p>such people are John Steed, top professional; Avengers.</p>
-								<a href="user/images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
-									<i class="icon-zoom-in icon-large"></i>
-								</a>
-								<a href="portfolio-single.html" class="picon-info">
-									<i class="icon-info icon-large"></i>
-								</a>
-							</div>
-						</div>
-						<div class="project-info">
-							<h3>In-house treatment</h3>
-							<p>Diabet, treatments</p>
-						</div>
-					</li>
-					<li data-id="8" data-type="people">
-						<div class="view view-one">
-							<img src="user/images/demo/portfolio/8.jpg" alt="" />
-							<div class="mask">
-								<p>such people are John Steed, top professional; Avengers.</p>
-								<a href="user/images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
-									<i class="icon-zoom-in icon-large"></i>
-								</a>
-								<a href="portfolio-single.html" class="picon-info">
-									<i class="icon-info icon-large"></i>
-								</a>
-							</div>
-						</div>
-						<div class="project-info">
-							<h3>In-house treatment</h3>
-							<p>Diabet, treatments</p>
-						</div>
-					</li>
-					 <li data-id="9" data-type="devices">
-						<div class="view view-one">
-							<img src="user/images/demo/portfolio/9.jpg" alt="" />
-							<div class="mask">
-								<p>such people are John Steed, top professional; Avengers.</p>
-								<a href="user/images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
-									<i class="icon-zoom-in icon-large"></i>
-								</a>
-								<a href="portfolio-single.html" class="picon-info">
-									<i class="icon-info icon-large"></i>
-								</a>
-							</div>
-						</div>
-						<div class="project-info">
-							<h3>In-house treatment</h3>
-							<p>Diabet, treatments</p>
-						</div>
-					</li>
-					<li data-id="10" data-type="building">
-						<div class="view view-one">
-							<img src="user/images/demo/portfolio/10.jpg" alt="" />
-							<div class="mask">
-								<p>such people are John Steed, top professional; Avengers.</p>
-								<a href="user/images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
-									<i class="icon-zoom-in icon-large"></i>
-								</a>
-								<a href="portfolio-single.html" class="picon-info">
-									<i class="icon-info icon-large"></i>
-								</a>
-							</div>
-						</div>
-						<div class="project-info">
-							<h3>In-house treatment</h3>
-							<p>Diabet, treatments</p>
-						</div>
-					</li>
-					 <li data-id="11" data-type="people">
-						<div class="view view-one">
-							<img src="user/images/demo/portfolio/11.jpg" alt="" />
-							<div class="mask">
-								<p>such people are John Steed, top professional; Avengers.</p>
-								<a href="user/images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
-									<i class="icon-zoom-in icon-large"></i>
-								</a>
-								<a href="portfolio-single.html" class="picon-info">
-									<i class="icon-info icon-large"></i>
-								</a>
-							</div>
-						</div>
-						<div class="project-info">
-							<h3>In-house treatment</h3>
-							<p>Diabet, treatments</p>
-						</div>
-					</li>
-					<li data-id="12" data-type="websites">
-						<div class="view view-one">
-							<img src="user/images/demo/portfolio/12.jpg" alt="" />
-							<div class="mask">
-								<p>such people are John Steed, top professional; Avengers.</p>
-								<a href="user/images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
-									<i class="icon-zoom-in icon-large"></i>
-								</a>
-								<a href="portfolio-single.html" class="picon-info">
-									<i class="icon-info icon-large"></i>
-								</a>
-							</div>
-						</div>
-						<div class="project-info">
-							<h3>In-house treatment</h3>
-							<p>Diabet, treatments</p>
-						</div>
-					</li>
-                    <li data-id="13" data-type="websites">
-						<div class="view view-one">
-							<img src="user/images/demo/portfolio/13.jpg" alt="" />
-							<div class="mask">
-								<p>such people are John Steed, top professional; Avengers.</p>
-								<a href="user/images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
-									<i class="icon-zoom-in icon-large"></i>
-								</a>
-								<a href="portfolio-single.html" class="picon-info">
-									<i class="icon-info icon-large"></i>
-								</a>
-							</div>
-						</div>
-						<div class="project-info">
-							<h3>In-house treatment</h3>
-							<p>Diabet, treatments</p>
-						</div>
-					</li>
-                    <li data-id="14" data-type="websites">
-						<div class="view view-one">
-							<img src="user/images/demo/portfolio/14.jpg" alt="" />
-							<div class="mask">
-								<p>such people are John Steed, top professional; Avengers.</p>
-								<a href="user/images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
-									<i class="icon-zoom-in icon-large"></i>
-								</a>
-								<a href="portfolio-single.html" class="picon-info">
-									<i class="icon-info icon-large"></i>
-								</a>
-							</div>
-						</div>
-						<div class="project-info">
-							<h3>In-house treatment</h3>
-							<p>Diabet, treatments</p>
-						</div>
-					</li>
-                    <li data-id="15" data-type="websites">
-						<div class="view view-one">
-							<img src="user/images/demo/portfolio/15.jpg" alt="" />
-							<div class="mask">
-								<p>such people are John Steed, top professional; Avengers.</p>
-								<a href="user/images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
-									<i class="icon-zoom-in icon-large"></i>
-								</a>
-								<a href="portfolio-single.html" class="picon-info">
-									<i class="icon-info icon-large"></i>
-								</a>
-							</div>
-						</div>
-						<div class="project-info">
-							<h3>In-house treatment</h3>
-							<p>Diabet, treatments</p>
-						</div>
-					</li>
-                    <li data-id="16" data-type="websites">
-						<div class="view view-one">
-							<img src="user/images/demo/portfolio/16.jpg" alt="" />
-							<div class="mask">
-								<p>such people are John Steed, top professional; Avengers.</p>
-								<a href="user/images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
-									<i class="icon-zoom-in icon-large"></i>
-								</a>
-								<a href="portfolio-single.html" class="picon-info">
-									<i class="icon-info icon-large"></i>
-								</a>
-							</div>
-						</div>
-						<div class="project-info">
-							<h3>In-house treatment</h3>
-							<p>Diabet, treatments</p>
-						</div>
-					</li>
-
+						</li>
+					@endforeach
 				</ul>
-
 			</div>
 		</div>
 	</div>
