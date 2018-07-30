@@ -43,7 +43,7 @@ Route::prefix('private')->group(function () {
             Route::get('/{id_dokter}/hapus', 'DokterController@destroy')->name('dokter.edit');
         });
         Route::prefix('artikel')->group(function () {
-            // Router for dokter
+            // Router for artikel
             Route::get('/', 'ArtikelController@index')->name('artikel.index');
             Route::get('/tambah', 'ArtikelController@create')->name('artikel.create');
             Route::post('/tambah', 'ArtikelController@store')->name('artikel.store');
