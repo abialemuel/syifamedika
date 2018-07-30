@@ -11,7 +11,7 @@ Supports Thumbs: true
 .theme-default .nivoSlider {
 	position:relative;
 	background:#fff url(loading.gif) no-repeat 50% 50%;
-   
+
 }
 .theme-default .nivoSlider img {
 	position:absolute;
@@ -34,7 +34,7 @@ Supports Thumbs: true
 	-moz-border-radius:6px;
 	-webkit-border-radius:6px;
 	border-radius:6px;
-	
+
 	z-index:999;
 	margin-left:-150px;
 	padding:4px 6px 6px 6px;
@@ -91,8 +91,8 @@ Supports Thumbs: true
 .nivo-caption{opacity:1; text-align:center}
 .nivo-caption p.nivotitle{background:url('../../../images/nivo_bg.png'); margin:20px auto; padding:10px 20px; font-size:36px; color:#fff; margin-bottom:10px;  font-family: 'Open Sans', sans-serif; display:inline-block}
 .nivo-caption p.nivotitle.v1{font-size:1.4em;}
-.nivo-caption p.nivotitle.v2{font-size:2em; background:#278ad8; }
-.nivo-caption p.nivotitle.v3{background:#25c9da; font-size:1.4em; letter-spacing:2px}
+.nivo-caption p.nivotitle.v2{font-size:2em; background:#c40105; }
+.nivo-caption p.nivotitle.v3{background:#da09b3; font-size:1.4em; letter-spacing:2px}
 
 
 

@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
-	<title>Medico - Forms</title>  
+	<title>Layanan BPJS - RS Syifa Medika</title>
 
 	<!-- Smallipop CSS - Tooltips -->
 	<link rel="stylesheet" href="user/plugins/smallipop/css/contrib/animate.min.css" type="text/css" media="all" title="Screen" />
@@ -28,17 +28,19 @@
 	<!-- Main JS Files -->
 	<script src="user/js/vendor/jquery.js"></script>
 	<script src="user/js/vendor/custom.modernizr.js"></script>
+
 </head>
+
 <body>
 
 <!-- Begin Main Wrapper -->
 <div class="main-wrapper">
-	<!-- Main Navigation -->  
+	<!-- Main Navigation -->
 	<header class="row main-navigation">
-		<div class="large-3 columns">	
+		<div class="large-3 columns">
 			<a href="index.html" id="logo"><img src="user/images/logo.png" alt="Medico Logo" /></a>
 		</div>
-		<div class="large-9 columns">			
+		<div class="large-9 columns">
 			<nav class="top-bar">
 				<ul class="title-area">
 				  <!-- Title Area -->
@@ -77,7 +79,7 @@
 							<li><a href="tooltips.html">Info tooltips</a></li>
 						  </ul>
 						</li>
-						
+
 						<li class="has-dropdown"><a href="#">Shortcodes</a>
 						  <ul class="dropdown">
                           	<li><a href="shortcodes.html">Main elements</a></li>
@@ -88,22 +90,22 @@
 							<li><a href="tables.html">Tables</a></li>
 							<li><a href="thumbnails.html">Thumbnails</a></li>
 							<li><a href="flex-video.html">Flex Video</a></li>
-							
+
 						  </ul>
-						</li>                    
+						</li>
 						<li class="has-dropdown"><a href="#">Add-ons</a>
 						  <ul class="dropdown">
 							<li><a href="icons.html">Retina Icons - Font Awesome</a></li>
 						  </ul>
 						</li>
-						<li class="has-dropdown"><a href="#">Portfolio</a>                                       
-						  <ul class="dropdown"> 
-                          		<li><a href="portfolio.html">Portfolio 4 Columns</a> </li>                       
+						<li class="has-dropdown"><a href="#">Portfolio</a>
+						  <ul class="dropdown">
+                          		<li><a href="portfolio.html">Portfolio 4 Columns</a> </li>
 								<li><a href="portfolio2.html">Portfolio 3 Columns</a></li>
 								<li><a href="portfolio-single.html">Single item</a></li>
 							</ul>
 						</li>
-						<li class="has-dropdown"><a href="#">Blog</a>                    
+						<li class="has-dropdown"><a href="#">Blog</a>
 						  <ul class="dropdown">
 							<li><a href="blog.html">1 Column, Default</a></li>
 							<li><a href="blogalt.html">1 Column, Alternative</a></li>
@@ -115,28 +117,28 @@
 						</li>
 						<li><a href="contact.html">Contact</a></li>
 					  </ul>
-					  <!-- End Left Nav Section -->					 
+					  <!-- End Left Nav Section -->
 				</section>
 			</nav>
 		</div>
 	</header>
 </div><!-- End Main Navigation -->
-<div class="main-content-top">	
-	<div class="main-wrapper">	
+<div class="main-content-top">
+	<div class="main-wrapper">
 		<div class="row">
 			<div class="large-6 columns">
-				<h2>Forms</h2>
-			</div>        
+				<h2>Layanan BPJS - RSU Syifa Medika</h2>
+			</div>
 			<div class="large-6 columns">
 				<ul class="breadcrumbs right">
 					<li>You are here: </li>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="#">Features</a></li>
-					<li><span>Forms</span></li>
+					<li><span>Typography</span></li>
 				</ul>
 			</div>
 		</div>
-	</div>		
+	</div>
 </div>
 <!-- End Main Content Top -->
 <div class="main-wrapper">
@@ -144,132 +146,34 @@
     	<div class="large-12 columns">
 			<div class="row"><!-- Row -->
 				<div class="large-9 push-3 columns">
-					<h3>Forms</h3>
-                    <p>With Foundation, we set out to create an easy to handle, powerful and versatile form layout system. A 
-					combination of form styles and the Foundation grid means you can do basically anything.</p>
-                    <form>
-						<fieldset>
-							<legend>Fieldset</legend>
-							<div class="row">
-								<div class="large-12 columns">
-									<label>Input Label</label>
-									<input type="text" placeholder="large-12.columns">
-								</div>
-							</div>
-							<div class="row">
-								<div class="large-4 columns">
-									<label>Input Label</label>
-									<input type="text" placeholder="large-4.columns">
-								</div>
-								<div class="large-4 columns">
-									<label>Input Label</label>
-									<input type="text" placeholder="large-4.columns">
-								</div>
-								<div class="large-4 columns">
-									<div class="row collapse">
-										<label>Input Label</label>
-										<div class="small-9 columns">
-											<input type="text" placeholder="small-9.columns">
-										</div>
-										<div class="small-3 columns">
-											<span class="postfix">.com</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="large-12 columns">
-									<label>Textarea Label</label>
-									<textarea placeholder="small-12.columns"></textarea>
-								</div>
-							</div>
-						</fieldset>
-					</form>
+          <ol>
+          	<li><h3>Daftar dokter spesialis Layanan BPJS RSU Syifa Medika Banjarbaru.</h3></li>
+						<li>
+							<h3>Keterangan layanan BPJS di RSU Syifa Medika Banjarbaru.</h3>
+							<ul>
+								<li><h3>Penanggungan Biaya Berobat BPJS.<br>RSU Syifa Medika TIDAK MEMUNGUT biaya tambahan bagi pasien BPJS, kecuali atas permintaan sendiri, seperti antara lain: Pasien naik kelas Rawat Inap, Permintaan perubahan merek obat, atau kondisi lainnya atas permintaan/persetujuan pasien.</h3></li>
+								<li><h3>Ketentuan Pasien Naik Kelas Rawat Inap BPJS.<br>Merujuk pada ketentuan BPJS, pasien diperbolehkan naik kelas rawat inap atas permintaan pasien sendiri jika pasien bersedia membayar selisih biaya paket BPJS yang telah ditentukan.</h3></li>
+								<li><h3>Ketentuan Penggunaan Obat Paten.<br>Pasien diperbolehkan menggunakan obat-obatan paten (Generic Branded) atas permintaan sendiri jika pasien bersedia membayar biaya obat di luar tanggungan BPJS.</h3></li>
+								<li><h3>Kualitas Layanan BPJS.<br>RSU Syifa Medika TIDAK MEMBEDAKAN kualitas layanan pasien BPJS dengan pasien Non BPJS.</h3></li>
+								<li><h3>Alur Layanan Rawat Jalan BPJS.<br>Pasien yang berobat ke Poliklinik spesialis wajib membawa rujukan dari Fasilitas Kesehatan Tingkat I.</h3></li>
+								<li><h3>Alur Layanan Rawat Inap BPJS.<br>Semua pasien rawat inap melalui Instalasi Gawat Darurat tidak perlu membawa surat rujukan.</h3></li>
+								<li><h3>TIDAK MELAKUKAN praktek “Pengarahan Negatif” dalam rangka mengambil keuntungan Rumah Sakit, misalnya: mengarahkan pasien BPJS untuk naik kelas dengan memberi keterangan tidak benar. Atau mempermainkan pasien BPJS yang mengakibatkan pasien terdesak untuk membeli obat merek lain yg tidak ditanggung BPJS.</h3></li>
 
-                    <h3>Error States</h3>
-                    <p>Foundation includes error states for labels, inputs and messaging that you can have your app generate programatically. 
-					You can attach a class of <code>.error</code> either to the individual elements (label, input, small) or to a column/div.</p>
-					<form>
-						<div class="row">
-							<div class="large-6 columns">
-								<label class="error">Error</label>
-								<input type="text" class="error" />
-								<small class="error">Invalid entry</small>
-							</div>
-							<div class="large-6 columns error">
-								<label>Another Error</label>
-								<input type="text" />
-								<small>Invalid entry</small>
-							</div>
-							<div class="large-12 columns error">
-								<textarea class="error" placeholder="Message..."></textarea>
-								<small class="error">Invalid entry</small>
-							</div>
-						</div>
-					</form>
-                    <h3>Custom Forms</h3>
-                    <p>It's so crazy easy to create easy-to-style custom forms. It's practically a crime.</p>
-					<form class="custom">
-						<div class="row">
-							<div class="large-4 columns">
-								<label for="radio1"><input name="radio1" type="radio" id="radio1" style="display:none;" CHECKED><span class="custom radio checked"></span> Radio Button 1</label>
-								<label for="radio2"><input name="radio1" type="radio" id="radio2" style="display:none;"><span class="custom radio"></span> Radio Button 2</label>
-								<label for="radio3"><input name="radio1" type="radio" id="radio3" disabled style="display:none;"><span class="custom radio"></span> Radio Button 3</label>
-							</div>
-							<div class="large-4 columns">
-								<label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Label for Checkbox</label>
-								<label for="checkbox2"><input type="checkbox" id="checkbox2" CHECKED style="display: none;"><span class="custom checkbox checked"></span> Label for Checkbox</label>
-								<label for="checkbox3"><input type="checkbox" CHECKED id="checkbox3" style="display: none;"><span class="custom checkbox checked"></span> Label for Checkbox</label>
-							</div>
-							<div class="large-4 columns">
-								<label for="customDropdown1">Medium Example</label>
-								<select id="customDropdown1" class="medium">
-									<option DISABLED>This is a dropdown</option>
-									<option>This is another option</option>
-									<option>This is another option too</option>
-									<option>Look, a third option</option>
-								</select>
-							</div>
-						</div>
-					</form>
+							</ul>
+						</li>
+          </ol>
 				</div>
-                <div class="large-3 pull-9 columns widgets side-widgets"> 
-					<h3>Side Navigation</h3>                   
+				<div class="large-3 pull-9 columns widgets side-widgets">
+					<h3>ini diisi foto mba2nya rssyifa yang pakai hijab</h3>
 					<div class="section-container accordion"><!-- Sidebar Navigation -->
-						<section class="section active">
-							<p class="title"><a href="#">Features Default</a></p>
-							<div class="content">
-								<ul class="side-nav">
-									<li><a href="grid.html">Grid</a></li>
-									<li><a href="navigation.html">Navigation</a></li>
-									<li><a href="buttons.html">Buttons</a></li>
-									<li><a class="active" href="forms.html">Forms</a></li>
-									<li><a href="typography.html">Typography</a></li>
-								</ul>
-							</div>
-						</section>
-                            
-						<section class="section">
-							<p class="title"><a href="#">Javascript Features</a></p>
-							<div class="content">
-								<ul class="side-nav">
-									<li><a href="orbit.html">Orbit slider</a></li>
-									<li><a href="clearing.html">Clearing</a></li>
-									<li><a href="dropdown.html">Dropdown</a></li>
-									<li><a href="joyride.html">Joyride</a></li>
-									<li><a href="magellan.html">Magellan</a></li>
-									<li><a href="reveal.html">Reveal</a></li>
-									<li><a href="section.html">Section</a></li>
-									<li><a href="tooltips.html">Info Tooltips</a></li>
-								</ul>
-							</div>
-						</section>
-					</div><!-- End Sidebar Navigation -->        
+						<img src="" alt="">
+					</div><!-- End Sidebar Navigation -->
 				</div>
 			</div><!-- End Row -->
         </div>
 	</div><!-- End Main Content -->
-</div>   
+</div>
+<!-- Begin Top Footer -->
 <footer class="footer_wrapper">
 	<div class="row footer-part">
 		<div class="large-12 columns">
@@ -302,7 +206,7 @@
 						</ul>
 					</div>
 				</div>
-				
+
 
 				<div class="large-3 columns">
 					<h4 class="footer-title">Contact info</h4>
@@ -321,8 +225,8 @@
 					</ul>
 					</div>
 				</div>
-					
-				<div class="large-3 columns"> 
+
+				<div class="large-3 columns">
 					<h4 class="footer-title">Quick Contact</h4>
 					<div class="divdott"></div>
 					<form method="POST" action="#" id="footer-contact-form">
@@ -339,15 +243,15 @@
 								</div>
 								<div class="large-12 columns text-right">
 									<input type="submit" class="button" value="Send" name="send" />
-								</div>	
+								</div>
 							</div>
 						</div>
 					</form>
-				</div> 
+				</div>
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="privacy footer_bottom">
 		<div class="footer-part">
 			<div class="row">
@@ -366,20 +270,16 @@
 <script type="text/javascript" src="user/plugins/carouFredSel/helper-plugins/jquery.touchSwipe.min.js"></script>
 
 <!-- Scripts Initialize -->
-<script src="user/js/app-head-calls.js"></script> 
+<script src="user/js/app-head-calls.js"></script>
 <script src="user/js/foundation.min.js"></script>
-
 <script>
 $(document).foundation();
-</script>  
-
+</script>
 <!-- Smallipop JS - Tooltips -->
 <script type="text/javascript" src="user/plugins/smallipop/lib/contrib/prettify.js"></script>
 <script type="text/javascript" src="user/plugins/smallipop/lib/jquery.smallipop.js"></script>
-<script type="text/javascript" src="user/plugins/smallipop/lib/smallipop.calls.js"></script> 
-
+<script type="text/javascript" src="user/plugins/smallipop/lib/smallipop.calls.js"></script>
 <!-- Initialize JS Plugins -->
 <script src="user/js/app-bottom-calls.js"></script>
-
 </body>
 </html>
