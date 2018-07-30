@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
-	<title>Medico - Regular tables</title>  
+	<title>Jadwal Poliklinik</title>
 
 	<!-- Smallipop CSS - Tooltips -->
 	<link rel="stylesheet" href="user/plugins/smallipop/css/contrib/animate.min.css" type="text/css" media="all" title="Screen" />
@@ -34,12 +34,12 @@
 
 <!-- Begin Main Wrapper -->
 <div class="main-wrapper">
-	<!-- Main Navigation -->  
+	<!-- Main Navigation -->
 	<header class="row main-navigation">
-		<div class="large-3 columns">	
+		<div class="large-3 columns">
 			<a href="index.html" id="logo"><img src="user/images/logo.png" alt="Medico Logo" /></a>
 		</div>
-		<div class="large-9 columns">			
+		<div class="large-9 columns">
 			<nav class="top-bar">
 				<ul class="title-area">
 				  <!-- Title Area -->
@@ -78,7 +78,7 @@
 							<li><a href="tooltips.html">Info tooltips</a></li>
 						  </ul>
 						</li>
-						
+
 						<li class="has-dropdown"><a href="#">Shortcodes</a>
 						  <ul class="dropdown">
                           	<li><a href="shortcodes.html">Main elements</a></li>
@@ -89,22 +89,22 @@
 							<li><a href="tables.html">Tables</a></li>
 							<li><a href="thumbnails.html">Thumbnails</a></li>
 							<li><a href="flex-video.html">Flex Video</a></li>
-							
+
 						  </ul>
-						</li>                    
+						</li>
 						<li class="has-dropdown"><a href="#">Add-ons</a>
 						  <ul class="dropdown">
 							<li><a href="icons.html">Retina Icons - Font Awesome</a></li>
 						  </ul>
 						</li>
-						<li class="has-dropdown"><a href="#">Portfolio</a>                                       
-						  <ul class="dropdown"> 
-                          		<li><a href="portfolio.html">Portfolio 4 Columns</a> </li>                       
+						<li class="has-dropdown"><a href="#">Portfolio</a>
+						  <ul class="dropdown">
+                          		<li><a href="portfolio.html">Portfolio 4 Columns</a> </li>
 								<li><a href="portfolio2.html">Portfolio 3 Columns</a></li>
 								<li><a href="portfolio-single.html">Single item</a></li>
 							</ul>
 						</li>
-						<li class="has-dropdown"><a href="#">Blog</a>                    
+						<li class="has-dropdown"><a href="#">Blog</a>
 						  <ul class="dropdown">
 							<li><a href="blog.html">1 Column, Default</a></li>
 							<li><a href="blogalt.html">1 Column, Alternative</a></li>
@@ -116,18 +116,18 @@
 						</li>
 						<li><a href="contact.html">Contact</a></li>
 					  </ul>
-					  <!-- End Left Nav Section -->					 
+					  <!-- End Left Nav Section -->
 				</section>
 			</nav>
 		</div>
 	</header>
 </div><!-- End Main Navigation -->
-<div class="main-content-top">	
-	<div class="main-wrapper">	
+<div class="main-content-top">
+	<div class="main-wrapper">
 		<div class="row">
 			<div class="large-6 columns">
-				<h2>Regular Tables</h2>
-			</div>        
+				<h2>Jadwal Poliklinik RSU Syifa Medika</h2>
+			</div>
 			<div class="large-6 columns">
 				<ul class="breadcrumbs right">
 					<li>You are here: </li>
@@ -137,102 +137,224 @@
 				</ul>
 			</div>
 		</div>
-	</div>		
+	</div>
 </div>
 <!-- End Main Content Top -->
 <div class="main-wrapper">
 	<div class="row main-content">
 		<div class="large-12 columns">
-			<div class="row">       
-				<div class="large-9 push-3 columns">          
-					<h3>Tables</h3>
-					<p>Okay, they're not the sexiest things ever, but tables get the job done (for tabular data, of course).</p>
+			<div class="row">
+				<div class="large-10 push-1 columns" style="margin: 25px 0;">
 					<div class="row">
 						<div class="large-12 columns">
 							<table>
 								<thead>
 									<tr>
-										<th style="width:200px">Table Header</th>
-										<th>Table Header</th>
-										<th style="width:150px">Table Header</th>
-										<th style="width:150px">Table Header</th>
+										<th style="width:200px">Kategori</th>
+										<th>Klinik</th>
+										<th style="width:150px">Hari</th>
+										<th style="width:100px">Jam</th>
+										<th style="width:150px">Dokter</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td>Content Goes Here</td>
-										<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-										<td>Content Goes Here</td>
-										<td>Content Goes Here</td>
+										<td>POLI SPESIALIS NON BPJS</td>
+										<td>Klinik Bedah Sub Onkologi</td>
+										<td>Senin, Kamis, Jum’at</td>
+										<td>09.00 – 10.00</td>
+										<td>dr.Yamsun,Sp.BK(K)Onkologi</td>
 									</tr>
 									<tr>
-										<td>Content Goes Here</td>
-										<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-										<td>Content Goes Here</td>
-										<td>Content Goes Here</td>
+										<td></td>
+										<td>Klinik Kebidanan dan Kandungan</td>
+										<td>Senin</td>
+										<td>16.00 – 18.00</td>
+										<td>dr. Yulisa Haslinda, Sp.OG</td>
 									</tr>
 									<tr>
-										<td>Content Goes Here</td>
-										<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-										<td>Content Goes Here</td>
-										<td>Content Goes Here</td>
+										<td></td>
+										<td></td>
+										<td>Jum’at</td>
+										<td>09.00 – 10.00</td>
+										<td>dr. Hj. F. A. Rahayu, Sp.OG</td>
 									</tr>
-								</tbody>
-							</table>
-						</div>        
-					</div>
-					<div class="row">
-						<div class="large-8 large-centered columns">
+									<tr>
+										<td></td>
+										<td>Klinik Jantung dan Pembuluh Darah</td>
+										<td>Senin - Sabtu</td>
+										<td>17.00 – selesai</td>
+										<td>dr. Gusti Rifansyah, Sp.JP</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Klinik Umum</td>
+										<td>Senin - Minggu</td>
+										<td>24 Jam</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Layanan Psikolog</td>
+										<td>Senin – Jum’at</td>
+										<td></td>
+										<td>Rika Vira Zwagery, M.Psi, Psikolog</td>
+									</tr>
+									<tr>
+										<td>POLI SPESIAL BPJS DAN NON BPJS</td>
+										<td>Klinik Penyakit Dalam</td>
+										<td>Senin – Jum’at</td>
+										<td>14.30 – 16.00</td>
+										<td>dr. Achmad Dainuri, Sp.PD</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>17.00 – 21.00</td>
+										<td>dr. Budi Indra, Sp.PD</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Klinik Bedah</td>
+										<td>Senin – Jum’at</td>
+										<td>17.00 – 21.00</td>
+										<td>dr. R.M. Ardani Fitriansyah SY, Sp.B</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Klinik Anak</td>
+										<td>Senin – Jum’at</td>
+										<td>16.00 – 18.00</td>
+										<td>dr. Hj. Naili Muna, Sp.A.M.Kes</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Klinik Syaraf</td>
+										<td>Senin – Sabtu</td>
+										<td>07.30 – 09.00</td>
+										<td>dr. Pagan Pambudi, Sp.S</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td>Senin – Jum’at</td>
+										<td>17.00 – 18.00</td>
+										<td>dr. Fatmawati, Sp.S</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>19.00 – 21.00</td>
+										<td>dr. Eko Suryo P., Sp.S</td>
+									</tr>
 
-							<table>
-								<thead>
 									<tr>
-										<th style="width:200px">Table Header</th>
-										<th>Table Header</th>
-										<th style="width:150px">Table Header</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Content Goes Here</td>
-										<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-										<td>Content Goes Here</td>
+										<td></td>
+										<td>Klinik Mata</td>
+										<td>Senin – Jum’at</td>
+										<td>14.00 – 16.00</td>
+										<td>dr. Helen Nguda, Sp.M</td>
 									</tr>
 									<tr>
-										<td>Content Goes Here</td>
-										<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-										<td>Content Goes Here</td>
+										<td></td>
+										<td></td>
+										<td>Senin – Rabu</td>
+										<td>13.00 – 15.00</td>
+										<td>dr. Hadijah, Sp.M</td>
 									</tr>
+
+									<tr>
+										<td></td>
+										<td>Klinik Paru</td>
+										<td>Senin – Jum’at</td>
+										<td>14.30 – 16.00</td>
+										<td>dr. Nur Janah,Sp.P, FISR</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Klinik THT</td>
+										<td>Senin – Rabu</td>
+										<td>16.00 – 18.00</td>
+										<td>dr. Shofiah Sari, Sp.THT-KL</td>
+									</tr>
+
+									<tr>
+										<td></td>
+										<td>Klinik Rehabilitasi Medik</td>
+										<td>Senin - Kamis<br>&nbsp;Program Terapi Rutin</td>
+										<td>14.30 – 16.00</td>
+										<td>dr. Nur Yulia Sari, Sp.KFR</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td>&nbsp;Konsultasi</td>
+										<td>14.30 – 15.30</td>
+										<td>dr. Nur Yulia Sari, Sp.KFR</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td>Jum’at<br>&nbsp;Program Terapi Rutin</td>
+										<td>10.00 – 12.00</td>
+										<td>dr. Nur Yulia Sari, Sp.KFR</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td>&nbsp;Konsultasi</td>
+										<td>11.00 – 12.00</td>
+										<td>dr. Nur Yulia Sari, Sp.KFR</td>
+									</tr>
+
+									<tr>
+										<td></td>
+										<td>Klinik Gigi Spesialis Bedah Mulut</td>
+										<td>Senin - Sabtu</td>
+										<td>18.00 – 20.00</td>
+										<td>drg. Mario Agung Asmara, Sp.BMM</td>
+									</tr>
+
+									<tr>
+										<td></td>
+										<td>Klinik Gigi</td>
+										<td>Senin - Jum’at</td>
+										<td>09.00 – 13.00</td>
+										<td>drg. Harinda Wahyu K.</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td>Senin - Rabu</td>
+										<td>15.00 – 18.00</td>
+										<td>drg. Nurul Husna</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td>Senin, Kamis, Jum’at</td>
+										<td>15.00 – 18.00</td>
+										<td>drg. Irna Noviantria</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Klinik Gigi Anak</td>
+										<td>Senin - Kamis</td>
+										<td>13.00 – 15.00</td>
+										<td>drg. Ike Ratna Dewi, Sp. KGA, M. Kes</td>
+									</tr>
+
 								</tbody>
 							</table>
-						</div>        
-					</div>               
-				</div>      
-				<div class="large-3 pull-9 columns widgets side-widgets"> 
-					<h3>Side Navigation</h3>                   
-					<!-- Sidebar Navigation -->      
-					<div class="section-container accordion" data-section>
-						<section class="section active">
-							<p class="title"><a href="#">Add-ons</a></p>
-							<div class="content">
-								<ul class="side-nav">
-									<li><a href="alert-boxes.html">Alert Boxes</a></li>
-									<li><a href="panels.html">Panels</a></li>
-									<li><a href="pricing-tables.html">Pricing Tables</a></li>
-									<li><a href="bars.html">Progress Bars</a></li>
-									<li><a class="active" href="tables.html">Tables</a></li>
-									<li><a href="thumbnails.html">Thumbnails</a></li>
-									<li><a href="flex-video.html">Flex Video</a></li>
-								</ul>
-							</div>
-						</section>
+						</div>
 					</div>
-					<!-- End Sidebar Navigation -->        
 				</div>
 			</div><!-- End Row -->
 		</div>
 	</div>
-</div>   
+</div>
 <footer class="footer_wrapper">
 	<div class="row footer-part">
 		<div class="large-12 columns">
@@ -265,7 +387,7 @@
 						</ul>
 					</div>
 				</div>
-				
+
 
 				<div class="large-3 columns">
 					<h4 class="footer-title">Contact info</h4>
@@ -284,8 +406,8 @@
 					</ul>
 					</div>
 				</div>
-					
-				<div class="large-3 columns"> 
+
+				<div class="large-3 columns">
 					<h4 class="footer-title">Quick Contact</h4>
 					<div class="divdott"></div>
 					<form method="POST" action="#" id="footer-contact-form">
@@ -302,15 +424,15 @@
 								</div>
 								<div class="large-12 columns text-right">
 									<input type="submit" class="button" value="Send" name="send" />
-								</div>	
+								</div>
 							</div>
 						</div>
 					</form>
-				</div> 
+				</div>
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="privacy footer_bottom">
 		<div class="footer-part">
 			<div class="row">
@@ -324,7 +446,7 @@
 		</div>
 	</div>
 </footer>
- 
+
 <!-- carouFredSel plugin -->
 <script type="text/javascript" src="user/plugins/carouFredSel/jquery.carouFredSel-6.2.0-packed.js"></script>
 <script type="text/javascript" src="user/plugins/carouFredSel/helper-plugins/jquery.touchSwipe.min.js"></script>
@@ -335,12 +457,12 @@
 
 <script>
 $(document).foundation();
-</script>  
+</script>
 
 <!-- Smallipop JS - Tooltips -->
 <script type="text/javascript" src="user/plugins/smallipop/lib/contrib/prettify.js"></script>
 <script type="text/javascript" src="user/plugins/smallipop/lib/jquery.smallipop.js"></script>
-<script type="text/javascript" src="user/plugins/smallipop/lib/smallipop.calls.js"></script> 
+<script type="text/javascript" src="user/plugins/smallipop/lib/smallipop.calls.js"></script>
 
 <!-- Initialize JS Plugins -->
 <script src="user/js/app-bottom-calls.js"></script>

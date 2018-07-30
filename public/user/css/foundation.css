@@ -1038,11 +1038,11 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #2ba6cb;
+  color: #da09b3;
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
-    color: #2795b6; }
+    color: #f510ca; }
   a img {
     border: none; }
 
@@ -1321,11 +1321,11 @@ button, .button {
   padding-bottom: 0.8125em;
   padding-left: 1.5em;
   font-size: 1em;
-  background-color: #2ba6cb;
-  border-color: #2284a1;
+  background-color: #da09b3;
+  border-color: #da09b3;
   color: white; }
   button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #2284a1; }
+    background-color: #da09b3; }
   button:hover, button:focus, .button:hover, .button:focus {
     color: white; }
   button.secondary, .button.secondary {
@@ -2045,7 +2045,7 @@ label.error {
 .flex-video {
   position: relative;
   padding-top: 1.5625em;
-  padding-bottom: 67.5%;
+  padding-bottom: 50%;
   height: 0;
   margin-bottom: 1em;
   overflow: hidden; }

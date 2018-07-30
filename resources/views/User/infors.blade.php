@@ -30,7 +30,7 @@
 	<script src="user/js/vendor/custom.modernizr.js"></script>
 
 </head>
-<body>
+<body onload="initialize()">
 
 <!-- Begin Main Wrapper -->
 <div class="main-wrapper">
@@ -51,90 +51,52 @@
 				<section class="top-bar-section">
 					<!-- Left Nav Section -->
 					  <ul class="right">
-						<li class="has-dropdown"><a href="#" class="active">Home</a>
+						<li class=""><a href="#" class="active">Beranda</a></li>
+						<li class="has-dropdown"><a href="#">Profil</a>
 						  <ul class="dropdown">
-							<li><a href="index2.html">Variation 2</a></li>
-							<li><a href="index3.html">Variation 3</a></li>
-							<li><a href="index4.html">Variation 4</a></li>
-							<li><a href="index5.html">Variation 5</a></li>
-							<li><a href="index6.html">Variation 6</a></li>
+							<li><a href="about.html">Profil Rumah Sakit</a></li>
+							<li><a href="grid.html">Profil Dokter</a></li>
+							<li><a href="navigation.html">Dokter Spesialis</a></li>
 						  </ul>
 						</li>
-						<li class="has-dropdown"><a href="#">Features</a>
+						<li class="has-dropdown"><a href="#">Rawat Jalan</a>
 						  <ul class="dropdown">
-                          	<li><a href="about.html">About page</a></li>
-							<li><a href="grid.html">Grid</a></li>
-							<li><a href="navigation.html">Navigation</a></li>
-							<li><a href="buttons.html">Buttons</a></li>
-							<li><a href="forms.html">Forms</a></li>
-							<li><a href="typography.html">Typography</a></li>
-							<li><a href="orbit.html">Orbit - Foundation Slider</a></li>
-							<li><a href="clearing.html">Clearing -  Responsive Lightboxes</a></li>
-							<li><a href="dropdown.html">Dropdown</a></li>
-							<li><a href="joyride.html">Joyride</a></li>
-							<li><a href="magellan.html">Magellan</a></li>
-							<li><a href="reveal.html">Reveal - Modal dialogs / pop-up windows</a></li>
-							<li><a href="section.html">Section - Accordion, Tabs &amp; Vertical Nav</a></li>
-							<li><a href="tooltips.html">Info tooltips</a></li>
+            	<li><a href="shortcodes.html">Klinik Mata</a></li>
+							<li><a href="alert-boxes.html">Klinik Gigi</a></li>
+							<li><a href="panels.html">Klinik Jantung & Pembuluh Darah</a></li>
+							<li><a href="pricing-tables.html">Klinik Anak</a></li>
+							<li><a href="bars.html">Klinik Bedah</a></li>
+							<li><a href="tables.html">Klinik Syaraf</a></li>
+							<li><a href="thumbnails.html">Klinik Rehabilitasi Medis</a></li>
+							<li><a href="flex-video.html">Klinik Penyakit Dalam</a></li>
+							<li><a href="bars.html">Klinik Kebidanan dan Kandungan</a></li>
+							<li><a href="tables.html">Klinik Umum</a></li>
 						  </ul>
 						</li>
-
-						<li class="has-dropdown"><a href="#">Shortcodes</a>
-						  <ul class="dropdown">
-                          	<li><a href="shortcodes.html">Main elements</a></li>
-							<li><a href="alert-boxes.html">Alert Boxes</a></li>
-							<li><a href="panels.html">Panels</a></li>
-							<li><a href="pricing-tables.html">Pricing Tables</a></li>
-							<li><a href="bars.html">Progress Bars</a></li>
-							<li><a href="tables.html">Tables</a></li>
-							<li><a href="thumbnails.html">Thumbnails</a></li>
-							<li><a href="flex-video.html">Flex Video</a></li>
-
-						  </ul>
-						</li>
-						<li class="has-dropdown"><a href="#">Add-ons</a>
-						  <ul class="dropdown">
-							<li><a href="icons.html">Retina Icons - Font Awesome</a></li>
-						  </ul>
-						</li>
-						<li class="has-dropdown"><a href="#">Portfolio</a>
-						  <ul class="dropdown">
-                          		<li><a href="portfolio.html">Portfolio 4 Columns</a> </li>
-								<li><a href="portfolio2.html">Portfolio 3 Columns</a></li>
-								<li><a href="portfolio-single.html">Single item</a></li>
-							</ul>
-						</li>
-						<li class="has-dropdown"><a href="#">Blog</a>
-						  <ul class="dropdown">
-							<li><a href="blog.html">1 Column, Default</a></li>
-							<li><a href="blogalt.html">1 Column, Alternative</a></li>
-							<li><a href="blog-2column.html">2 Columns</a></li>
-							<li><a href="blog-3column-no-sidebar.html">3 Columns, No sidebar</a></li>
-							<li><a href="blog-4column-no-sidebar.html">4 Columns, No sidebar</a></li>
-							<li><a href="blog-single.html">Blog Inner</a></li>
-						  </ul>
-						</li>
-						<li><a href="contact.html">Contact</a></li>
+						<li class=""><a href="#">Rawat Inap</a></li>
 					  </ul>
 					  <!-- End Left Nav Section -->
 				</section>
 			</nav>
 		</div>
 	</header>
+
 </div>
 	<!-- Start Main Slider -->
+
+
 	<!-- End Main Slider -->
 	<div class="main-content-top">
 		<div class="main-wrapper">
 			<div class="row">
 				<div class="large-6 columns">
-					<h2>About Us</h2>
+					<h2>Informasi Rumah Sakit</h2>
 				</div>
 				<div class="large-6 columns">
 					<ul class="breadcrumbs right">
-						<li>You are here: </li>
-						<li><a href="#">home</a></li>
-						<li><a href="#">About us</a></li>
+						<li>Direktori: </li>
+						<li><a href="#">beranda</a></li>
+						<li><a href="#">informasi klinik</a></li>
 					</ul>
 				</div>
 			</div>
@@ -142,69 +104,59 @@
 	</div>
 
 <div class="main-wrapper">
+	<div id="map_canvas"></div>
 	<!-- Main Content -->
-	<div class="row main-content">
+	<div class="row main-content" style="margin-top: 25px;">
 		<div class="large-12 columns">
 			<div class="row">
-				<div class="large-8 columns">
-					<h3>Who we are</h3>
+				<div class="large-12 columns">
+					<h3>Tentang Rs Syifa Medika</h3>
 					<div class="divider"><span></span></div>
-					<img src="user/images/demo/about/1.jpg" alt="post-img" class="alignleft">
-					<p>
-						This is <a href="#">Photoshop's version</a> of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
-						sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio
-						sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor
-						a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent
-						per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet
-						a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum
-						feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.This is Photoshop's version
-						of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-					</p>
-				</div>
+					<img src="user/images/banner.png" alt="post-img">
+					<div class="large-12 columns">
+						<h3 class="text-center">“Menjadi Rumah Sakit Terdepan di <code>Kalimantan Selatan</code>.“</h3></br>
+						<h4><strong>Dengan beroperasinya Rumah Sakit Umum Syifa Medika diharapkan dapat:</strong></h4>
+						<ol>
+							<li><h6>Memberikan kontribusi dalam peningkatan kesadaran dan mutu kesehatan masyarakat Kota Banjarbaru.</h6></li>
+							<li><h6>Memberikan kontribusi dalam penyerapan tenaga kerja di Kota Banjarbaru.</h6></li>
+							<li><h6>Memberikan dampak tumbuhnya ekonomi masyarakat di sekitar lokasi rumah sakit, pertumbuhan ekonomi Kota Banjarbaru dan pertumbuhan ekonomi Kalimantan Selatan pada umumnya.</h6></li>
+						</ol>
+						<h4><strong>Misi Rumah Sakit, disebut juga sebagai 8 pilar organisasi adalah:</strong></h4>
+						<ol>
+							<li><h6>Superiority, selalu unggul dalam pelayanan.</h6></li>
+							<li><h6>Hospitality, melayani dengan hati, keahlian dan keramah-tamahan.</h6></li>
+							<li><h6>Priority, keselamatan, kualitas, kecepatan dan kenyamanan.</h6></li>
+							<li><h6>Proactive, proaktif dalam memahami kebutuhan dan keinginan pasien dan masyarakat.</h6></li>
+							<li><h6>Ethic, memegang teguh etika pelayanan.</h6></li>
+							<li><h6>Knowledge, mencerdaskan pasiendan masyarakat.</h6></li>
+							<li><h6>Environmental friendly, berperan serta dalam bina lingkungan (ekosistem, sosial dan ekonomi).</h6></li>
+							<li><h6>Dynamic, dinamis dalam setiap situasi.</h6></li>
+						</ol>
 
-				<div class="large-4 columns">
-					<h3>Some Statistics</h3>
-					<div class="divider"><span></span></div>
-					<p class="client-statistics">Satisfied Clients:</p>
-					<div class="figures">6549</div>
-					<p class="client-statistics">Succesful Surgeries</p>
-					<div class="figures">1329</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
+
+<img src="user/images/main1.jpg" alt="post-img" class="cs-bg" style="margin-top: 25px;">
+<!-- Edit : Colouring agar senada dan berikan teks sehat adalah berkah -->
+<div class="main-wrapper">
 	<div class="row">
 		<div class="large-12 columns service-block">
 			<div class="row">
 				<div class="large-6 columns">
-					<h5>OUR Services</h5>
+					<h3>Statistik</h3>
 					<div class="divider"><span></span></div>
-					<ul id="example1" class="accordion">
-						<li>
-							<div class="handle"><span><i></i></span><a href="#">Teeth whitening</a></div>
-							<div class="panel loading">
-								<p>Tartar: A common term for dental calculus, a hard deposit that adheres to teeth and produces a rough surface that attracts plaque.</p>
-							</div>
-						</li>
-						<li>
-							<div class="handle"><span><i></i></span>Crown dental bridges</div>
-							<ul class="panel loading">
-								<li>How about&hellip;</li>
-								<li>&hellip; a list &hellip;</li>
-								<li>&hellip; of items?</li>
-							</ul>
-						</li>
-						<li>
-							<div class="handle"><span><i></i></span>Rehabilitation center</div>
-							<p class="panel loading">
-								An image in a paragraph.
-							</p>
-						</li>
-					</ul>
+					<p class="client-statistics">Pasien Puas:</p>
+					<div class="figures">6549</div>
+					<p class="client-statistics">Operasi Berhasil</p>
+					<div class="figures">1329</div>
 				</div>
 				<div class="large-6 columns">
 					<div class="title-block">
-						<h5>Client Testimonials</h5>
+						<h5>Testimoni Pasien</h5>
 						<div class="divider"><span></span></div>
 						<div class="clearfix"></div>
 					</div>
@@ -240,85 +192,67 @@
 			</div>
 		</div>
 	</div>
+</div>
 
-	<div class="row">
-		<div class="large-12 columns">
-			<div class="title-block">
-				<h3>OUR DOCTORS</h3>
+<div class="row" style="margin-top: 80px;">
+	<div class="large-12 columns">
+		<div class="title-block">
+			<h1><strong>Kerjasama Kesehatan</strong> 17 Perusahaan</h1>
+		</div>
+		<div class="divider"><span></span></div>
+		<div class="work_slide">
+			<ul id="work_slide">
+				<li>
+					<div class="view view-two">
+						<img src="user/images/Kerjasama/575ea58b6e29f350c3852ff58.png" alt="" />
+					</div>
+				</li>
+				<li>
+					<div class="view view-two">
+						<img src="user/images/kerjasama/1-1.jpg" alt="" />
+					</div>
+				</li>
+				 <li>
+					<div class="view view-two">
+						<img src="user/images/kerjasama/1492411891.png" alt="" />
+					</div>
+				</li>
+				<li>
+					<div class="view view-two">
+						<img src="user/images/demo/doctors/4.jpg" alt="" />
+					</div>
+				</li>
+				 <li>
+					<div class="view view-two">
+						<img src="user/images/demo/doctors/5.jpg" alt="" />
+					</div>
+				</li>
+			</ul>
+
+			<div class="clearfix"></div>
+			<a class="prev" id="slide_prev" href="#"><img src="user/images/arrow_left.png" alt="Previous" /></a>
+			<a class="next" id="slide_next" href="#"><img src="user/images/arrow_right.png" alt="Next" /></a>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="main-content-top" id="lowongankerja" style="margin-top: 80px; background-color: #ebebeb">
+	<div class="main-wrapper">
+		<div class="row">
+			<div class="large-12 columns">
+					<h1><strong>Lowongan Pekerjaan</strong></h1>
 			</div>
-			<div class="divider"><span></span></div>
-			<div class="work_slide">
-				<ul id="work_slide">
-					<li>
-						<div class="view view-two">
-							<img src="user/images/demo/doctors/1.jpg" alt="" />
-							<div class="mask">
-								<h3>Specialties</h3>
-								<p>Colon and rectal surgery, Dental surgery, Oral and maxillofacial surgery.</p>
-								<a class="button btn-icon icon-2" href="portfolio-single.html"><i class="icon-external-link icon-large"></i></a>
-							</div>
-						</div>
-						<div class="doctor-name">John Smith</div>
-					</li>
-					<li>
-						<div class="view view-two">
-							<img src="user/images/demo/doctors/2.jpg" alt="" />
-							<div class="mask">
-								<h3>Specialties</h3>
-								<p>Pediatric surgery, Plastic surgery, Podiatric surgery.</p>
-								<a class="button btn-icon icon-2" href="#"><i class="icon-external-link icon-large"></i></a>
-							</div>
-						</div>
-						<div class="doctor-name">Adriana Lima</div>
-					</li>
-					 <li>
-						<div class="view view-two">
-							<img src="user/images/demo/doctors/3.jpg" alt="" />
-							<div class="mask">
-								<h3>Specialties</h3>
-								<p>Trauma surgery, Thoracic surgery, Urology, Veterinary surgery.</p>
-								<a class="button btn-icon icon-2" href="#"><i class="icon-external-link icon-large"></i></a>
-							</div>
-						</div>
-						<div class="doctor-name">M.D. House</div>
-					</li>
-					<li>
-						<div class="view view-two">
-							<img src="user/images/demo/doctors/4.jpg" alt="" />
-							<div class="mask">
-								<h3>Specialties</h3>
-								<p>All in one master, the genius, the man behind the curtain.</p>
-								<a class="button btn-icon icon-2" href="#"><i class="icon-external-link icon-large"></i></a>
-							</div>
-						</div>
-						<div class="doctor-name">Lonely Shepherd</div>
-					</li>
-					 <li>
-						<div class="view view-two">
-							<img src="user/images/demo/doctors/5.jpg" alt="" />
-							<div class="mask">
-								<h3>Specialties</h3>
-								<p>Aenean eget mauris nibh, eu pellentesque ipsum. The lorem is totally site amet.</p>
-								<a class="button btn-icon icon-2" href="#"><i class="icon-external-link icon-large"></i></a>
-							</div>
-						</div>
-					</li>
-					 <li>
-						<div class="view view-two">
-							<img src="user/images/demo/doctors/6.jpg" alt="" />
-							<div class="mask">
-								<h3>Specialties</h3>
-								<p>Aenean eget mauris nibh, eu pellentesque ipsum. The lorem is totally site amet.</p>
-								<a class="button btn-icon" href="#"><i class="icon-zoom-in icon-large"></i></a>
-							</div>
-						</div>
-						<div class="doctor-name">Enzo Ferrari</div>
-					</li>
-				</ul>
-
-				<div class="clearfix"></div>
-				<a class="prev" id="slide_prev" href="#"><img src="user/images/arrow_left.png" alt="Previous" /></a>
-				<a class="next" id="slide_next" href="#"><img src="user/images/arrow_right.png" alt="Next" /></a>
+		</div>
+	</div>
+</div>
+<div class="row main-content text-center">
+	<div class="large-12 columns">
+		<div class="row">
+			<div class="large-12 columns">
+				<div class="divider"><span></span></div>
+				<img src="user/images/lowongankerja.jpg" alt="Lowongan Kerja" height="750" width="750">
 			</div>
 		</div>
 	</div>
@@ -415,6 +349,61 @@
 		</div>
 	</div>
 </footer>
+
+<script src="user/js/foundation.min.js"></script>
+<script src="user/js/foundation/foundation.js"></script>
+<script src="user/js/foundation/foundation.topbar.js"></script>
+
+
+<script src="user/js/app-head-calls.js"></script>
+<script src="user/js/jquery.validate.min.js"></script>
+
+<!-- for Google Map-->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTSJ4nigiCUcS_KdUEvTfegUWC2EPbP_Q&amp;sensor=false"></script>
+<script type="text/javascript">
+function initialize() {
+
+var mapOptions = {
+  center: new google.maps.LatLng(-3.4594135223177336, 114.81616330129327),
+  zoom: 15,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+var map = new google.maps.Map(document.getElementById("map_canvas"),
+	mapOptions);
+var myLatlng = new google.maps.LatLng(-3.4594135223177336, 114.81616330129327);
+var marker = new google.maps.Marker({
+	position: myLatlng,
+	title:"Rumah Sakit Syifa Medika - Banjar Baru"
+});
+var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">RS Syifa Medika</h1>'+
+      '<div id="bodyContent">'+
+      '<p><b>Rumah Sakit Syifa </b>, Jl. R.O. Ulin No. 93, Banjarbaru 70712.</p><br>' +
+			'<h3>Sehat Adalah Berkah.</h3><br>'+
+      'Telepon : 0511-5910889 <br>'+
+      'Handphone : 0857 0542 2267 <br>'+
+      'Whatsapp : 0821 5342 4447 <br>'+
+      '</div>'+
+      '</div>';
+var infowindow = new google.maps.InfoWindow({
+   content: contentString
+});
+marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
+
+
+// To add the marker to the map, call setMap();
+marker.setMap(map);
+}
+</script>
+<script>
+	$(document).foundation();
+</script>
+
+
 <!-- carouFredSel plugin -->
 <script src="user/plugins/carouFredSel/jquery.carouFredSel-6.2.0-packed.js"></script>
 <script src="user/plugins/carouFredSel/helper-plugins/jquery.touchSwipe.min.js"></script>
@@ -424,9 +413,6 @@
 <script type="text/javascript" src="user/js/jquery.nivo.slider.pack.js"></script>
 <script src="user/js/foundation.min.js"></script>
 
-<script>
-$(document).foundation();
-</script>
 
 <!-- Smallipop JS - Tooltips -->
 <script type="text/javascript" src="user/plugins/smallipop/lib/contrib/prettify.js"></script>
@@ -487,5 +473,7 @@ jQuery(document).ready(function() {
 <script src="user/js/app-bottom-calls.js"></script>
 
 <!-- End Main Wrapper -->
+
+
 </body>
 </html>
