@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class ModifyDbAdmin extends Migration
+class DmAdminAddPrimaryKeyId extends Migration
 {
     /**
      * Run the migrations.
@@ -15,7 +15,7 @@ class ModifyDbAdmin extends Migration
     {
         //
         Schema::table('dm_admin', function (Blueprint $table) {
-          $table->increments('id');
+            $table->increments('id');
         });
     }
 
@@ -28,7 +28,7 @@ class ModifyDbAdmin extends Migration
     {
         //
         Schema::table('dm_admin', function (Blueprint $table) {
-          $table->dropColumn('id');
+            $table->dropColumn('id');
         });
     }
 }
