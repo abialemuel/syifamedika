@@ -25,12 +25,13 @@ class AdminLoginController extends Controller
     {
 
       // Attempt to login
-      if (Auth::attempt(['id_karyawan' => $request->id_karyawan, 'password' => $request->password]))
+      if (Auth::attempt(['id_admin' => $request->id_admin, 'password' => $request->password]))
       {
         // if successful, redirect to admin.dashboard
         return redirect()->intended(route('admin.dashboard'));
       }
       // if unsuccessful, redirect to admin.login
-      return redirect()->back()->withInput($request->only('id_karyawan'));
+      return redirect()->back()->withInput($request->only('id_admin'))
+                                                   ->withErrors(['ID_Admin/Password Salah']);
     }
 }

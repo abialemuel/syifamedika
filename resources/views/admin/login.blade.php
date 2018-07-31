@@ -30,23 +30,16 @@
 
       <form action="{{ route('admin.login.submit') }}" method="post">
         @csrf
+        @if($errors->any())
+          <p style="color:red;">*{{$errors->first()}}</p>
+        @endif
         <div class="form-group has-feedback">
           <span class="fa fa-user form-control-feedback"></span>
-          <input type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="ID Karyawan" name="id_karyawan" value="{{ old('id_karyawan') }}" required>
-          @if ($errors->has('email'))
-              <span class="invalid-feedback" role="alert">
-                <strong>{{ $errors->first('id_karyawan') }}</strong>
-              </span>
-          @endif
+          <input type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="ID Admin" name="id_admin" value="{{ old('id_admin') }}" required>
         </div>
         <div class="form-group has-feedback">
           <span class="fa fa-lock form-control-feedback"></span>
           <input type="password" class="form-control" placeholder="Password" name="password" required>
-          @if ($errors->has('password'))
-              <span class="invalid-feedback" role="alert">
-                <strong>{{ $errors->first('password') }}</strong>
-              </span>
-          @endif
         </div>
         <div class="row">
           <!-- /.col -->
