@@ -28,4 +28,9 @@ class Admin extends Authenticatable
     protected $hidden = [
         'password',
     ];
+
+    public function karyawan()
+    {
+      return $this->belongsTo('App\Karyawan', 'id_karyawan', 'id_karyawan');
+    }
 }
