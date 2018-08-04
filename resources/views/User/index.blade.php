@@ -39,9 +39,9 @@
 
 <div class="slider-wrapper theme-default">
     <div id="slider" class="nivoSlider">
-		<img src="user/images/demo/slider/1.jpg" data-thumb="user/images/demo/news/1.jpg" alt="" title="#caption1" />
-		<a href=""><img src="user/images/demo/slider/2.jpg" data-thumb="user/images/demo/news/2.jpg" alt="" title="#caption2"  /></a>
-		<img src="user/images/demo/slider/3.jpg" data-thumb="user/images/demo/news/3.jpg" alt="" title="#caption3" />
+		<img src="user/images/slider/1.jpg" alt="" title="#gambar RS" />
+		<a href=""><img src="user/images/slider/2.jpg" alt="" title="#gambar RS"  /></a>
+		<img src="user/images/slider/3.jpg" alt="" title="#gambar RS" />
 	</div>
 	<div id="caption1" class="nivo-html-caption">
 		<p class="nivotitle v1">Selamat Datang</p>
@@ -218,14 +218,14 @@
 						<div class="view view-two">
 							<img src="user/images/demo/doctors/1.jpg" alt="" />
 							<div class="mask">
-								<h3>Specialties</h3>
-								<p>Colon and rectal surgery, Dental surgery, Oral and maxillofacial surgery.</p>
-								<a class="button btn-icon icon-2" href="portfolio-single.html"><i class="icon-external-link icon-large"></i></a>
+								<h3>{{ $dokter->spesialis['nama_spesialis'] }}</h3>
 							</div>
 						</div>
-						<div class="doctor-name">John Smith</div>
+						<div class="doctor-name">{{ $dokter->nama_dokter }}</div>
 					</li>
+					@endforeach
 				</ul>
+
 
 				<div class="clearfix"></div>
 				<a class="prev" id="slide_prev" href="#"><img src="user/images/arrow_left.png" alt="Previous" /></a>
@@ -244,44 +244,44 @@
 	<ul class="gallery-showcase clearfix">
 		<li>
 			<figure class="gallery-photo">
-				<img src="user/images/gallery/kelas1a-min.png" alt="Korean bibimbap with egg and vegetables">
+				<img src="user/images/gallery/kelas1a-min.png" alt="Kamar kelas 1A">
 			</figure>
 		</li>
 		<li>
 			<figure class="gallery-photo">
-				<img src="user/images/gallery/kelas1b-min.png" alt="Simple italian pizza with cherry tomatoes">
+				<img src="user/images/gallery/kelas1b-min.png" alt="Kamar kelas 1B">
 			</figure>
 		</li>
 		<li>
 			<figure class="gallery-photo">
-				<img src="user/images/gallery/kelas2a-min.png" alt="Chicken breast steak with vegetables">
+				<img src="user/images/gallery/kelas2a-min.png" alt="Kamar kelas 2A">
 			</figure>
 		</li>
 		<li>
 			<figure class="gallery-photo">
-				<img src="user/images/gallery/kelas2b-min.png" alt="Autumn pumpkin soup">
+				<img src="user/images/gallery/kelas2b-min.png" alt="Kamar kelas 2B">
 			</figure>
 		</li>
 	</ul>
 	<ul class="gallery-showcase">
 		<li>
 			<figure class="gallery-photo">
-				<img src="user/images/gallery/kelas3a-min.png" alt="Korean bibimbap with egg and vegetables">
+				<img src="user/images/gallery/kelas3a-min.png" alt="Kamar kelas 3A">
 			</figure>
 		</li>
 		<li>
 			<figure class="gallery-photo">
-				<img src="user/images/gallery/kelas3b-min.png" alt="Simple italian pizza with cherry tomatoes">
+				<img src="user/images/gallery/kelas3b-min.png" alt="Kamar kelas 3B">
 			</figure>
 		</li>
 		<li>
 			<figure class="gallery-photo">
-				<img src="user/images/gallery/kelas3c-min.png" alt="Chicken breast steak with vegetables">
+				<img src="user/images/gallery/kelas3c-min.png" alt="Kamar kelas 3C">
 			</figure>
 		</li>
 		<li>
 			<figure class="gallery-photo">
-				<img src="user/images/gallery/kelas3d-min.png" alt="Autumn pumpkin soup">
+				<img src="user/images/gallery/kelas3d-min.png" alt="Kamar kelas 3D">
 			</figure>
 		</li>
 	</ul>
