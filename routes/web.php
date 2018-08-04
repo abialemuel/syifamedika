@@ -11,19 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('user.index');
-})->name('user.index');
-
-
 // Route for users (controller)
 Route::namespace('user')->group(function () {
     // Controllers Within The "App\Http\Controllers\user" Namespace
+    Route::get('/', 'UserController@index');
+    Route::get('/dokter', 'UserController@dokter');
     Route::get('/forms', 'PasienController@create');
     Route::get('/infosehat', function () {
         return view('user.blogs');
     });
-    Route::get('/dokter', 'DokterController@index');
 
     Route::get('/profilrs', function () {
         return view('user.infors');

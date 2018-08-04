@@ -74,9 +74,8 @@
           </ol>
 				</div>
 				<div class="large-3 pull-9 columns widgets side-widgets">
-					<h3>ini diisi foto mba2nya rssyifa yang pakai hijab</h3>
 					<div class="section-container accordion"><!-- Sidebar Navigation -->
-						<img src="" alt="">
+						<img src="rsp-1.png" alt="">
 					</div><!-- End Sidebar Navigation -->
 				</div>
 			</div><!-- End Row -->
