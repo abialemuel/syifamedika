@@ -5,6 +5,10 @@ namespace App\Http\Controllers\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Pasien;
+use App\Kelurahan;
+use App\Kecamatan;
+use App\Kabupaten;
+use App\Provinsi;
 
 class PasienController extends Controller
 {
@@ -12,7 +16,11 @@ class PasienController extends Controller
     //return to form create pasien
     public function create()
     {
-      return view('User.forms');
+      $kelurahans = Kelurahan::all();
+      $kecamatans = Kecamatan::all();
+      $kabupatens = Kabupaten::all();
+      $provinsis = Provinsi::all();
+      return view('user.user_register', compact('kelurahans', 'kecamatans', 'kabupatens', 'provinsis'));
     }
 
     //create new pasien
