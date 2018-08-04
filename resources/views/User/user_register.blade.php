@@ -131,7 +131,7 @@
 				<ul class="breadcrumbs right">
 					<li>POSISI ANDA: </li>
 					<li><a href="index.html">BERANDA</a></li>
-					<li><a href="#">PENDAFTARAN BARU</a></li>
+					<li><a href="#">Form Pendaftaran</a></li>
 				</ul>
 			</div>
 		</div>
