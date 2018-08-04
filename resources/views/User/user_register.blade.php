@@ -129,10 +129,9 @@
 			</div>
 			<div class="large-6 columns">
 				<ul class="breadcrumbs right">
-					<li>You are here: </li>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#">Features</a></li>
-					<li><span>Forms</span></li>
+					<li>POSISI ANDA: </li>
+					<li><a href="index.html">BERANDA</a></li>
+					<li><a href="#">PENDAFTARAN BARU</a></li>
 				</ul>
 			</div>
 		</div>
@@ -157,11 +156,11 @@
 							<div class="row">
 								<div class="large-6 columns">
 									<label>Tempat Lahir</label>
-									<input type="text" placeholder="Isikan dengan tempat lahir pasien">
+									<input type="text" placeholder="ISIKAN DENGAN TEMPAT LAHIR PASIEN">
 								</div>
 								<div class="large-6 columns">
 									<label>Tanggal Lahir</label>
-									<input class="datepicker" type="text" placeholder="Appointment Date"  name="name" />
+									<input class="datepicker" type="text" placeholder="ISIKAN DENGAN TANGGAL LAHIR PASIEN"  name="name" />
 								</div>
 							</div>
 							<div class="row">
@@ -185,17 +184,17 @@
 							<div class="row">
 								<div class="large-6 columns">
 									<label>No. Telp</label>
-									<input type="text" placeholder="Isikan dengan nama telepon pasien">
+									<input type="text" placeholder="ISIKAN DENGAN NOMOR TELEPON PASIEN">
 								</div>
 								<div class="large-6 columns">
 									<label>Email</label>
-									<input type="email" placeholder="Isikan dengan email pasien">
+									<input type="email" placeholder="ISIKAN DENGAN E-MAIL PASIEN">
 								</div>
 							</div>
 							<div class="row">
 								<div class="large-4 columns">
 									<label>kewarganegaraan</label>
-									<input type="text" placeholder="large-4.columns">
+									<input type="text" placeholder="ISIKAN SESUAI KEWARGANEGARAAN PASIEN">
 								</div>
 								<div class="large-4 columns">
 									<label for="customDropdown3">Agama</label>
@@ -218,7 +217,7 @@
 							<div class="row">
 								<div class="large-4 columns">
 									<label>Pekerjaan</label>
-									<input type="email" placeholder="Isikan dengan pekerjaan pasien">
+									<input type="email" placeholder="ISIKAN DENGAN PEKERJAAN PASIEN">
 								</div>
 								<div class="large-4 columns">
 									<label for="customDropdown4">Pendidikan Terakhir</label>
@@ -231,28 +230,26 @@
 								</div>
 								<div class="large-4 columns">
 									<label>Tanggungan</label>
-									<input type="email" placeholder="Isikan dengan tanggungan pasien">
+									<input type="email" placeholder="ISIKAN DENGAN TANGGUNGAN PASIEN">
 								</div>
 							</div>
 							<div class="row">
 								<div class="large-6 columns">
 									<label>Nama Ayah</label>
-									<input type="text" placeholder="Isikan dengan nama ayah pasien">
+									<input type="text" placeholder="ISIKAN DENGAN NAMA AYAH PASIEN">
 								</div>
 								<div class="large-6 columns">
 									<label>Nama Ibu</label>
-									<input type="email" placeholder="Isikan dengan nama ibu pasien">
+									<input type="email" placeholder="ISIKAN DENGAN NAMA IBU PASIEN">
 								</div>
 							</div>
 							<div class="row">
 								<div class="large-12 columns">
 									<label>Nomor BPJS.</label>
-									<input type="text" placeholder="large-4.columns">
+									<input type="text" placeholder="ISIKAN SESUAI NOMOR BPJS PASIEN">
 								</div>
 							</div>
 						</fieldset>
-					</form>
-					<form class="custom">
 						<fieldset>
 							<legend>Alamat Pasien</legend>
 							<div class="row">
@@ -296,186 +293,22 @@
 							<div class="row">
 								<div class="large-12 columns">
 									<label>Alamat</label>
-									<textarea placeholder="Isikan dengan alamat pasien."></textarea>
+									<textarea placeholder="ISIKAN DENGAN ALAMAT PASIEN."></textarea>
 								</div>
 							</div>
 						</fieldset>
-					</form>f
-                    <h3>Error States</h3>
-                    <p>Foundation includes error states for labels, inputs and messaging that you can have your app generate programatically.
-					You can attach a class of <code>.error</code> either to the individual elements (label, input, small) or to a column/div.</p>
-					<form>
-						<div class="row">
-							<div class="large-6 columns">
-								<label class="error">Error</label>
-								<input type="text" class="error" />
-								<small class="error">Invalid entry</small>
-							</div>
-							<div class="large-6 columns error">
-								<label>Another Error</label>
-								<input type="text" />
-								<small>Invalid entry</small>
-							</div>
-							<div class="large-12 columns error">
-								<textarea class="error" placeholder="Message..."></textarea>
-								<small class="error">Invalid entry</small>
-							</div>
-						</div>
 					</form>
-                    <h3>Custom Forms</h3>
-                    <p>It's so crazy easy to create easy-to-style custom forms. It's practically a crime.</p>
-					<!-- <form class="custom">
-						<div class="row">
-							<div class="large-4 columns">
-								<label for="radio1"><input name="radio1" type="radio" id="radio1" style="display:none;" CHECKED><span class="custom radio checked"></span> Radio Button 1</label>
-								<label for="radio2"><input name="radio1" type="radio" id="radio2" style="display:none;"><span class="custom radio"></span> Radio Button 2</label>
-								<label for="radio3"><input name="radio1" type="radio" id="radio3" disabled style="display:none;"><span class="custom radio"></span> Radio Button 3</label>
-							</div>
-							<div class="large-4 columns">
-								<label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Label for Checkbox</label>
-								<label for="checkbox2"><input type="checkbox" id="checkbox2" CHECKED style="display: none;"><span class="custom checkbox checked"></span> Label for Checkbox</label>
-								<label for="checkbox3"><input type="checkbox" CHECKED id="checkbox3" style="display: none;"><span class="custom checkbox checked"></span> Label for Checkbox</label>
-							</div>
-							<div class="large-4 columns">
-								<label for="customDropdown1">Medium Example</label>
-								<select id="customDropdown1" class="medium">
-									<option DISABLED>This is a dropdown</option>
-									<option>This is another option</option>
-									<option>This is another option too</option>
-									<option>Look, a third option</option>
-								</select>
-							</div>
-						</div>
-					</form> -->
+					<input type="submit" class="purple button radius" value="Daftar" / style="width:100%;">
+					<!--  Form End -->
 				</div>
-                <div class="large-3 pull-9 columns widgets side-widgets">
-					<h3>Side Navigation</h3>
-					<div class="section-container accordion"><!-- Sidebar Navigation -->
-						<section class="section active">
-							<p class="title"><a href="#">Features Default</a></p>
-							<div class="content">
-								<ul class="side-nav">
-									<li><a href="grid.html">Grid</a></li>
-									<li><a href="navigation.html">Navigation</a></li>
-									<li><a href="buttons.html">Buttons</a></li>
-									<li><a class="active" href="forms.html">Forms</a></li>
-									<li><a href="typography.html">Typography</a></li>
-								</ul>
-							</div>
-						</section>
-
-						<section class="section">
-							<p class="title"><a href="#">Javascript Features</a></p>
-							<div class="content">
-								<ul class="side-nav">
-									<li><a href="orbit.html">Orbit slider</a></li>
-									<li><a href="clearing.html">Clearing</a></li>
-									<li><a href="dropdown.html">Dropdown</a></li>
-									<li><a href="joyride.html">Joyride</a></li>
-									<li><a href="magellan.html">Magellan</a></li>
-									<li><a href="reveal.html">Reveal</a></li>
-									<li><a href="section.html">Section</a></li>
-									<li><a href="tooltips.html">Info Tooltips</a></li>
-								</ul>
-							</div>
-						</section>
-					</div><!-- End Sidebar Navigation -->
+        <div class="large-3 pull-9 columns widgets side-widgets">
+					<img src="user/images/rsp-1.png" alt="">
 				</div>
 			</div><!-- End Row -->
         </div>
 	</div><!-- End Main Content -->
 </div>
-<footer class="footer_wrapper">
-	<div class="row footer-part">
-		<div class="large-12 columns">
-			<div class="row">
-				<div class="large-3 columns">
-					<h4 class="footer-title">About Us</h4>
-					<div class="divdott"></div>
-					<img class="botlogo" src="user/images/botlogo.png" alt="" />
-					<div class="footer_part_content">
-						<p>Medico Theme Bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate</p>
-					</div>
-				</div>
-				<div class="large-3 columns">
-					<h4 class="footer-title">Latest Posts</h4>
-					<div class="divdott"></div>
-					<div class="footer_part_content">
-						<ul class="latest-posts">
-							<li>
-								Update: WordPress Theme Submission Requirements
-								<div class="divline"><span></span></div>
-							</li>
-							<li>
-								Envato's Most Wanted - $5,000 Reward for the First 15 Hosting Templates
-								<div class="divline"><span></span></div>
-							</li>
-							<li>
-								Does a well designed thumbnail increase your sales?
-								<div class="divline"><span></span></div>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-
-				<div class="large-3 columns">
-					<h4 class="footer-title">Contact info</h4>
-					<div class="divdott"></div>
-					<div class="footer_part_content">
-						<p>Medico Bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id </p>
-						<ul class="about-info">
-							<li><i class="icon-home"></i><span>lorem ipsum street</span></li>
-							<li><i class="icon-phone"></i><span>+399 (500) 321 9548</span></li>
-							<li><i class="icon-envelope"></i><a href="mailto:info@Medico.com">info@Medico.com</a></li>
-						</ul>
-						<ul class="social-icons">
-						<li><a href="#"><i class="icon-pinterest"></i></a></li>
-						<li><a href="#"><i class="icon-twitter"></i></a></li>
-						<li><a href="#"><i class="icon-facebook"></i></a></li>
-					</ul>
-					</div>
-				</div>
-
-				<div class="large-3 columns">
-					<h4 class="footer-title">Quick Contact</h4>
-					<div class="divdott"></div>
-					<form method="POST" action="#" id="footer-contact-form">
-						<div class="footer_part_content">
-							<div class="row">
-								<div class="large-6 columns">
-									<input type="text" placeholder="Name"  name="name" />
-								</div>
-								<div class="large-6 columns">
-									<input type="text" placeholder="E-mail" name="email" />
-								</div>
-								<div class="large-12 columns">
-									<textarea cols="10" rows="15"  name="message" placeholder="Message"></textarea>
-								</div>
-								<div class="large-12 columns text-right">
-									<input type="submit" class="button" value="Send" name="send" />
-								</div>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="privacy footer_bottom">
-		<div class="footer-part">
-			<div class="row">
-				<div class="large-10 columns copyright">
-					<p >&copy; 2013 Medico Theme, All Rights Reserved.</p>
-				</div>
-				<div class="large-2 columns">
-					<div id="back-to-top"><a href="#top"></a></div>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
+@include('user/footer')
 <!-- carouFredSel plugin -->
 <script type="text/javascript" src="user/plugins/carouFredSel/jquery.carouFredSel-6.2.0-packed.js"></script>
 <script type="text/javascript" src="user/plugins/carouFredSel/helper-plugins/jquery.touchSwipe.min.js"></script>
