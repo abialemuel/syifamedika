@@ -9,6 +9,7 @@ use App\Kelurahan;
 use App\Kecamatan;
 use App\Kabupaten;
 use App\Provinsi;
+use App\Agama;
 
 class PasienController extends Controller
 {
@@ -20,7 +21,8 @@ class PasienController extends Controller
       $kecamatans = Kecamatan::all();
       $kabupatens = Kabupaten::all();
       $provinsis = Provinsi::all();
-      return view('user.user_register', compact('kelurahans', 'kecamatans', 'kabupatens', 'provinsis'));
+      $agamas = Agama::all();
+      return view('user.user_register', compact('kelurahans', 'kecamatans', 'kabupatens', 'provinsis', 'agamas'));
     }
 
     //create new pasien
