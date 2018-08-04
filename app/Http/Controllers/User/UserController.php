@@ -12,6 +12,10 @@ use App\Kecamatan;
 use App\Kabupaten;
 use App\Provinsi;
 use App\Agama;
+use App\Klinik;
+use App\Pembiayaan;
+use App\Artikel;
+
 
 class UserController extends Controller
 {
@@ -19,7 +23,9 @@ class UserController extends Controller
     public function index()
     {
         $dokters = Dokter::all();
-        return view('user.index', compact('dokters'));
+        $kliniks = Klinik::all();
+        $pembiayaans = Pembiayaan::all();
+        return view('user.index', compact('dokters','kliniks','pembiayaans'));
     }
 
     public function dokter()
@@ -27,6 +33,12 @@ class UserController extends Controller
       $dokters = Dokter::all();
       $spesialis = Spesialis::all();
       return view('user.dokter',compact('dokters','spesialis'));
+    }
+
+    public function infosehat()
+    {
+      $artikels = Artikel::all();
+      return view('user.infosehat',compact('artikels'));
     }
 
     //return to form create pasien

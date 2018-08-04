@@ -40,7 +40,7 @@
 <div class="slider-wrapper theme-default">
     <div id="slider" class="nivoSlider">
 		<img src="user/images/slider/1.jpg" alt="" title="#gambar RS" />
-		<a href=""><img src="user/images/slider/2.jpg" alt="" title="#gambar RS"  /></a>
+		<img src="user/images/slider/2.jpg" alt="" title="#gambar RS" />
 		<img src="user/images/slider/3.jpg" alt="" title="#gambar RS" />
 	</div>
 	<div id="caption1" class="nivo-html-caption">
@@ -72,21 +72,23 @@
                         <div class="row">
                             <div class="large-3 columns">
                                 <input type="text" placeholder="No. Rekam Medis" name="no_rekam_medis" />
-                                <input type="text" placeholder="Nama Pasien" name="name" />
+                                <input type="text" placeholder="No. Handphone" name="no_handphone" />
                             </div>
                             <div class="large-2 columns">
 
 															<select class="choose_clinic">
-																<option value="volvo">Clinic</option>
-																<option value="mercedes">Mercedes</option>
-																<option value="saab">Saab</option>
-																<option value="audi">Audi</option>
+																<option selected disabled>Pilih Klinik</option>
+																@foreach ($kliniks as $dt=>$klinik)
+																<option value="{{ $klinik->id_poli }}">{{ $klinik->nama_poli }}</option>
+																@endforeach
 															</select>
 															<select class="choose_doctor">
-																<option value="volvo">doctor</option>
-																<option value="mercedes">Mercedes</option>
-																<option value="saab">Saab</option>
-																<option value="audi">Audi</option>
+																<option selected disabled>Pilih Dokter</option>
+																@foreach ($dokters as $dt=>$dokter)
+																<option value="{{ $dokter->id_dokter }}">{{ $dokter->nama_dokter }}</option>
+
+																@endforeach
+
 															</select>
                             </div>
                             <div class="large-4 columns">
@@ -103,10 +105,11 @@
 																</div>
 															  <div class="large-6 columns">
 																	<select class="choose_payment_method">
-																		<option value="volvo">Cara Bayar</option>
-																		<option value="mercedes">Mercedes</option>
-																		<option value="saab">Saab</option>
-																		<option value="audi">Audi</option>
+																		<option selected disabled>Pilih Pembiayaan</option>
+																		@foreach ($pembiayaans as $dt=>$pembiayaan)
+																		<option value="{{ $pembiayaan->id_pembiayaan }}">{{ $pembiayaan->nama_pembiayaan }}</option>
+
+																		@endforeach
 																	</select>
 																</div>
 															</div>
@@ -216,7 +219,7 @@
 					@foreach ($dokters as $dt=>$dokter)
 					<li>
 						<div class="view view-two">
-							<img src="user/images/demo/doctors/1.jpg" alt="" />
+							<img src="{{$dokter->foto}}" alt="" />
 							<div class="mask">
 								<h3>{{ $dokter->spesialis['nama_spesialis'] }}</h3>
 							</div>

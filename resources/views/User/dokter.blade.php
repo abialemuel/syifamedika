@@ -64,10 +64,10 @@
 							<li data-id="{{ $dt }}" data-type="Spesialis">
 						@endif
 							<div class="view view-one">
-								<img src="user/images/demo/portfolio/1.jpg" alt="" />
+								<img src="{{$dokter->foto}}" alt="" />
 								<div class="mask">
 									{{-- <p>Researchers can identify modifications to the chemical structure.</p> --}}
-									<a href="user/images/demo/slider/1.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
+									<a href="{{$dokter->foto}}" class="picon-zoom" rel="prettyPhoto" title="{{$dokter->nama_dokter}}">
 										<i class="icon-zoom-in icon-large"></i>
 									</a>
 								</div>

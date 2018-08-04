@@ -17,9 +17,7 @@ Route::namespace('user')->group(function () {
     Route::get('/', 'UserController@index');
     Route::get('/dokter', 'UserController@dokter');
     Route::get('/form', 'UserController@form_pasien');
-    Route::get('/infosehat', function () {
-        return view('user.blogs');
-    });
+    Route::get('/infosehat', 'UserController@infosehat');
 
     Route::get('/profilrs', function () {
         return view('user.infors');

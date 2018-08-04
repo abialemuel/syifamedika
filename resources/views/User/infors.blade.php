@@ -100,9 +100,9 @@
 					<h3>Statistik</h3>
 					<div class="divider"><span></span></div>
 					<p class="client-statistics">Pasien Puas:</p>
-					<div class="figures">6549</div>
+					<div class="figures">-</div>
 					<p class="client-statistics">Operasi Berhasil</p>
-					<div class="figures">1329</div>
+					<div class="figures">-</div>
 				</div>
 				<div class="large-6 columns">
 					<div class="title-block">
@@ -115,22 +115,11 @@
 							<li>
 								<div class="testimonial-content">
 									<p>
-										Text normalization is an important aspect of successful information retrieval from medical documents such as clinical
-										notes, radiology reports and discharge summaries. In the medical domain, a significant part of the general problem of
-										text normalization is abbreviation and acronym disambiguation. Numerous abbreviations are used routinely throughout
-										such texts and knowing their meaning is critical to data retrieval from the document.
+										-
 									</p>
 								</div>
 								<span class="testimonial-divider"></span>
-								<div class="testimonial-meta"><cite>John Smith</cite> - Head of marketing</div>
-
-							</li>
-							<li>
-								<div class="testimonial-content">
-									<p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. </p>
-								</div>
-								<span class="testimonial-divider"></span>
-								<div class="testimonial-meta"><cite>Faton Avdiu</cite> - Web Designer</div>
+								<div class="testimonial-meta"><cite>Pasien</cite> - Title</div>
 
 							</li>
 						</ul>
