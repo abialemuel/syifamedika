@@ -64,7 +64,7 @@
 		<div class="appointment-block grey-bg">
             <div class="row">
                 <div class="large-2 columns red">
-                    <a href="pendaftaranbaru">Registrasi <br>Pasien Baru</a>
+                    <a href="form">Registrasi <br>Pasien Baru</a>
                     &nbsp;<!-- Put appointemnt label here -->
                 </div>
                 <div class="large-10 columns">

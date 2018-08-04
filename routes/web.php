@@ -16,7 +16,7 @@ Route::namespace('user')->group(function () {
     // Controllers Within The "App\Http\Controllers\user" Namespace
     Route::get('/', 'UserController@index');
     Route::get('/dokter', 'UserController@dokter');
-    Route::get('/forms', 'PasienController@create');
+    Route::get('/form', 'UserController@form_pasien');
     Route::get('/infosehat', function () {
         return view('user.blogs');
     });
