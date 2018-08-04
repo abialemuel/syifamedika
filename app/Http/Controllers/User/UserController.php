@@ -7,10 +7,16 @@ use App\Http\Controllers\Controller;
 use App\Dokter;
 use App\Spesialis;
 
-class DokterController extends Controller
+class UserController extends Controller
 {
     //
     public function index()
+    {
+        $dokters = Dokter::all();
+        return view('user.index', compact('dokters'));
+    }
+
+    public function dokter()
     {
       $dokters = Dokter::all();
       $spesialis = Spesialis::all();

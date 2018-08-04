@@ -34,7 +34,7 @@
 			</div>
 			<div class="large-6 columns">
 				<ul class="breadcrumbs right">
-					<li>Direktori: </li>
+					<li>Posisi Anda: </li>
 					<li><a href="index.html">Beranda</a></li>
 					<li><a href="portfolio.html">Rawat Inap</a></li>
 				</ul>
