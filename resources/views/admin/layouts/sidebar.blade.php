@@ -25,12 +25,13 @@
         <!-- Add icons to the links using the .nav-icon class
              with font-awesome or any other icon font library -->
         <li class="nav-header">MAIN MENU</li>
-          <li class="nav-item">
+        {{-- dashboard --}}
+          {{-- <li class="nav-item">
             <a href="{{ route('admin.dashboard') }}" class="nav-link">
               <i class="nav-icon fa fa-dashboard"></i>
               <p>Dashboard</p>
             </a>
-          </li>
+          </li> --}}
         <li class="nav-item has-treeview menu">
           <a href="#" class="nav-link">
             <i class="nav-icon fa fa-user-md"></i>
@@ -55,7 +56,8 @@
 
           </ul>
         </li>
-        <li class="nav-item has-treeview menu">
+        {{-- pasien  --}}
+        {{-- <li class="nav-item has-treeview menu">
           <a href="#" class="nav-link">
             <i class="nav-icon fa fa-user"></i>
             <p>
@@ -72,7 +74,7 @@
             </li>
 
           </ul>
-        </li>
+        </li> --}}
         <li class="nav-item has-treeview menu">
           <a href="#" class="nav-link">
             <i class="nav-icon fa fa-newspaper-o"></i>
