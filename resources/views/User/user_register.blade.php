@@ -74,7 +74,7 @@
 								</div>
 								<div class="large-6 columns">
 									<label>Nomor ID (Nomor KTP, Nomor SIM)</label>
-									<input name="no_kartuid" type="text" placeholder="Isikan dengan nama pasien">
+									<input name="no_kartuid" type="text" placeholder="Isikan dengan nama pasien" required>
 								</div>
 							</div>
 							<div class="row">
