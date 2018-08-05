@@ -18,7 +18,7 @@ class FasilitasKamar extends Migration
             $table->increments('id');
             $table->string('id_jeniskamar');
             $table->string('fasilitas');
-            $table->boolean('status')
+            $table->boolean('status');
             $table->boolean('void');
         });
     }
