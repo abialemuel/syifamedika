@@ -41,10 +41,9 @@
 			</div>
 			<div class="large-6 columns">
 				<ul class="breadcrumbs right">
-					<li>You are here: </li>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#">Features</a></li>
-					<li><span>Typography</span></li>
+					<li>Posisi Anda: </li>
+					<li><a href="index.html">Beranda</a></li>
+					<li><a href="#">Info BPJS</a></li>
 				</ul>
 			</div>
 		</div>
