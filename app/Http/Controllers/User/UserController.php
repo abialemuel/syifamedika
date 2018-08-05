@@ -16,6 +16,7 @@ use App\Klinik;
 use App\Pembiayaan;
 use App\Artikel;
 use App\Status;
+use DB;
 
 
 class UserController extends Controller
@@ -56,10 +57,11 @@ class UserController extends Controller
 
     public function form_pasien_store(Request $request)
     {
-      $dt = Pasien::all()->last();
-      $lastid = str_pad((ltrim($dt['id'],'0') + 1),6,"0", STR_PAD_LEFT);
+      $dt = DB::table('dm_pasien')->orderBy('id_pasien', 'desc')->first();
+      $trim = (int)(ltrim($dt->id_pasien,'0')) + 1;
+      $lastid = str_pad($trim,6,"0", STR_PAD_LEFT);
       $pasien = new Pasien;
-      $pasien['id_pasien'] = 111111;
+      $pasien['id_pasien'] = $lastid;
       $pasien['awalan'] = $request['awalan'];
       $pasien['nama_pasien'] = $request['nama_pasien'];
       $pasien['kartu_id'] = $request['kartu_id'];
