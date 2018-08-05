@@ -130,10 +130,12 @@
 						</article>
 					</div>
 				</div>
+			</div>
+		</div>
 
 				<!--  Klinik Jantung dan Anak-->
 
-				<div class="row">
+				<div class="row" id="jantung_anak">
 					<div class="large-12 columns">
 						<div class="row">
 							<div class="large-6 columns">
@@ -167,8 +169,10 @@
 								</article>
 							</div>
 						</div>
+					</div>
+				</div>
 
-						<div class="row">
+						<div class="row" id="bedah_syaraf">
 							<div class="large-12 columns">
 								<div class="row">
 									<div class="large-6 columns">
@@ -241,8 +245,10 @@
 										</article>
 									</div>
 								</div>
+							</div>
+						</div>
 
-								<div class="row">
+								<div class="row" id="rehab_dalam">
 									<div class="large-12 columns">
 										<div class="row">
 											<div class="large-6 columns">
@@ -372,8 +378,10 @@
 												</article>
 											</div>
 										</div>
+									</div>
+								</div>
 
-										<div class="row">
+										<div class="row" id="bidan_umum">
 											<div class="large-12 columns">
 												<div class="row">
 													<div class="large-6 columns">
@@ -412,6 +420,8 @@
 														</article>
 													</div>
 												</div>
+											</div>
+										</div>
 
 				<div class="pagination-wrapper">
 					<ul class="pagination">
@@ -426,6 +436,7 @@
 		</div>
 	</div>
 </div>
+
 
 @include('user/footer')
 

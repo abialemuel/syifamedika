@@ -22,7 +22,7 @@ class UserController extends Controller
     //
     public function index()
     {
-        $dokters = Dokter::all();
+        $dokters = Dokter::orderBy('id_dokter', 'desc')->take(5)->get();
         $kliniks = Klinik::all();
         $pembiayaans = Pembiayaan::all();
         return view('user.index', compact('dokters','kliniks','pembiayaans'));

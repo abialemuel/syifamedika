@@ -196,7 +196,7 @@
 				</div>
 
 				<p>Dok. Pribadi.</p>
-					<a href="#" class="button aboutrs">
+					<a href="/profilrs" class="button aboutrs">
 							Tentang RS Syifa
 					</a>
 				</div>

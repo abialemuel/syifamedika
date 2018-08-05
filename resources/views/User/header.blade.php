@@ -26,21 +26,21 @@
             </li>
             <li class="has-dropdown"><a href="#">Rawat Jalan</a>
               <ul class="dropdown">
-              <li><a href="/rawatjalan">Klinik Mata</a></li>
+								<li><a href="/rawatjalan">Klinik Mata</a></li>
               <li><a href="/rawatjalan">Klinik Gigi</a></li>
-              <li><a href="/rawatjalan">Klinik Jantung & Pembuluh Darah</a></li>
-              <li><a href="/rawatjalan">Klinik Anak</a></li>
-              <li><a href="/rawatjalan">Klinik Bedah</a></li>
-              <li><a href="/rawatjalan">Klinik Syaraf</a></li>
-              <li><a href="/rawatjalan">Klinik Rehabilitasi Medis</a></li>
-              <li><a href="/rawatjalan">Klinik Penyakit Dalam</a></li>
-              <li><a href="/rawatjalan">Klinik Kebidanan dan Kandungan</a></li>
-              <li><a href="/rawatjalan">Klinik Umum</a></li>
+              <li><a href="/rawatjalan#jantung_anak">Klinik Jantung & Pembuluh Darah</a></li>
+              <li><a href="/rawatjalan#jantung_anak">Klinik Anak</a></li>
+              <li><a href="/rawatjalan#bedah_syaraf">Klinik Bedah</a></li>
+              <li><a href="/rawatjalan#bedah_syaraf">Klinik Syaraf</a></li>
+              <li><a href="/rawatjalan#rehab_dalam">Klinik Rehabilitasi Medis</a></li>
+              <li><a href="/rawatjalan#rehab_dalam">Klinik Penyakit Dalam</a></li>
+              <li><a href="/rawatjalan#bidan_umum">Klinik Kebidanan dan Kandungan</a></li>
+              <li><a href="/rawatjalan#bidan_umum">Klinik Umum</a></li>
               </ul>
             </li>
             <li class=""><a href="rawatinap">Rawat Inap</a></li>
             <li><a href="layananbpjs">Layanan BPJS</a></li>
-						<li><a href="#" data-reveal-id="emergModal" class="">Emergency</a></li>
+						<li><a href="#" data-reveal-id="emergModal" style="font-weight:800;">Darurat</a></li>
             </ul>
           <!-- End Left Nav Section -->
 
