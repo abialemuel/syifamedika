@@ -15,7 +15,13 @@
         <img src="/admin/dist/img/user-rsu.jpeg" class="img-circle elevation-2" alt="User Image">
       </div>
       <div class="info">
-        <a href="#" class="d-block">{{ Auth::user()->karyawan->nama_karyawan }}</a>
+        <a href="#" class="d-block">
+          @if (empty(Auth::user()->id_karyawan))
+            {{ Auth::user()->id_admin }}
+          @else
+            {{ Auth::user()->karyawan->nama_karyawan }}
+          @endif
+        </a>
       </div>
     </div>
 
