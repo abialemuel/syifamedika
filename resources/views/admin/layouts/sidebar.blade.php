@@ -19,7 +19,9 @@
           @if (empty(Auth::user()->id_karyawan))
             {{ Auth::user()->id_admin }}
           @else
-            {{ Auth::user()->karyawan->nama_karyawan }}
+            @if (!empty(Auth::user()->karyawan->nama_karyawan))
+              {{ Auth::user()->karyawan->nama_karyawan }}
+            @endif
           @endif
         </a>
       </div>
