@@ -84,6 +84,7 @@ class UserController extends Controller
       $pasien['kewarganegaraan'] = $request['kewarganegaraan'];
       $pasien['pekerjaan'] = $request['pekerjaan'];
       $pasien->save();
+      Mail::to($pasien['email'])->send(new UserRegist($pasien));
       $msg = "Terimakasih ". $request['awalan'] .". ". $request['nama_pasien'] . " telah melakukan pendaftaran. Silahkan cek email anda";
       return back()->with('message',$msg);
     }
