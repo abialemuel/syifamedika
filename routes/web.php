@@ -16,7 +16,8 @@ Route::namespace('user')->group(function () {
     // Controllers Within The "App\Http\Controllers\user" Namespace
     Route::get('/', 'UserController@index');
     Route::get('/dokter', 'UserController@dokter');
-    Route::get('/form', 'UserController@form_pasien');
+    Route::get('/form', 'UserController@form_pasien')->name('form.page');
+    Route::post('/form', 'UserController@form_pasien_store');
     Route::get('/infosehat', function () {
         return view('user.blogs');
     });
@@ -60,7 +61,7 @@ Route::prefix('private')->group(function () {
             Route::post('/tambah', 'DokterController@store')->name('dokter.store');
             Route::get('/{id_dokter}/edit', 'DokterController@edit')->name('dokter.edit');
             Route::post('/{id_dokter}/edit', 'DokterController@update');
-            Route::get('/{id_dokter}/hapus', 'DokterController@destroy')->name('dokter.edit');
+            Route::get('/{id_dokter}/hapus', 'DokterController@destroy');
         });
         Route::prefix('artikel')->group(function () {
             // Router for artikel
@@ -69,7 +70,7 @@ Route::prefix('private')->group(function () {
             Route::post('/tambah', 'ArtikelController@store')->name('artikel.store');
             Route::get('/{id_artikel}/edit', 'ArtikelController@edit')->name('artikel.edit');
             Route::post('/{id_artikel}/edit', 'ArtikelController@update');
-            Route::get('/{id_artikel}/hapus', 'ArtikelController@destroy')->name('artikel.edit');
+            Route::get('/{id_artikel}/hapus', 'ArtikelController@destroy');
         });
 
     });
