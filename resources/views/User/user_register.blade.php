@@ -54,7 +54,13 @@
 			<div class="row"><!-- Row -->
 				<div class="large-9 push-3 columns">
 					<h3>Formulir Pendaftaran Pasien Baru RSU Syifa Medika</h3>
-          <form method="POST" action="{{ url('/form') }}" class="custom">
+					@if (session()->has('message'))
+						<div data-alert class="alert-box success">
+							{{ session()->get('message') }}
+							<a href="" class="close">&times;</a>
+						</div>
+					@endif
+					<form method="POST" action="{{ url('/form') }}" class="custom">
 						@csrf
 						<fieldset>
 							<legend>Data Pasien</legend>

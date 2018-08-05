@@ -16,8 +16,9 @@ use App\Klinik;
 use App\Pembiayaan;
 use App\Artikel;
 use App\Status;
+use App\Mail\UserRegist;
 use DB;
-
+use Mail;
 
 class UserController extends Controller
 {
@@ -83,6 +84,7 @@ class UserController extends Controller
       $pasien['kewarganegaraan'] = $request['kewarganegaraan'];
       $pasien['pekerjaan'] = $request['pekerjaan'];
       $pasien->save();
-      return redirect(route('form.page'));
+      $msg = "Terimakasih ". $request['awalan'] .". ". $request['nama_pasien'] . " telah melakukan pendaftaran. Silahkan cek email anda";
+      return back()->with('message',$msg);
     }
 }
