@@ -21,6 +21,8 @@
           @else
             @if (!empty(Auth::user()->karyawan->nama_karyawan))
               {{ Auth::user()->karyawan->nama_karyawan }}
+            @else
+              {{ Auth::user()->id_admin }}
             @endif
           @endif
         </a>
