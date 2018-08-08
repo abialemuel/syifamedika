@@ -63,17 +63,17 @@
 
 		<div class="appointment-block grey-bg">
             <div class="row">
+							@if (session()->has('message'))
+								<div data-alert class="alert-box success">
+									{{ session()->get('message') }}
+									<a href="" class="close">&times;</a>
+								</div>
+							@endif
                 <div class="large-2 columns red">
                     <a href="form">Registrasi <br>Pasien Baru</a>
                     &nbsp;<!-- Put appointemnt label here -->
                 </div>
                 <div class="large-10 columns">
-									@if (session()->has('message'))
-										<div data-alert class="alert-box success">
-											{{ session()->get('message') }}
-											<a href="" class="close">&times;</a>
-										</div>
-									@endif
                     <form method="POST" action="/reservasi" id="appointment-contact-form">
 											@csrf
                         <div class="row">
