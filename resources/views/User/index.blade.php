@@ -68,21 +68,28 @@
                     &nbsp;<!-- Put appointemnt label here -->
                 </div>
                 <div class="large-10 columns">
-                    <form method="POST" action="#" id="appointment-contact-form">
+									@if (session()->has('message'))
+										<div data-alert class="alert-box success">
+											{{ session()->get('message') }}
+											<a href="" class="close">&times;</a>
+										</div>
+									@endif
+                    <form method="POST" action="/reservasi" id="appointment-contact-form">
+											@csrf
                         <div class="row">
                             <div class="large-3 columns">
-                                <input type="text" placeholder="No. Rekam Medis" name="no_rekam_medis" />
-                                <input type="text" placeholder="No. Handphone" name="no_handphone" />
+                                <input name="id_pasien" type="text" placeholder="No. Rekam Medis" name="no_rekam_medis" required/>
+                                {{-- <input  type="text" placeholder="No. Handphone" name="no_handphone" /> --}}
                             </div>
                             <div class="large-2 columns">
 
-															<select class="choose_clinic">
+															<select name="id_poli" class="choose_clinic">
 																<option selected disabled>Pilih Klinik</option>
 																@foreach ($kliniks as $dt=>$klinik)
 																<option value="{{ $klinik->id_poli }}">{{ $klinik->nama_poli }}</option>
 																@endforeach
 															</select>
-															<select class="choose_doctor">
+															<select name="id_dokter" class="choose_doctor">
 																<option selected disabled>Pilih Dokter</option>
 																@foreach ($dokters as $dt=>$dokter)
 																<option value="{{ $dokter->id_dokter }}">{{ $dokter->nama_dokter }}</option>
@@ -92,7 +99,7 @@
 															</select>
                             </div>
                             <div class="large-4 columns">
-															<input class="datepicker" type="text" placeholder="Pilih Tanggal"  name="name" />
+															<input name="tanggal" class="datepicker" type="text" placeholder="Pilih Tanggal"  name="name" />
 
 															<div class="row">
 															  <div class="large-6 columns">
@@ -104,11 +111,10 @@
 																	</select>
 																</div>
 															  <div class="large-6 columns">
-																	<select class="choose_payment_method">
-																		<option selected disabled>Pilih Pembiayaan</option>
+																	<select name="id_pembiayaan" class="choose_payment_method" required>
+																		<option value="" disabled selected>Pilih Pembiayaan</option>
 																		@foreach ($pembiayaans as $dt=>$pembiayaan)
 																		<option value="{{ $pembiayaan->id_pembiayaan }}">{{ $pembiayaan->nama_pembiayaan }}</option>
-
 																		@endforeach
 																	</select>
 																</div>

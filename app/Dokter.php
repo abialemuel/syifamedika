@@ -23,4 +23,9 @@ class Dokter extends Model
     {
       return $this->belongsTo('App\Status','status','no');
     }
+
+    public function reservasi()
+    {
+      return $this->hasMany('App\RjPoli');
+    }
 }

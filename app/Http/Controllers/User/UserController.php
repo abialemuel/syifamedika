@@ -16,7 +16,9 @@ use App\Klinik;
 use App\Pembiayaan;
 use App\Artikel;
 use App\Status;
+use App\RjPoli;
 use App\Mail\UserRegist;
+use App\Mail\UserReserv;
 use DB;
 use Mail;
 
@@ -42,6 +44,25 @@ class UserController extends Controller
     {
       $artikels = Artikel::all();
       return view('user.infosehat',compact('artikels'));
+    }
+
+    public function reservasi(Request $request)
+    {
+      $dt = DB::table('rj_poli')->orderBy('no_invoicepoli', 'desc')->first();
+      $rmv = substr($dt->no_invoicepoli, 8,6);
+      $trim = (int)(ltrim($rmv,'0')) + 1;
+      $lastid = "RJ". date("ymd") .str_pad($trim,6,"0", STR_PAD_LEFT);
+      $rjpoli = new RjPoli;
+      $rjpoli['no_invoicepoli'] = $lastid;
+      $rjpoli['tanggal'] = $request['tanggal'];
+      $rjpoli['id_pasien'] = $request['id_pasien'];
+      $rjpoli['id_poli'] = $request['id_poli'];
+      $rjpoli['id_dokter'] = $request['id_dokter'];
+      $rjpoli['id_pembiayaan'] = $request['id_pembiayaan'];
+      $rjpoli->save();
+      Mail::to($rjpoli->pasien['email'])->send(new UserReserv($rjpoli));
+      $msg = "Terimakasih " . $rjpoli->pasien['nama_pasien'] . " telah melakukan reservasi. Silahkan cek email anda";
+      return back()->with('message',$msg);
     }
 
     //return to form create pasien

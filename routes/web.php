@@ -14,11 +14,12 @@
 // Route for users (controller)
 Route::namespace('user')->group(function () {
     // Controllers Within The "App\Http\Controllers\user" Namespace
-    Route::get('/', 'UserController@index');
+    Route::get('/', 'UserController@index')->name('user.index');
     Route::get('/dokter', 'UserController@dokter');
     Route::get('/form', 'UserController@form_pasien')->name('form.page');
     Route::post('/form', 'UserController@form_pasien_store');
     Route::get('/infosehat', 'UserController@infosehat');
+    Route::post('/reservasi', 'UserController@reservasi');
 
     Route::get('/profilrs', function () {
         return view('user.infors');
