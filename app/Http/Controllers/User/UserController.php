@@ -48,6 +48,12 @@ class UserController extends Controller
 
     public function reservasi(Request $request)
     {
+      $pasien = RjPoli::where('id_pasien', '=', $request['id_pasien'])->first();
+      if ($pasien == null) {
+        // code...
+        $msg = "Anda belum terdaftar, mohon lakukan registrasi terlebih dahulu.";
+        return back()->with('error',$msg);
+      }
       $dt = DB::table('rj_poli')->orderBy('no_invoicepoli', 'desc')->first();
       $rmv = substr($dt->no_invoicepoli, 8,6);
       $trim = (int)(ltrim($rmv,'0')) + 1;

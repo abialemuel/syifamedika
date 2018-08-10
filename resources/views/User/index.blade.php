@@ -63,12 +63,18 @@
 
 		<div class="appointment-block grey-bg">
             <div class="row">
-							@if (session()->has('message'))
-								<div data-alert class="alert-box success">
-									{{ session()->get('message') }}
-									<a href="" class="close">&times;</a>
-								</div>
-							@endif
+								@if (session()->has('message'))
+									<div data-alert class="alert-box success round">
+										{{ session()->get('message') }}
+										<a href="" class="close">&times;</a>
+									</div>
+								@endif
+								@if (session()->has('error'))
+									<div data-alert class="alert-box alert round">
+										{{ session()->get('error') }}
+										<a href="" class="close">&times;</a>
+									</div>
+								@endif
                 <div class="large-2 columns red">
                     <a href="form">Registrasi <br>Pasien Baru</a>
                     &nbsp;<!-- Put appointemnt label here -->
@@ -77,11 +83,10 @@
                     <form method="POST" action="/reservasi" id="appointment-contact-form">
 											@csrf
                         <div class="row">
-                            <div class="large-3 columns">
-                                <input name="id_pasien" type="text" placeholder="No. Rekam Medis" name="no_rekam_medis" required/>
-                                {{-- <input  type="text" placeholder="No. Handphone" name="no_handphone" /> --}}
-                            </div>
                             <div class="large-2 columns">
+                                <input name="id_pasien" type="text" placeholder="No. Rekam Medis" name="no_rekam_medis" required/>
+                            </div>
+                            <div class="large-3 columns">
 
 															<select name="id_poli" class="choose_clinic">
 																<option selected disabled>Pilih Klinik</option>
@@ -100,25 +105,12 @@
                             </div>
                             <div class="large-4 columns">
 															<input name="tanggal" class="datepicker" type="text" placeholder="Pilih Tanggal"  name="name" />
-
-															<div class="row">
-															  <div class="large-6 columns">
-																	<select class="choose_schedule">
-																		<option value="volvo">Pilih Jadwal</option>
-																		<option value="mercedes">Mercedes</option>
-																		<option value="saab">Saab</option>
-																		<option value="audi">Audi</option>
-																	</select>
-																</div>
-															  <div class="large-6 columns">
-																	<select name="id_pembiayaan" class="choose_payment_method" required>
-																		<option value="" disabled selected>Pilih Pembiayaan</option>
-																		@foreach ($pembiayaans as $dt=>$pembiayaan)
-																		<option value="{{ $pembiayaan->id_pembiayaan }}">{{ $pembiayaan->nama_pembiayaan }}</option>
-																		@endforeach
-																	</select>
-																</div>
-															</div>
+																<select name="id_pembiayaan" class="choose_payment_method" required>
+																	<option value="" disabled selected>Pilih Pembiayaan</option>
+																	@foreach ($pembiayaans as $dt=>$pembiayaan)
+																	<option value="{{ $pembiayaan->id_pembiayaan }}">{{ $pembiayaan->nama_pembiayaan }}</option>
+																	@endforeach
+																</select>
                             </div>
                             <div class="large-3 columns">
                                 <input type="submit" class="purple button radius" value="Reservasi" / style="width:100%;">

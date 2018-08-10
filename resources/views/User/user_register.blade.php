@@ -54,9 +54,15 @@
 			<div class="row"><!-- Row -->
 				<div class="large-9 push-3 columns">
 					<h3>Formulir Pendaftaran Pasien Baru RSU Syifa Medika</h3>
-					@if (session()->has('message'))
-						<div data-alert class="alert-box success">
-							{{ session()->get('message') }}
+					@if (session()->has('message') or session()->has('error'))
+						{{ $box = 'success' }}
+						{{ $session = 'message' }}
+						@if (session()->has('error'))
+							{{ $box = 'alert' }}
+							{{ $session = 'error' }}
+						@endif
+						<div data-alert class="alert-box {{ $box }} round">
+							{{ session()->get($session) }}
 							<a href="" class="close">&times;</a>
 						</div>
 					@endif
