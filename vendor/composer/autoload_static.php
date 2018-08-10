@@ -348,6 +348,7 @@ class ComposerStaticInite926ebb4df8fff70df3f6caf5b80e5f1
     );
 
     public static $classMap = array (
+        'AdminSeeder' => __DIR__ . '/../..' . '/database/seeds/AdminSeeder.php',
         'App\\Admin' => __DIR__ . '/../..' . '/app/Admin.php',
         'App\\Agama' => __DIR__ . '/../..' . '/app/Agama.php',
         'App\\Artikel' => __DIR__ . '/../..' . '/app/Artikel.php',
