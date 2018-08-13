@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class FasilitasKamar extends Migration
+class JadwalDokter extends Migration
 {
     /**
      * Run the migrations.
@@ -14,11 +14,14 @@ class FasilitasKamar extends Migration
     public function up()
     {
         //
-        Schema::create('fasilitas_kamar', function (Blueprint $table) {
+        Schema::create('jadwal_dokter', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('id_jeniskamar');
-            $table->string('fasilitas');
-            $table->boolean('status');
+            $table->string('id_poli');
+            $table->string('id_dokter');
+            $table->date('hari');
+            $table->time('mulaijam');
+            $table->time('selesaijam');
+            $table->text('txtjam');
             $table->boolean('void');
         });
     }
@@ -32,6 +35,5 @@ class FasilitasKamar extends Migration
     {
         //
         Schema::dropIfExists('fasilitas_kamar');
-
     }
 }

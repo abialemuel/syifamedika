@@ -33,6 +33,16 @@
 <body onload="initialize()">
 
 @include('user/header')
+<script type="text/javascript">
+	document.getElementById("beranda").classList.remove("active")
+	document.getElementById("profil").classList.add("active")
+	document.getElementById("rj").classList.remove("active")
+	document.getElementById("bpjs").classList.remove("active")
+	document.getElementById("ri").classList.remove("active")
+	document.getElementById("info").classList.remove("active")
+	document.getElementById("jadwal").classList.remove("active")
+	document.getElementById("kerjasama").classList.remove("active")
+</script>
 	<!-- Start Main Slider -->
 
 	<!-- End Main Slider -->
@@ -92,7 +102,7 @@
 
 <img src="user/images/main1.jpg" alt="post-img" class="cs-bg" style="margin-top: 25px;">
 <!-- Edit : Colouring agar senada dan berikan teks sehat adalah berkah -->
-<div class="main-wrapper">
+<!-- <div class="main-wrapper">
 	<div class="row">
 		<div class="large-12 columns service-block">
 			<div class="row">
@@ -131,7 +141,9 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
+
+
 
 <div class="row" style="margin-top: 80px;">
 	<div class="large-12 columns">
@@ -139,34 +151,94 @@
 			<h1><strong>Kerjasama Kesehatan</strong> 17 Perusahaan</h1>
 		</div>
 		<div class="divider"><span></span></div>
-		<div class="work_slide">
+		<div class="work_slide" id="kerjasama">
 			<ul id="work_slide">
 				<li>
 					<div class="view view-two">
-						<img src="user/images/Kerjasama/575ea58b6e29f350c3852ff58.png" alt="" />
+						<img src="user/images/Kerjasama/1.jpg" alt="" />
 					</div>
 				</li>
 				<li>
 					<div class="view view-two">
-						<img src="user/images/kerjasama/1-1.jpg" alt="" />
+						<img src="user/images/kerjasama/2.png" alt="" />
 					</div>
 				</li>
 				 <li>
 					<div class="view view-two">
-						<img src="user/images/kerjasama/1492411891.png" alt="" />
+						<img src="user/images/kerjasama/3.png" alt="" />
 					</div>
 				</li>
 				<li>
 					<div class="view view-two">
-						<img src="user/images/demo/doctors/4.jpg" alt="" />
+						<img src="user/images/kerjasama/4.png" alt="" />
 					</div>
 				</li>
-				 <li>
+			 	<li>
 					<div class="view view-two">
-						<img src="user/images/demo/doctors/5.jpg" alt="" />
+						<img src="user/images/kerjasama/5.png" alt="" />
 					</div>
 				</li>
-			</ul>
+				<li>
+				 <div class="view view-two">
+					 <img src="user/images/kerjasama/6.jpg" alt="" />
+				 </div>
+			 </li>
+			 <li>
+				<div class="view view-two">
+					<img src="user/images/kerjasama/7.jpg" alt="" />
+				</div>
+			</li>
+			<li>
+				<div class="view view-two">
+					<img src="user/images/kerjasama/8.png" alt="" />
+				</div>
+			</li>
+			<li>
+			 <div class="view view-two">
+				 <img src="user/images/kerjasama/9.jpg" alt="" />
+			 </div>
+		 </li>
+		 <li>
+			 <div class="view view-two">
+				 <img src="user/images/kerjasama/10.png" alt="" />
+			 </div>
+		 </li>
+		 <li>
+			 <div class="view view-two">
+				 <img src="user/images/kerjasama/11.png" alt="" />
+			 </div>
+		 </li>
+		 <li>
+			<div class="view view-two">
+				<img src="user/images/kerjasama/12.jpg" alt="" />
+			</div>
+		</li>
+		 <li>
+			 <div class="view view-two">
+				 <img src="user/images/kerjasama/13.png" alt="" />
+			 </div>
+		 </li>
+		 <li>
+			 <div class="view view-two">
+				 <img src="user/images/kerjasama/14.png" alt="" />
+			 </div>
+		 </li>
+		 <li>
+			 <div class="view view-two">
+				 <img src="user/images/kerjasama/15.png" alt="" />
+			 </div>
+		 </li>
+		 <li>
+			<div class="view view-two">
+				<img src="user/images/kerjasama/16.jpg" alt="" />
+			</div>
+		</li>
+		<li>
+		 <div class="view view-two">
+			 <img src="user/images/kerjasama/17.jpg" alt="" />
+		 </div>
+	 </li>
+	</ul>
 
 			<div class="clearfix"></div>
 			<a class="prev" id="slide_prev" href="#"><img src="user/images/arrow_left.png" alt="Previous" /></a>
@@ -197,97 +269,7 @@
 	</div>
 </div>
 
-<footer class="footer_wrapper">
-	<div class="row footer-part">
-		<div class="large-12 columns">
-			<div class="row">
-				<div class="large-3 columns">
-					<h4 class="footer-title">About Us</h4>
-					<div class="divdott"></div>
-					<img class="botlogo" src="user/images/botlogo.png" alt="" />
-					<div class="footer_part_content">
-						<p>Medico Theme Bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate</p>
-					</div>
-				</div>
-				<div class="large-3 columns">
-					<h4 class="footer-title">Latest Posts</h4>
-					<div class="divdott"></div>
-					<div class="footer_part_content">
-						<ul class="latest-posts">
-							<li>
-								Update: WordPress Theme Submission Requirements
-								<div class="divline"><span></span></div>
-							</li>
-							<li>
-								Envato's Most Wanted - $5,000 Reward for the First 15 Hosting Templates
-								<div class="divline"><span></span></div>
-							</li>
-							<li>
-								Does a well designed thumbnail increase your sales?
-								<div class="divline"><span></span></div>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-
-				<div class="large-3 columns">
-					<h4 class="footer-title">Contact info</h4>
-					<div class="divdott"></div>
-					<div class="footer_part_content">
-						<p>Medico Bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id </p>
-						<ul class="about-info">
-							<li><i class="icon-home"></i><span>lorem ipsum street</span></li>
-							<li><i class="icon-phone"></i><span>+399 (500) 321 9548</span></li>
-							<li><i class="icon-envelope"></i><a href="mailto:info@Medico.com">info@Medico.com</a></li>
-						</ul>
-						<ul class="social-icons">
-						<li><a href="#"><i class="icon-pinterest"></i></a></li>
-						<li><a href="#"><i class="icon-twitter"></i></a></li>
-						<li><a href="#"><i class="icon-facebook"></i></a></li>
-					</ul>
-					</div>
-				</div>
-
-				<div class="large-3 columns">
-					<h4 class="footer-title">Quick Contact</h4>
-					<div class="divdott"></div>
-					<form method="POST" action="#" id="footer-contact-form">
-						<div class="footer_part_content">
-							<div class="row">
-								<div class="large-6 columns">
-									<input type="text" placeholder="Name"  name="name" />
-								</div>
-								<div class="large-6 columns">
-									<input type="text" placeholder="E-mail" name="email" />
-								</div>
-								<div class="large-12 columns">
-									<textarea cols="10" rows="15"  name="message" placeholder="Message"></textarea>
-								</div>
-								<div class="large-12 columns text-right">
-									<input type="submit" class="button" value="Send" name="send" />
-								</div>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="privacy footer_bottom">
-		<div class="footer-part">
-			<div class="row">
-				<div class="large-10 columns copyright">
-					<p >&copy; 2013 Medico Theme, All Rights Reserved.</p>
-				</div>
-				<div class="large-2 columns">
-					<div id="back-to-top"><a href="#top"></a></div>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
+@include('user/footer')
 
 <script src="user/js/foundation.min.js"></script>
 <script src="user/js/foundation/foundation.js"></script>

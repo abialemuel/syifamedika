@@ -24,6 +24,9 @@ Route::namespace('user')->group(function () {
     Route::get('/profilrs', function () {
         return view('user.infors');
     });
+    Route::get('/mitra', function () {
+        return view('user.perusahaan_kerjasama');
+    });
     Route::get('/rawatinap', function () {
         return view('user.fasilitaskamar');
     });

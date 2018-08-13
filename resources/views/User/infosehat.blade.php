@@ -28,7 +28,16 @@
 <body>
 
 @include('user/header')
-
+<script type="text/javascript">
+	document.getElementById("beranda").classList.remove("active")
+	document.getElementById("profil").classList.remove("active")
+	document.getElementById("rj").classList.remove("active")
+	document.getElementById("bpjs").classList.remove("active")
+	document.getElementById("ri").classList.remove("active")
+	document.getElementById("info").classList.add("active")
+	document.getElementById("jadwal").classList.remove("active")
+	document.getElementById("kerjasama").classList.remove("active")
+</script>
 <div class="main-content-top">
 	<div class="main-wrapper">
 		<div class="row">
@@ -75,14 +84,14 @@
 				<div class="clearfix"></div>
 			</div>
 		</div>
-		<aside class="large-3 columns">
+		<!-- <aside class="large-3 columns">
 			<div class="widgets">
 				<form method="get" id="search-global-form">
 					<input type="text" placeholder="Cari Artikel.." name="s" id="search" value="" />
 					<button type="submit" value="" name="search" id="search-submit"><i class="icon-search"></i></button>
 				</form>
 			</div>
-		</aside>
+		</aside> -->
 	</div>
 </div>
 

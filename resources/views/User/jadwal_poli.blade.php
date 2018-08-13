@@ -32,6 +32,16 @@
 </head>
 <body>
 @include('user/header')
+<script type="text/javascript">
+	document.getElementById("beranda").classList.remove("active")
+	document.getElementById("profil").classList.remove("active")
+	document.getElementById("rj").classList.remove("active")
+	document.getElementById("bpjs").classList.remove("active")
+	document.getElementById("ri").classList.remove("active")
+	document.getElementById("info").classList.remove("active")
+	document.getElementById("jadwal").classList.add("active")
+	document.getElementById("kerjasama").classList.remove("active")
+</script>
 <div class="main-content-top">
 	<div class="main-wrapper">
 		<div class="row">

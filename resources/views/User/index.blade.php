@@ -34,8 +34,18 @@
 	<script src="user/js/vendor/jquery.js"></script>
 	<script src="user/js/vendor/custom.modernizr.js"></script>
 </head>
-<body onload="initialize()">
+<body>
 @include('user/header')
+<script type="text/javascript">
+	document.getElementById("beranda").classList.add("active")
+	document.getElementById("profil").classList.remove("active")
+	document.getElementById("rj").classList.remove("active")
+	document.getElementById("bpjs").classList.remove("active")
+	document.getElementById("ri").classList.remove("active")
+	document.getElementById("info").classList.remove("active")
+	document.getElementById("jadwal").classList.remove("active")
+	document.getElementById("kerjasama").classList.remove("active")
+</script>
 
 <div class="slider-wrapper theme-default">
     <div id="slider" class="nivoSlider">
@@ -61,7 +71,7 @@
 
     <div class="main-wrapper app-wrapper">
 
-		<div class="appointment-block grey-bg">
+		<!-- <div class="appointment-block grey-bg">
             <div class="row">
 								@if (session()->has('message'))
 									<div data-alert class="alert-box success round">
@@ -77,7 +87,7 @@
 								@endif
                 <div class="large-2 columns red">
                     <a href="form">Registrasi <br>Pasien Baru</a>
-                    &nbsp;<!-- Put appointemnt label here -->
+                    &nbsp;
                 </div>
                 <div class="large-10 columns">
                     <form method="POST" action="/reservasi" id="appointment-contact-form">
@@ -118,15 +128,15 @@
                         </div>
                     </form>
                 </div>
-            </div>
-		</div>
+	            </div>
+						</div> -->
 		<div class="clearfix"></div>
 	</div>
 </div>
 <!-- End Main Slider -->
 
 	<!-- Main Content -->
-<div class="main-wrapper">
+<!-- <div class="main-wrapper">
    	<div class="row main-content">
         <div class="large-12 columns">
 			<div class="row">
@@ -179,7 +189,7 @@
 		<hr>
 		<div class="clearfix"></div>
 	</div>
-</div>
+</div> -->
 
 <div class="grey-bg" style="">
 	<h1 class="text-center" style="padding-top:75px;"><strong>Rumah Sakit Syifa Medika</strong></h1>
@@ -301,13 +311,12 @@
 <script type="text/javascript" src="user/js/jquery.nivo.slider.pack.js"></script>
 <script type="text/javascript" src="user/js/datepicker.js"></script>
 <script src="user/js/foundation.min.js"></script>
+<script>$(document).foundation();</script>
 
 <!-- Smallipop JS - Tooltips -->
 <script type="text/javascript" src="user/plugins/smallipop/lib/contrib/prettify.js"></script>
 <script type="text/javascript" src="user/plugins/smallipop/lib/jquery.smallipop.js"></script>
 
-
-<script>$(document).foundation();</script>
 
 
 <script>
@@ -370,8 +379,6 @@ jQuery(document).ready(function() {
 <!-- Initialize JS Plugins -->
 <script src="user/js/app-bottom-calls.js"></script>
 <!-- End Main Wrapper -->
-<script>$(document).foundation();</script>
-
 
 </body>
 </html>

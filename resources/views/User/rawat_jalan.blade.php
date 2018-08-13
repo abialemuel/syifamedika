@@ -29,6 +29,16 @@
 <body>
 
 @include('user/header')
+<script type="text/javascript">
+	document.getElementById("beranda").classList.remove("active")
+	document.getElementById("profil").classList.remove("active")
+	document.getElementById("rj").classList.add("active")
+	document.getElementById("bpjs").classList.remove("active")
+	document.getElementById("ri").classList.remove("active")
+	document.getElementById("info").classList.remove("active")
+	document.getElementById("jadwal").classList.remove("active")
+	document.getElementById("kerjasama").classList.remove("active")
+</script>
 <div class="main-content-top">
 	<div class="main-wrapper">
 		<div class="row">
@@ -135,305 +145,295 @@
 
 				<!--  Klinik Jantung dan Anak-->
 
-				<div class="row" id="jantung_anak">
-					<div class="large-12 columns">
-						<div class="row">
-							<div class="large-6 columns">
-								<article class="post col-2">
-									<div class="post_img">
-										<img src="user/images/rawatjalan/jantung.jpg" alt="post-image" style="height:350px;">
-									</div>
-									<h2>Klinik Jantung & Pembuluh Darah</h2>
-									<p class="post_text">Klinik Jantung & Pembuluh Darah RSU Syifa Medika Banjarbaru ditangani oleh dokter spesialis jantung & pembuluh darah, yaitu :</p>
-									<h3>dr. Gt. Rifansyah, Sp.JP</h3>
-									<h5>Senin – Sabtu</h5>
-									<h5>17.00 – selesai.</h5>
-								</article>
+		<div class="row" id="jantung_anak">
+			<div class="large-12 columns">
+				<div class="row">
+					<div class="large-6 columns">
+						<article class="post col-2">
+							<div class="post_img">
+								<img src="user/images/rawatjalan/jantung.jpg" alt="post-image" style="height:350px;">
 							</div>
-							<div class="large-6 columns">
-								<article class="post col-2">
-									<div class="post_img">
-										<img src="user/images/rawatjalan/anak.jpg" alt="post-image" style="height:350px;">
-									</div>
-									<h2>Klinik Anak</h2>
-									<p class="post_text">Klinik Anak RSU Syifa Medika Banjarbaru ditangani oleh dokter spesialis anak, diantaranya :</p>
-									<div class="row">
-										<div class="large-6 columns">
-											<h3> Dr. dr. H. Parlindungan Ringoringo, Sp.A(K)</h3>
-										</div>
-										<div class="large-6 columns">
-											<h3>dr. Indra Widjaja Himawan, Sp.A(K)</h3>
-										</div>
-									</div><br>
-									<p>Klinik Mata RSU Syifa Medika Banjarbaru melayani pemeriksaan :</p>
-								</article>
-							</div>
-						</div>
+							<h2>Klinik Jantung & Pembuluh Darah</h2>
+							<p class="post_text">Klinik Jantung & Pembuluh Darah RSU Syifa Medika Banjarbaru ditangani oleh dokter spesialis jantung & pembuluh darah, yaitu :</p>
+							<h3>dr. Gt. Rifansyah, Sp.JP</h3>
+							<h5>Senin – Sabtu</h5>
+							<h5>17.00 – selesai.</h5>
+						</article>
 					</div>
-				</div>
-
-						<div class="row" id="bedah_syaraf">
-							<div class="large-12 columns">
-								<div class="row">
-									<div class="large-6 columns">
-										<article class="post col-2">
-											<div class="post_img">
-												<img src="user/images/rawatjalan/bedah-1.jpg" alt="post-image" style="height:350px;">
-											</div>
-											<h2>Klinik Bedah</h2>
-											<div class="row">
-												<div class="large-6 columns">
-													<h4>Bedah Umum</h4>
-													<h3>dr. Muhammad Asnal, Sp.B, Flna.CS</h3>
-													<h5>Senin – Jum’at</h5>
-													<h5>08.00 – 09.00.</h5>
-													<br>
-													<h3>dr. R.M. Ardani Fitriansyah SY, Sp.B</h3>
-													<h5>Senin – Jum’at</h5>
-													<h5>17.00 – 21.00.</h5>
-												</div>
-												<div class="large-6 columns">
-													<h4>Bedah Sub Onkologi</h4>
-													<h3>dr. Yamsun, Sp.B(K) Onkologi</h3>
-													<h5>Senin, Kamis, Jum’at</h5>
-													<h5>09.00 – 10.00.</h5>
-												</div>
-											</div>
-										</article>
-									</div>
-									<div class="large-6 columns">
-										<article class="post col-2">
-											<div class="post_img">
-												<img src="user/images/rawatjalan/syaraf.jpg" alt="post-image" style="height:350px;">
-											</div>
-											<h2>Klinik Syaraf</h2>
-											<p class="post_text">Klinik Syaraf RSU Syifa Medika Banjarbaru melayani pemeriksaan dengan dokter spesialis syaraf, di antaranya:</p>
-											<div class="row">
-												<div class="large-6 columns">
-													<h3>dr. Pagan Pambudi, Sp.S</h3>
-													<h5>Senin, Rabu, Jum’at</h5>
-													<h5>09.00 – 11.00.</h5>
-												</div>
-												<div class="large-6 columns">
-													<h3>dr. Indah Rusmiatie, Sp.S</h3>
-													<h5>Senin – Jum’at</h5>
-													<h5>14.00 – 16.00</h5>
-												</div>
-											</div>
-											<div class="row">
-												<div class="large-6 columns">
-													<h3>dr. Fatmawati, Sp.S</h3>
-													<h5>Senin – Jum’at</h5>
-													<h5>17.00 – 18.00</h5>
-												</div>
-												<div class="large-6 columns">
-													<h3>dr. Eko Suryo P., Sp.S</h3>
-													<h5>Senin – Jum’at</h5>
-													<h5>19.00 – 21.00</h5>
-												</div>
-											</div><br>
-											<p>Klinik Mata RSU Syifa Medika Banjarbaru melayani pemeriksaan :</p>
-											<div class="row">
-												<div class="large-4 columns">
-													<ul>
-														<li>Excevcisp Back Pain</li>
-														<li>Akupuntur</li>
-													</ul>
-												</div>
-											</div>
-
-										</article>
-									</div>
-								</div>
+					<div class="large-6 columns">
+						<article class="post col-2">
+							<div class="post_img">
+								<img src="user/images/rawatjalan/anak.jpg" alt="post-image" style="height:350px;">
 							</div>
-						</div>
-
-								<div class="row" id="rehab_dalam">
-									<div class="large-12 columns">
-										<div class="row">
-											<div class="large-6 columns">
-												<article class="post col-2">
-													<div class="post_img">
-														<img src="user/images/rawatjalan/rehab.jpg" alt="post-image" style="height:350px;">
-													</div>
-													<h2>Klinik Rehab</h2>
-													<p class="post_text">Klinik Rehabilitasi Medik RSU Syifa Medika Banjarbaru ditangani oleh dokter spesialis rehabilitasi medik, yaitu:</p>
-													<h3>dr. Nur Yulia Sari, Sp. KFR</h3>
-													<h5>Senin – Jum’at</h5>
-													<h5>14.00 – 16.00.</h5><br>
-													<p>Klinik Rehabilitasi Medik RSU Syifa Medika Banjarbaru melayani pemeriksaan :</p>
-													<div class="row">
-														<div class="large-4 columns">
-															<ul>
-																<li>Pemeriksaan Kedokteran Fisik dan Rehabilitasi Komperhensif</li>
-																<li>Dry Needling</li>
-																<li>Tata Laksana Gangguan Berbahasa</li>
-															</ul>
-														</div>
-														<div class="large-4 columns">
-															<ul>
-																<li>Fonasi atau Gangguan Suara</li>
-																<li>Tata Laksana Gangguan Artikulasi	</li>
-																<li>Tata Laksana Gangguan Bicara Bahasa</li>
-															</ul>
-														</div>
-														<div class="large-4 columns">
-															<ul>
-																<li>Tata Laksana Gangguan Kelancaran Bicara</li>
-																<li>Tata Laksana Gangguan Menelan</li>
-																<li>Latihan Lingkup Gerak Sendi</li>
-															</ul>
-														</div>
-													</div>
-
-													<div class="row">
-														<div class="large-4 columns">
-															<ul>
-																<li>Latihan Penguatan Otot Ringan</li>
-																<li>Latihan Pernafasan</li>
-																<li>Latihan Koordinasi dan Keterampilan Motorik</li>
-															</ul>
-														</div>
-														<div class="large-4 columns">
-															<ul>
-																<li>Neurofasilitasi</li>
-																<li>Terapi Latihan</li>
-																<li>Latihan Ambulasi dan Keseimbangan</li>
-															</ul>
-														</div>
-														<div class="large-4 columns">
-															<ul>
-																<li>Tens per area</li>
-																<li>Spray & Strecth</li>
-																<li>Tapping dan Stapping (Ringan, Sedang, Berat)</li>
-															</ul>
-														</div>
-													</div>
-
-													<div class="row">
-														<div class="large-4 columns">
-															<ul>
-																<li>Terapi Manipulasi</li>
-																<li>Adaptasi Aktifitas Kehidupan Sehari-Hari</li>
-																<li>Rehabilitasi Pre-Vokasional dan Rehabilitasi Okupasi</li>
-															</ul>
-														</div>
-														<div class="large-4 columns">
-															<ul>
-																<li>Penanganan Persepsi-Kognisi</li>
-																<li>Tata Laksana Gangguan Sensasi Somato-Sensori</li>
-																<li>Terapi Inhalasi</li>
-															</ul>
-														</div>
-														<div class="large-4 columns">
-															<ul>
-																<li>Postural Drainage</li>
-																<li>Tindakan Ultrasound (per area)</li>
-																<li>Phonophoresis</li>
-															</ul>
-														</div>
-													</div>
-
-													<div class="row">
-														<div class="large-4 columns">
-															<ul>
-																<li>Electrical Stimulasi 2 titik</li>
-																<li>Electrical Stimulasi > 2 titik</li>
-																<li>Parafin Bath, inframerah</li>
-															</ul>
-														</div>
-														<div class="large-4 columns">
-															<ul>
-																<li>SWT</li>
-																<li>Hilt per titik</li>
-																<li>Hilt (3-5 titik)</li>
-															</ul>
-														</div>
-														<div class="large-4 columns">
-															<ul>
-															</ul>
-														</div>
-													</div>
-												</article>
-											</div>
-											<div class="large-6 columns">
-												<article class="post col-2">
-													<div class="post_img">
-														<img src="user/images/rawatjalan/gigi.jpg" alt="post-image" style="height:350px;">
-													</div>
-													<h2>Klinik Penyakit Dalam</h2>
-													<p class="post_text">Klinik Penyakit Dalam RSU Syifa Medika Banjarbaru dengan Dokter Spesialis Penyakit Dalam:</p>
-													<div class="row">
-														<div class="large-6 columns">
-															<h3>dr. Achmad Dainuri, Sp.PD</h3>
-															<h5>Senin – Jum’at</h5>
-															<h5>14.00 – 16.00.</h5>
-														</div>
-														<div class="large-6 columns">
-															<h3>dr. Budi Indra, Sp.PD</h3>
-															<h5>Senin – Jum’at</h5>
-															<h5>17.00 – 21.00.</h5>
-														</div>
-													</div>
-												</article>
-											</div>
-										</div>
-									</div>
+							<h2>Klinik Anak</h2>
+							<p class="post_text">Klinik Anak RSU Syifa Medika Banjarbaru ditangani oleh dokter spesialis anak, diantaranya :</p>
+							<div class="row">
+								<div class="large-6 columns">
+									<h3> Dr. dr. H. Parlindungan Ringoringo, Sp.A(K)</h3>
 								</div>
-
-										<div class="row" id="bidan_umum">
-											<div class="large-12 columns">
-												<div class="row">
-													<div class="large-6 columns">
-														<article class="post col-2">
-															<div class="post_img">
-																<img src="user/images/rawatjalan/kandungan-1.jpg" alt="post-image" style="height:350px;">
-															</div>
-															<h2>Klinik Kebidanan & Kandungan</h2>
-															<p class="post_text">Klinik Kebidanan & Kandungan RSU Syifa Medika Banjarbaru ditangani oleh dokter spesialis Kebidanan dan Kandungan, diantaranya:</p>
-															<div class="row">
-																<div class="large-6 columns">
-																	<h3>dr. Yulisa Haslinda, Sp.OG</h3>
-																	<h5>Senin</h5>
-																	<h5>16.00 – 18.00.</h5>
-																</div>
-																<div class="large-6 columns">
-																	<h3>dr. Hj. F. A. Rahayu, Sp.OG</h3>
-																	<h5>Jum’at</h5>
-																	<h5>09.00-10.00</h5>
-																</div>
-															</div>
-
-															<p>Klinik Kebidanan & Kandungan RSU Syifa Medika Banjarbaru melayani pemeriksaan Kehamilan dengan USG 2 dimensi dan 4 dimensi.</p>
-														</article>
-													</div>
-													<div class="large-6 columns">
-														<article class="post col-2">
-
-															<h1>Klinik Umum</h1>
-															<p class="post_text">Klinik Umum RSU Syifa Medika Banjarbaru ditangani oleh dokter umum, diantaranya :</p>
-															<h3>dr. Hendy Buana Vijaya</h3>
-															<h3>dr. Hukniatiku Diana</h3>
-															<h3>dr. M. Farid Rakhman</h3>
-															<h3>dr. Sophia Yustina</h3>
-
-														</article>
-													</div>
-												</div>
-											</div>
-										</div>
-
-				<div class="pagination-wrapper">
-					<ul class="pagination">
-						<li class="current"><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-					</ul>
-					<div class="clearfix"></div>
+								<div class="large-6 columns">
+									<h3>dr. Indra Widjaja Himawan, Sp.A(K)</h3>
+								</div>
+							</div><br>
+							<p>Klinik Mata RSU Syifa Medika Banjarbaru melayani pemeriksaan :</p>
+						</article>
+					</div>
 				</div>
 			</div>
 		</div>
+
+		<div class="row" id="bedah_syaraf">
+			<div class="large-12 columns">
+				<div class="row">
+					<div class="large-6 columns">
+						<article class="post col-2">
+							<div class="post_img">
+								<img src="user/images/rawatjalan/bedah-1.jpg" alt="post-image" style="height:350px;">
+							</div>
+							<h2>Klinik Bedah</h2>
+							<div class="row">
+								<div class="large-6 columns">
+									<h4>Bedah Umum</h4>
+									<h3>dr. Muhammad Asnal, Sp.B, Flna.CS</h3>
+									<h5>Senin – Jum’at</h5>
+									<h5>08.00 – 09.00.</h5>
+									<br>
+									<h3>dr. R.M. Ardani Fitriansyah SY, Sp.B</h3>
+									<h5>Senin – Jum’at</h5>
+									<h5>17.00 – 21.00.</h5>
+								</div>
+								<div class="large-6 columns">
+									<h4>Bedah Sub Onkologi</h4>
+									<h3>dr. Yamsun, Sp.B(K) Onkologi</h3>
+									<h5>Senin, Kamis, Jum’at</h5>
+									<h5>09.00 – 10.00.</h5>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="large-6 columns">
+						<article class="post col-2">
+							<div class="post_img">
+								<img src="user/images/rawatjalan/syaraf.jpg" alt="post-image" style="height:350px;">
+							</div>
+							<h2>Klinik Syaraf</h2>
+							<p class="post_text">Klinik Syaraf RSU Syifa Medika Banjarbaru melayani pemeriksaan dengan dokter spesialis syaraf, di antaranya:</p>
+							<div class="row">
+								<div class="large-6 columns">
+									<h3>dr. Pagan Pambudi, Sp.S</h3>
+									<h5>Senin, Rabu, Jum’at</h5>
+									<h5>09.00 – 11.00.</h5>
+								</div>
+								<div class="large-6 columns">
+									<h3>dr. Indah Rusmiatie, Sp.S</h3>
+									<h5>Senin – Jum’at</h5>
+									<h5>14.00 – 16.00</h5>
+								</div>
+							</div>
+							<div class="row">
+								<div class="large-6 columns">
+									<h3>dr. Fatmawati, Sp.S</h3>
+									<h5>Senin – Jum’at</h5>
+									<h5>17.00 – 18.00</h5>
+								</div>
+								<div class="large-6 columns">
+									<h3>dr. Eko Suryo P., Sp.S</h3>
+									<h5>Senin – Jum’at</h5>
+									<h5>19.00 – 21.00</h5>
+								</div>
+							</div><br>
+							<p>Klinik Mata RSU Syifa Medika Banjarbaru melayani pemeriksaan :</p>
+							<div class="row">
+								<div class="large-4 columns">
+									<ul>
+										<li>Excevcisp Back Pain</li>
+										<li>Akupuntur</li>
+									</ul>
+								</div>
+							</div>
+
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" id="rehab_dalam">
+			<div class="large-12 columns">
+				<div class="row">
+					<div class="large-6 columns">
+						<article class="post col-2">
+							<div class="post_img">
+								<img src="user/images/rawatjalan/rehab.jpg" alt="post-image" style="height:350px;">
+							</div>
+							<h2>Klinik Rehab</h2>
+							<p class="post_text">Klinik Rehabilitasi Medik RSU Syifa Medika Banjarbaru ditangani oleh dokter spesialis rehabilitasi medik, yaitu:</p>
+							<h3>dr. Nur Yulia Sari, Sp. KFR</h3>
+							<h5>Senin – Jum’at</h5>
+							<h5>14.00 – 16.00.</h5><br>
+							<p>Klinik Rehabilitasi Medik RSU Syifa Medika Banjarbaru melayani pemeriksaan :</p>
+							<div class="row">
+								<div class="large-4 columns">
+									<ul>
+										<li>Pemeriksaan Kedokteran Fisik dan Rehabilitasi Komperhensif</li>
+										<li>Dry Needling</li>
+										<li>Tata Laksana Gangguan Berbahasa</li>
+									</ul>
+								</div>
+								<div class="large-4 columns">
+									<ul>
+										<li>Fonasi atau Gangguan Suara</li>
+										<li>Tata Laksana Gangguan Artikulasi	</li>
+										<li>Tata Laksana Gangguan Bicara Bahasa</li>
+									</ul>
+								</div>
+								<div class="large-4 columns">
+									<ul>
+										<li>Tata Laksana Gangguan Kelancaran Bicara</li>
+										<li>Tata Laksana Gangguan Menelan</li>
+										<li>Latihan Lingkup Gerak Sendi</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="large-4 columns">
+									<ul>
+										<li>Latihan Penguatan Otot Ringan</li>
+										<li>Latihan Pernafasan</li>
+										<li>Latihan Koordinasi dan Keterampilan Motorik</li>
+									</ul>
+								</div>
+								<div class="large-4 columns">
+									<ul>
+										<li>Neurofasilitasi</li>
+										<li>Terapi Latihan</li>
+										<li>Latihan Ambulasi dan Keseimbangan</li>
+									</ul>
+								</div>
+								<div class="large-4 columns">
+									<ul>
+										<li>Tens per area</li>
+										<li>Spray & Strecth</li>
+										<li>Tapping dan Stapping (Ringan, Sedang, Berat)</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="large-4 columns">
+									<ul>
+										<li>Terapi Manipulasi</li>
+										<li>Adaptasi Aktifitas Kehidupan Sehari-Hari</li>
+										<li>Rehabilitasi Pre-Vokasional dan Rehabilitasi Okupasi</li>
+									</ul>
+								</div>
+								<div class="large-4 columns">
+									<ul>
+										<li>Penanganan Persepsi-Kognisi</li>
+										<li>Tata Laksana Gangguan Sensasi Somato-Sensori</li>
+										<li>Terapi Inhalasi</li>
+									</ul>
+								</div>
+								<div class="large-4 columns">
+									<ul>
+										<li>Postural Drainage</li>
+										<li>Tindakan Ultrasound (per area)</li>
+										<li>Phonophoresis</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="large-4 columns">
+									<ul>
+										<li>Electrical Stimulasi 2 titik</li>
+										<li>Electrical Stimulasi > 2 titik</li>
+										<li>Parafin Bath, inframerah</li>
+									</ul>
+								</div>
+								<div class="large-4 columns">
+									<ul>
+										<li>SWT</li>
+										<li>Hilt per titik</li>
+										<li>Hilt (3-5 titik)</li>
+									</ul>
+								</div>
+								<div class="large-4 columns">
+									<ul>
+									</ul>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="large-6 columns">
+						<article class="post col-2">
+							<div class="post_img">
+								<img src="user/images/rawatjalan/gigi.jpg" alt="post-image" style="height:350px;">
+							</div>
+							<h2>Klinik Penyakit Dalam</h2>
+							<p class="post_text">Klinik Penyakit Dalam RSU Syifa Medika Banjarbaru dengan Dokter Spesialis Penyakit Dalam:</p>
+							<div class="row">
+								<div class="large-6 columns">
+									<h3>dr. Achmad Dainuri, Sp.PD</h3>
+									<h5>Senin – Jum’at</h5>
+									<h5>14.00 – 16.00.</h5>
+								</div>
+								<div class="large-6 columns">
+									<h3>dr. Budi Indra, Sp.PD</h3>
+									<h5>Senin – Jum’at</h5>
+									<h5>17.00 – 21.00.</h5>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" id="bidan_umum">
+			<div class="large-12 columns">
+				<div class="row">
+					<div class="large-6 columns">
+						<article class="post col-2">
+							<div class="post_img">
+								<img src="user/images/rawatjalan/kandungan-1.jpg" alt="post-image" style="height:350px;">
+							</div>
+							<h2>Klinik Kebidanan & Kandungan</h2>
+							<p class="post_text">Klinik Kebidanan & Kandungan RSU Syifa Medika Banjarbaru ditangani oleh dokter spesialis Kebidanan dan Kandungan, diantaranya:</p>
+							<div class="row">
+								<div class="large-6 columns">
+									<h3>dr. Yulisa Haslinda, Sp.OG</h3>
+									<h5>Senin</h5>
+									<h5>16.00 – 18.00.</h5>
+								</div>
+								<div class="large-6 columns">
+									<h3>dr. Hj. F. A. Rahayu, Sp.OG</h3>
+									<h5>Jum’at</h5>
+									<h5>09.00-10.00</h5>
+								</div>
+							</div>
+
+							<p>Klinik Kebidanan & Kandungan RSU Syifa Medika Banjarbaru melayani pemeriksaan Kehamilan dengan USG 2 dimensi dan 4 dimensi.</p>
+						</article>
+					</div>
+					<div class="large-6 columns">
+						<article class="post col-2">
+
+							<h1>Klinik Umum</h1>
+							<p class="post_text">Klinik Umum RSU Syifa Medika Banjarbaru ditangani oleh dokter umum, diantaranya :</p>
+							<h3>dr. Hendy Buana Vijaya</h3>
+							<h3>dr. Hukniatiku Diana</h3>
+							<h3>dr. M. Farid Rakhman</h3>
+							<h3>dr. Sophia Yustina</h3>
+
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
 	</div>
 </div>
 
