@@ -74,7 +74,7 @@
 			</article>
 			@endforeach
 
-			<div class="pagination-wrapper">
+			<!-- <div class="pagination-wrapper">
 				<ul class="pagination">
 					<li class="current"><a href="#">1</a></li>
 					<li><a href="#">2</a></li>
@@ -82,7 +82,7 @@
 					<li><a href="#">4</a></li>
 				</ul>
 				<div class="clearfix"></div>
-			</div>
+			</div> -->
 		</div>
 		<!-- <aside class="large-3 columns">
 			<div class="widgets">
