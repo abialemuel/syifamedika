@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class JadwalDokter extends Migration
+class CreateDmKategori extends Migration
 {
     /**
      * Run the migrations.
@@ -14,15 +14,9 @@ class JadwalDokter extends Migration
     public function up()
     {
         //
-        Schema::create('jadwal_dokter', function (Blueprint $table) {
+        Schema::create('dm_kategori', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('id_poli');
-            $table->string('id_dokter');
-            $table->date('hari');
-            $table->time('mulaijam');
-            $table->time('selesaijam');
-            $table->text('txtjam');
-            $table->boolean('void');
+            $table->string('nama_kategori');
         });
     }
 
@@ -34,6 +28,6 @@ class JadwalDokter extends Migration
     public function down()
     {
         //
-        Schema::dropIfExists('jadwal_dokter');
+        Schema::dropIfExists('dm_kategori');
     }
 }

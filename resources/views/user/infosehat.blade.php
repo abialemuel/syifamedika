@@ -68,7 +68,7 @@
 							<li><i class="icon-calendar"></i>{{$artikel->updated_at}}</li>
 							<li><i class="icon-user"></i>Administrator</li>
 						</ul>
-						<p class="post_text">{{$artikel->text}}</p>
+						<p class="post_text"><?php echo $artikel->text ?></p>
 					</div>
 				</div>
 			</article>
