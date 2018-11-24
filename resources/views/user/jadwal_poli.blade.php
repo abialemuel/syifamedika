@@ -50,10 +50,9 @@
 			</div>
 			<div class="large-6 columns">
 				<ul class="breadcrumbs right">
-					<li>You are here: </li>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#">Shortcodes</a></li>
-					<li><span>Tables</span></li>
+					<li>Posisi Anda: </li>
+					<li><a href="index.html">Beranda</a></li>
+					<li><span>Jadwal Poliklinik</span></li>
 				</ul>
 			</div>
 		</div>

@@ -67,7 +67,7 @@
 							<li class=""><a href="rawatinap" id="ri">Rawat Inap</a></li>
 							<li><a href="jadwalpoliklinik" id="jadwal">Jadwal Poliklinik</a></li>
 							<li><a href="infosehat" id="infosehat">Info Sehat</a></li>
-							<li><a href="profilrs" id="kerjasama">Kerjasama Kesehatan</a></li>
+							<li><a href="perusahaan_kerjasama" id="kerjasama">Kerjasama Kesehatan</a></li>
 							<li><a href="layananbpjs" id="bpjs">Layanan BPJS</a></li>
 							</ul>
 						<!-- End Left Nav Section -->

@@ -39,6 +39,12 @@ Route::namespace('user')->group(function () {
     Route::get('/jadwalpoliklinik', function () {
         return view('user.jadwal_poli');
     });
+    Route::get('/perusahaan_kerjasama', function () {
+        return view('user.perusahaan_kerjasama');
+    });
+    Route::get('/lowongan', function () {
+        return view('user.lowongan');
+    });
 });
 
 

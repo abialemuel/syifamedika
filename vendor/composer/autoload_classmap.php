@@ -168,6 +168,7 @@ return array(
     'DeepCopy\\TypeFilter\\Spl\\SplDoublyLinkedListFilter' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/TypeFilter/Spl/SplDoublyLinkedListFilter.php',
     'DeepCopy\\TypeFilter\\TypeFilter' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/TypeFilter/TypeFilter.php',
     'DeepCopy\\TypeMatcher\\TypeMatcher' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/TypeMatcher/TypeMatcher.php',
+    'DmKategori' => $baseDir . '/database/seeds/DmKategori.php',
     'Doctrine\\Common\\Cache\\ApcCache' => $vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache/ApcCache.php',
     'Doctrine\\Common\\Cache\\ApcuCache' => $vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache/ApcuCache.php',
     'Doctrine\\Common\\Cache\\ArrayCache' => $vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache/ArrayCache.php',

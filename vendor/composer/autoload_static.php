@@ -510,6 +510,7 @@ class ComposerStaticInite926ebb4df8fff70df3f6caf5b80e5f1
         'DeepCopy\\TypeFilter\\Spl\\SplDoublyLinkedListFilter' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/TypeFilter/Spl/SplDoublyLinkedListFilter.php',
         'DeepCopy\\TypeFilter\\TypeFilter' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/TypeFilter/TypeFilter.php',
         'DeepCopy\\TypeMatcher\\TypeMatcher' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/TypeMatcher/TypeMatcher.php',
+        'DmKategori' => __DIR__ . '/../..' . '/database/seeds/DmKategori.php',
         'Doctrine\\Common\\Cache\\ApcCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/ApcCache.php',
         'Doctrine\\Common\\Cache\\ApcuCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/ApcuCache.php',
         'Doctrine\\Common\\Cache\\ArrayCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/ArrayCache.php',

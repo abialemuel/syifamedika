@@ -2,7 +2,7 @@
 	<div class="row footer-part">
 		<div class="large-12 columns">
 			<div class="row">
-				<div class="large-6 columns">
+				<div class="large-4 columns">
 					<h4 class="footer-title">Tentang Kami</h4>
 					<div class="divdott"></div>
 					<img class="botlogo" src="user/images/logo.png" alt="" />
@@ -11,7 +11,7 @@
 					</div>
 				</div>
 
-        <div class="large-6 columns">
+        <div class="large-4 columns">
           <h4 class="footer-title">Kontak kami</h4>
           <div class="footer_part_content">
             <ul class="about-info">
@@ -19,9 +19,18 @@
               <li><i class="icon-phone"></i><span>0511-5910889</span></li>
               <li><i class="icon-mobile-phone"></i><span>0857 0542 2267</span></li>
               <li><i class="icon-mobile-phone"></i><span>0821 5342 4447 (WA)</span></li>
+
             </ul>
           </div>
         </div>
+				<div class="large-4 columns">
+					<h4 class="footer-title">Lowongan Pekerjaan</h4>
+					<div class="footer_part_content">
+						<ul class="about-info" style="color:blue">
+							<li style="text-decoration:underline;"><a href="/lowongan"><span>Informasi Lebih Lanjut</span></a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -35,7 +35,7 @@
 @include('user/header')
 <script type="text/javascript">
 	document.getElementById("beranda").classList.remove("active")
-	document.getElementById("profil").classList.add("active")
+	document.getElementById("profil").classList.remove("active")
 	document.getElementById("rj").classList.remove("active")
 	document.getElementById("bpjs").classList.remove("active")
 	document.getElementById("ri").classList.remove("active")
@@ -50,102 +50,29 @@
 		<div class="main-wrapper">
 			<div class="row">
 				<div class="large-6 columns">
-					<h2>Informasi Rumah Sakit</h2>
+					<h2>Lowongan Pekerjaan</h2>
 				</div>
 				<div class="large-6 columns">
 					<ul class="breadcrumbs right">
 						<li>Posisi Anda: </li>
-						<li><a href="#">beranda</a></li>
-						<li><a href="#">informasi klinik</a></li>
+						<li><a href="#">Beranda</a></li>
+						<li>Lowongan</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
 
-<div class="main-wrapper">
-	<div id="map_canvas"></div>
-	<!-- Main Content -->
-	<div class="row main-content" style="margin-top: 25px;">
-		<div class="large-12 columns">
-			<div class="row">
-				<div class="large-12 columns">
-					<h3>Tentang Rs Syifa Medika</h3>
-					<div class="divider"><span></span></div>
-					<img src="user/images/banner.png" alt="post-img">
-					<div class="large-12 columns">
-						<h3 class="text-center">“Menjadi Rumah Sakit Terdepan di <code>Kalimantan Selatan</code>.“</h3></br>
-						<h4><strong>Dengan beroperasinya Rumah Sakit Umum Syifa Medika diharapkan dapat:</strong></h4>
-						<ol>
-							<li><h6>Memberikan kontribusi dalam peningkatan kesadaran dan mutu kesehatan masyarakat Kota Banjarbaru.</h6></li>
-							<li><h6>Memberikan kontribusi dalam penyerapan tenaga kerja di Kota Banjarbaru.</h6></li>
-							<li><h6>Memberikan dampak tumbuhnya ekonomi masyarakat di sekitar lokasi rumah sakit, pertumbuhan ekonomi Kota Banjarbaru dan pertumbuhan ekonomi Kalimantan Selatan pada umumnya.</h6></li>
-						</ol>
-						<h4><strong>Misi Rumah Sakit, disebut juga sebagai 8 pilar organisasi adalah:</strong></h4>
-						<ol>
-							<li><h6>Superiority, selalu unggul dalam pelayanan.</h6></li>
-							<li><h6>Hospitality, melayani dengan hati, keahlian dan keramah-tamahan.</h6></li>
-							<li><h6>Priority, keselamatan, kualitas, kecepatan dan kenyamanan.</h6></li>
-							<li><h6>Proactive, proaktif dalam memahami kebutuhan dan keinginan pasien dan masyarakat.</h6></li>
-							<li><h6>Ethic, memegang teguh etika pelayanan.</h6></li>
-							<li><h6>Knowledge, mencerdaskan pasiendan masyarakat.</h6></li>
-							<li><h6>Environmental friendly, berperan serta dalam bina lingkungan (ekosistem, sosial dan ekonomi).</h6></li>
-							<li><h6>Dynamic, dinamis dalam setiap situasi.</h6></li>
-						</ol>
-
-					</div>
-				</div>
+<div class="row main-content text-center">
+	<div class="large-12 columns">
+		<div class="row">
+			<div class="large-12 columns">
+				<div class="divider"><span></span></div>
+				<img src="user/images/lowongankerja.jpg" alt="Lowongan Kerja" height="750" width="750">
 			</div>
 		</div>
 	</div>
 </div>
-
-<img src="user/images/main1.jpg" alt="post-img" class="cs-bg" style="margin-top: 25px;">
-<!-- Edit : Colouring agar senada dan berikan teks sehat adalah berkah -->
-<!-- <div class="main-wrapper">
-	<div class="row">
-		<div class="large-12 columns service-block">
-			<div class="row">
-				<div class="large-6 columns">
-					<h3>Statistik</h3>
-					<div class="divider"><span></span></div>
-					<p class="client-statistics">Pasien Puas:</p>
-					<div class="figures">-</div>
-					<p class="client-statistics">Operasi Berhasil</p>
-					<div class="figures">-</div>
-				</div>
-				<div class="large-6 columns">
-					<div class="title-block">
-						<h5>Testimoni Pasien</h5>
-						<div class="divider"><span></span></div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="module_content testimonial-block">
-						<ul id="testimonial_slide">
-							<li>
-								<div class="testimonial-content">
-									<p>
-										-
-									</p>
-								</div>
-								<span class="testimonial-divider"></span>
-								<div class="testimonial-meta"><cite>Pasien</cite> - Title</div>
-
-							</li>
-						</ul>
-						<div class="clearfix"></div>
-						<a class="prev" id="slide_prev1" href="#"><img src="user/images/arrow_left.png" alt="Previous" /></a>
-						<a class="next" id="slide_next1" href="#"><img src="user/images/arrow_right.png" alt="Next" /></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div> -->
-
-
-
-
 
 @include('user/footer')
 
