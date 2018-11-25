@@ -108,6 +108,30 @@
             </li>
           </ul>
         </li>
+        </li>
+        <li class="nav-item has-treeview menu">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fa fa-calendar"></i>
+            <p>
+              Jadwal Poli
+              <i class="right fa fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="{{ route('artikel.create') }}" class="nav-link">
+                <i class="fa fa-plus-square nav-icon"></i>
+                <p>Tambah</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('jadwal_poli.index') }}" class="nav-link">
+                <i class="fa fa-list nav-icon"></i>
+                <p>List</p>
+              </a>
+            </li>
+          </ul>
+        </li>
       </ul>
     </nav>
     <!-- /.sidebar-menu -->

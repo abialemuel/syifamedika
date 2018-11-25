@@ -68,12 +68,23 @@ Route::prefix('private')->group(function () {
             Route::post('/{id_dokter}/edit', 'DokterController@update');
             Route::get('/{id_dokter}/hapus', 'DokterController@destroy');
         });
+
         Route::prefix('artikel')->group(function () {
             // Router for artikel
             Route::get('/', 'ArtikelController@index')->name('artikel.index');
             Route::get('/tambah', 'ArtikelController@create')->name('artikel.create');
             Route::post('/tambah', 'ArtikelController@store')->name('artikel.store');
             Route::get('/{id_artikel}/edit', 'ArtikelController@edit')->name('artikel.edit');
+            Route::post('/{id_artikel}/edit', 'ArtikelController@update');
+            Route::get('/{id_artikel}/hapus', 'ArtikelController@destroy');
+        });
+
+        Route::prefix('jadwal_poli')->group(function () {
+            // Router for artikel
+            Route::get('/', 'JadwalPoliController@index')->name('jadwal_poli.index');
+            Route::get('/tambah', 'JadwalPoliController@create')->name('JadwalPoli.create');
+            Route::post('/tambah', 'JadwalPoliController@store')->name('JadwalPoli.store');
+            Route::get('/{id_artikel}/edit', 'ArtikelController@edit')->name('JadwalPoli.edit');
             Route::post('/{id_artikel}/edit', 'ArtikelController@update');
             Route::get('/{id_artikel}/hapus', 'ArtikelController@destroy');
         });
