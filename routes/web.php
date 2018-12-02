@@ -79,7 +79,7 @@ Route::prefix('private')->group(function () {
             Route::get('/{id_artikel}/hapus', 'ArtikelController@destroy');
         });
 
-        Route::prefix('jadwal_poli')->group(function () {
+        Route::prefix('jadwal-poli')->group(function () {
             // Router for artikel
             Route::get('/', 'JadwalPoliController@index')->name('jadwal_poli.index');
             Route::get('/tambah', 'JadwalPoliController@create')->name('JadwalPoli.create');

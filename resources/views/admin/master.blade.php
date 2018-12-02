@@ -202,6 +202,15 @@
       "info": true,
       "autoWidth": true
     });
+    $('#data1').DataTable({
+      "paging": true,
+      "pagingType": "full_numbers",
+      "lengthChange": true,
+      "searching": true,
+      "ordering": true,
+      "info": true,
+      "autoWidth": true
+    });
 
     //editor
     $(function () {
