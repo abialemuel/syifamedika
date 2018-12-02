@@ -14,4 +14,9 @@ class JadwalPoli extends Model
     {
       return $this->belongsTo('App\Dokter','id_dokter','id_dokter');
     }
+
+    public function kategori()
+    {
+      return $this->belongsTo('App\Kategori','id_kategori','id');
+    }
 }
