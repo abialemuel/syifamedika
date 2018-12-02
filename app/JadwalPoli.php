@@ -1,0 +1,17 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class JadwalPoli extends Model
+{
+    //
+    protected $table = 'jadwal_poli';
+    public $timestamps = false;
+
+    public function dokter()
+    {
+      return $this->belongsTo('App\Dokter','id_dokter','id_dokter');
+    }
+}
