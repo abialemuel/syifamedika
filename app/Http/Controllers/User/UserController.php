@@ -44,8 +44,8 @@ class UserController extends Controller
     }
     public function jadwal_poli()
     {
-      $jadwal_polis1 = JadwalPoli::all()->where('id_kategori', '=', 2);
-      $jadwal_polis2 = JadwalPoli::all()->where('id_kategori', '=', 3);
+      $jadwal_polis1 = JadwalPoli::all()->where('id_kategori', '=', 1);
+      $jadwal_polis2 = JadwalPoli::all()->where('id_kategori', '=', 2);
       return view('user.jadwal_poli', compact('jadwal_polis1', 'jadwal_polis2'));
     }
 

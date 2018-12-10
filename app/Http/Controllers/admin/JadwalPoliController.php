@@ -20,8 +20,8 @@ class JadwalPoliController extends Controller
     }
     public function index()
     {
-        $jadwal_polis1 = JadwalPoli::all()->where('id_kategori', '=', 2);
-        $jadwal_polis2 = JadwalPoli::all()->where('id_kategori', '=', 3);
+        $jadwal_polis1 = JadwalPoli::all()->where('id_kategori', '=', 1);
+        $jadwal_polis2 = JadwalPoli::all()->where('id_kategori', '=', 2);
         return view('admin.jadwal_poli.index', compact('jadwal_polis1', 'jadwal_polis2'));
     }
     public function create()

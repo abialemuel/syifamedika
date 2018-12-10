@@ -77,13 +77,13 @@
 									</tr>
 								</thead>
 								<tbody>
-									@foreach ($jadwal_polis1 as $jadwal=>$jadwal_poli1)
+									@foreach ($jadwal_polis1 as $jadwal_poli)
 									<tr>
-										<td>POLI SPESIALIS NON BPJS</td>
-										<td>Klinik Bedah Sub Onkologi</td>
-										<td>Senin, Kamis, Jum’at</td>
-										<td>09.00 – 10.00</td>
-										<td>dr.Yamsun,Sp.BK(K)Onkologi</td>
+										<td>{{ $jadwal_poli->kategori->nama_kategori }}</td>
+										<td>{{ $jadwal_poli->klinik->nama_poli }}</td>
+										<td>{{ $jadwal_poli->hari }}</td>
+										<td>{{ $jadwal_poli->jam }}</td>
+										<td>{{ $jadwal_poli->dokter->nama_dokter }}</td>
 									</tr>
 									@endforeach
 								</tbody>
