@@ -63,11 +63,11 @@ class JadwalPoliController extends Controller
         $dokters = Dokter::all();
         $polis = Poli::all();
         $kategoris = Kategori::all();
-        return view('admin.jadwal_poli.edit',compact('jadwal_polis','dokters','polis','kategoris'));
+        return view('admin.jadwal_poli.edit',compact('jadwalpolis','dokters','polis','kategoris'));
     }
     public function update(Request $request, $id)
     {
-      DB::table('dm_dokter')
+      DB::table('jadwal_poli')
       ->where('id', $id)
       ->update([
         'id_kategori' => $request->input('kategori'),
@@ -78,9 +78,9 @@ class JadwalPoliController extends Controller
       ]);
       return redirect(route('jadwal_poli.index'));
     }
-    public function destroy($id_artikel)
+    public function destroy($id_jadwal_poli)
     {
-        $artikels = JadwalPoli::find($id_artikel)->delete();
+        $jadwal_poli = JadwalPoli::find($id_jadwal_poli)->delete();
         return redirect(route('jadwal_poli.index'));
     }
 }

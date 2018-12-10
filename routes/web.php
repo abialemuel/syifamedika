@@ -36,7 +36,7 @@ Route::namespace('user')->group(function () {
     Route::get('/rawatjalan', function () {
         return view('user.rawat_jalan');
     });
-    
+
     Route::get('/lowongan', function () {
         return view('user.lowongan');
     });
@@ -79,9 +79,9 @@ Route::prefix('private')->group(function () {
             Route::get('/', 'JadwalPoliController@index')->name('jadwal_poli.index');
             Route::get('/tambah', 'JadwalPoliController@create')->name('jadwal_poli.create');
             Route::post('/tambah', 'JadwalPoliController@store')->name('jadwal_poli.store');
-            Route::get('/{id_artikel}/edit', 'JadwalPoli@edit')->name('jadwal_poli.edit');
-            Route::post('/{id_artikel}/edit', 'JadwalPoli@update');
-            Route::get('/{id_artikel}/hapus', 'JadwalPoli@destroy');
+            Route::get('/{id_jadwal_poli}/edit', 'JadwalPoliController@edit')->name('jadwal_poli.edit');
+            Route::post('/{id_jadwal_poli}/edit', 'JadwalPoliController@update');
+            Route::get('/{id_jadwal_poli}/hapus', 'JadwalPoliController@destroy');
         });
 
     });

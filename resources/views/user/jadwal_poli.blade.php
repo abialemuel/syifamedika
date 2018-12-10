@@ -86,6 +86,15 @@
 										<td>{{ $jadwal_poli->dokter->nama_dokter }}</td>
 									</tr>
 									@endforeach
+									@foreach ($jadwal_polis2 as $jadwal_poli)
+									<tr>
+										<td>{{ $jadwal_poli->kategori->nama_kategori }}</td>
+										<td>{{ $jadwal_poli->klinik->nama_poli }}</td>
+										<td>{{ $jadwal_poli->hari }}</td>
+										<td>{{ $jadwal_poli->jam }}</td>
+										<td>{{ $jadwal_poli->dokter->nama_dokter }}</td>
+									</tr>
+									@endforeach
 								</tbody>
 							</table>
 						</div>

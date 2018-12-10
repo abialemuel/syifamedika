@@ -3,12 +3,12 @@
         @section('breadcrumb')
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Artikel</h1>
+            <h1 class="m-0 text-dark">Jadwal Poli</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Home</a></li>
-              <li class="breadcrumb-item"><a href="{{ route('artikel.index') }}">Artikel</a></li>
+              <li class="breadcrumb-item"><a href="{{ route('jadwal_poli.index') }}">Jadwal Poli</a></li>
               <li class="breadcrumb-item active">Tambah</li>
             </ol>
           </div><!-- /.col -->
@@ -22,54 +22,72 @@
           <div class="col-md-12">
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Tambah Artikel</h3>
+                <h3 class="card-title">Tambah Jadwal Poli</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form  action="{{ url('/private/artikel/'.$artikels->id.'/edit') }}" method="POST">
+              <form  action="{{ url('/private/jadwal-poli/'.$jadwalpolis->id.'/edit') }}" method="POST">
                 @csrf
                 <div class="card-body">
-                  <div class="row">
-                    <div class="col-md-4 form-group">
-                      <label for="exampleInputEmail1">Judul</label>
-                      <input name="judul" type="text" value="{{ $artikels->judul }}" class="form-control" id="exampleInputEmail1" placeholder="Judul">
+                  @foreach ($errors->all() as $error)
+                    <div class="alert alert-danger alert-dismissible">
+                      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                      <h5><i class="icon fa fa-ban"></i> Alert!</h5>
+                       {{ $error }}
                     </div>
-                  </div>
+                  @endforeach
+
                   <div class="row">
-                    <div class="col-md-3 form-group">
-                      <label>Tanggal</label>
-                      <input name="tanggal" type="date" value="{{ $artikels->tanggal }}" class="form-control" id="exampleInputEmail1">
-                    </div>
-                    <div class="col-md-2 form-group">
-                      <label>Status</label>
-                      <select class="form-control" style="width: 100%;" name="aktif">
-                        <option @if ($artikels->aktif == 1) selected @endif value="1">Aktif</option>
-                        <option @if ($artikels->aktif == 0) selected @endif value="0">Tidak Aktif</option>
+                      <div class="col-md-6 form-group">
+                      <label>Kategori</label>
+                      <select class="form-control" style="width: 100%;" name="kategori">
+                        @if (empty($jadwalpolis->id_kategori))
+                          <option selected="selected" value=""></option>
+                        @endif
+                        @foreach ($kategoris as $kategori)
+                          <option @if ($kategori->id ==  $jadwalpolis->id_kategori) selected @endif value="{{ $kategori->id }}">{{ $kategori->nama_kategori }}</option>
+                        @endforeach
                       </select>
                     </div>
                   </div>
-
                   <div class="row">
-                    <div class="col-md-12 form-group">
-                      <div class="card-tools">
-                        <label for="exampleInputEmail1">Text</label>
-                        <button type="button" class="btn btn-tool btn-sm" data-widget="collapse" data-toggle="tooltip"
-                                title="Collapse">
-                          <i class="fa fa-minus"></i></button>
-                        <button type="button" class="btn btn-tool btn-sm" data-widget="remove" data-toggle="tooltip"
-                                title="Remove">
-                          <i class="fa fa-times"></i></button>
-                      </div>
-                    <!-- /. tools -->
-                  <!-- /.card-header -->
-                      <div class="card-body pad">
-                        <div class="mb-3">
-                          <textarea value="" name="text" class="textarea" placeholder="Place some text here"
-                                    style="width: 100%; height: 500px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">{{ $artikels->text }}</textarea>
-                        </div>
-                      </div>
+                    <div class="col-md-6 form-group">
+                      <label>Klinik</label>
+                      <select class="form-control" style="width: 100%;" name="poli">
+                        @if (empty($jadwalpolis->id_poli))
+                          <option selected="selected" value=""></option>
+                        @endif
+                        @foreach ($polis as $poli)
+                          <option @if ($poli->id_poli ==  $jadwalpolis->id_poli) selected @endif value="{{ $poli->id_poli }}">{{ $poli->nama_poli }}</option>
+                        @endforeach
+                      </select>
                     </div>
                   </div>
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <label>Dokter</label>
+                      <select class="form-control" style="width: 100%;" name="dokter">
+                        @if (empty($jadwalpolis->id_dokter))
+                          <option selected="selected" value=""></option>
+                        @endif
+                        @foreach ($dokters as $dokter)
+                          <option @if ($dokter->id_dokter ==  $jadwalpolis->id_dokter) selected @endif value="{{ $dokter->id_dokter }}">{{ $dokter->nama_dokter }}</option>
+                        @endforeach
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <label>Hari</label>
+                      <input name="hari" type="text" value="{{$jadwalpolis->hari}}" class="form-control" id="exampleInputEmail1" placeholder="e.g. Senin, Selasa, Rabu / Senin, Kamis">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <label>Jam</label>
+                      <input name="jam" type="text" value="{{$jadwalpolis->jam}}" class="form-control" id="exampleInputEmail1" placeholder="e.g 10.00 - 16.30 / 17.45 - 19.00">
+                    </div>
+                </div>
                 <!-- /.card-body -->
 
                 <div class="card-footer">
