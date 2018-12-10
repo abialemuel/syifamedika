@@ -34,7 +34,7 @@
 	document.getElementById("rj").classList.remove("active")
 	document.getElementById("bpjs").classList.remove("active")
 	document.getElementById("ri").classList.remove("active")
-	document.getElementById("info").classList.add("active")
+	document.getElementById("infosehat").classList.add("active")
 	document.getElementById("jadwal").classList.remove("active")
 	document.getElementById("kerjasama").classList.remove("active")
 </script>

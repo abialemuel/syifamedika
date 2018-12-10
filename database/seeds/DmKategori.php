@@ -12,13 +12,10 @@ class DmKategori extends Seeder
      public function run()
      {
          //
-         DB::table('dm_kategori')->insert(
-           [
-             'name' => 'POLI SPESIALIS NON BPJS',
-           ],
-           [
-             'name' => 'POLI SPESIAL BPJS DAN NON BPJS',
-           ]
-         );
+         DB::table('dm_kategori')->insert(array(
+
+             array('nama_kategori' => 'POLI SPESIALIS NON BPJS'),
+            array('nama_kategori' => 'POLI SPESIAL BPJS DAN NON BPJS')
+         ));
      }
 }

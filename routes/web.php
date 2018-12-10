@@ -20,12 +20,12 @@ Route::namespace('user')->group(function () {
     Route::post('/form', 'UserController@form_pasien_store');
     Route::get('/infosehat', 'UserController@infosehat');
     Route::post('/reservasi', 'UserController@reservasi');
+    Route::get('/perusahaan_kerjasama','UserController@perusahaan_kerjasama');
+    Route::get('/jadwalpoliklinik','UserController@jadwal_poli');
+
 
     Route::get('/profilrs', function () {
         return view('user.infors');
-    });
-    Route::get('/mitra', function () {
-        return view('user.perusahaan_kerjasama');
     });
     Route::get('/rawatinap', function () {
         return view('user.fasilitaskamar');
@@ -36,12 +36,7 @@ Route::namespace('user')->group(function () {
     Route::get('/rawatjalan', function () {
         return view('user.rawat_jalan');
     });
-    Route::get('/jadwalpoliklinik', function () {
-        return view('user.jadwal_poli');
-    });
-    Route::get('/perusahaan_kerjasama', function () {
-        return view('user.perusahaan_kerjasama');
-    });
+    
     Route::get('/lowongan', function () {
         return view('user.lowongan');
     });
@@ -82,11 +77,11 @@ Route::prefix('private')->group(function () {
         Route::prefix('jadwal-poli')->group(function () {
             // Router for artikel
             Route::get('/', 'JadwalPoliController@index')->name('jadwal_poli.index');
-            Route::get('/tambah', 'JadwalPoliController@create')->name('JadwalPoli.create');
-            Route::post('/tambah', 'JadwalPoliController@store')->name('JadwalPoli.store');
-            Route::get('/{id_artikel}/edit', 'ArtikelController@edit')->name('JadwalPoli.edit');
-            Route::post('/{id_artikel}/edit', 'ArtikelController@update');
-            Route::get('/{id_artikel}/hapus', 'ArtikelController@destroy');
+            Route::get('/tambah', 'JadwalPoliController@create')->name('jadwal_poli.create');
+            Route::post('/tambah', 'JadwalPoliController@store')->name('jadwal_poli.store');
+            Route::get('/{id_artikel}/edit', 'JadwalPoli@edit')->name('jadwal_poli.edit');
+            Route::post('/{id_artikel}/edit', 'JadwalPoli@update');
+            Route::get('/{id_artikel}/hapus', 'JadwalPoli@destroy');
         });
 
     });

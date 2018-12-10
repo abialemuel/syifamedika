@@ -89,7 +89,6 @@ class DokterController extends Controller
           'alamat' => $request->input('alamat'),
           'no_telp' => $request->input('no_telp'),
           'email' => $request->input('email'),
-          'email' => $request->input('email'),
           'agama' => $request->input('agama'),
           'kewarganegaraan' => $request->input('kewarganegaraan'),
           'status' => $request->input('status'),

@@ -38,7 +38,7 @@
 	document.getElementById("rj").classList.remove("active")
 	document.getElementById("bpjs").classList.remove("active")
 	document.getElementById("ri").classList.remove("active")
-	document.getElementById("info").classList.remove("active")
+	document.getElementById("infosehat").classList.remove("active")
 	document.getElementById("jadwal").classList.add("active")
 	document.getElementById("kerjasama").classList.remove("active")
 </script>
@@ -77,6 +77,7 @@
 									</tr>
 								</thead>
 								<tbody>
+									@foreach ($jadwal_polis1 as $jadwal=>$jadwal_poli1)
 									<tr>
 										<td>POLI SPESIALIS NON BPJS</td>
 										<td>Klinik Bedah Sub Onkologi</td>
@@ -84,187 +85,7 @@
 										<td>09.00 – 10.00</td>
 										<td>dr.Yamsun,Sp.BK(K)Onkologi</td>
 									</tr>
-									<tr>
-										<td></td>
-										<td>Klinik Kebidanan dan Kandungan</td>
-										<td>Senin</td>
-										<td>16.00 – 18.00</td>
-										<td>dr. Yulisa Haslinda, Sp.OG</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td></td>
-										<td>Jum’at</td>
-										<td>09.00 – 10.00</td>
-										<td>dr. Hj. F. A. Rahayu, Sp.OG</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>Klinik Jantung dan Pembuluh Darah</td>
-										<td>Senin - Sabtu</td>
-										<td>17.00 – selesai</td>
-										<td>dr. Gusti Rifansyah, Sp.JP</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>Klinik Umum</td>
-										<td>Senin - Minggu</td>
-										<td>24 Jam</td>
-										<td></td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>Layanan Psikolog</td>
-										<td>Senin – Jum’at</td>
-										<td></td>
-										<td>Rika Vira Zwagery, M.Psi, Psikolog</td>
-									</tr>
-									<tr>
-										<td>POLI SPESIAL BPJS DAN NON BPJS</td>
-										<td>Klinik Penyakit Dalam</td>
-										<td>Senin – Jum’at</td>
-										<td>14.30 – 16.00</td>
-										<td>dr. Achmad Dainuri, Sp.PD</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td>17.00 – 21.00</td>
-										<td>dr. Budi Indra, Sp.PD</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>Klinik Bedah</td>
-										<td>Senin – Jum’at</td>
-										<td>17.00 – 21.00</td>
-										<td>dr. R.M. Ardani Fitriansyah SY, Sp.B</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>Klinik Anak</td>
-										<td>Senin – Jum’at</td>
-										<td>16.00 – 18.00</td>
-										<td>dr. Hj. Naili Muna, Sp.A.M.Kes</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>Klinik Syaraf</td>
-										<td>Senin – Sabtu</td>
-										<td>07.30 – 09.00</td>
-										<td>dr. Pagan Pambudi, Sp.S</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td></td>
-										<td>Senin – Jum’at</td>
-										<td>17.00 – 18.00</td>
-										<td>dr. Fatmawati, Sp.S</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td>19.00 – 21.00</td>
-										<td>dr. Eko Suryo P., Sp.S</td>
-									</tr>
-
-									<tr>
-										<td></td>
-										<td>Klinik Mata</td>
-										<td>Senin – Jum’at</td>
-										<td>14.00 – 16.00</td>
-										<td>dr. Helen Nguda, Sp.M</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td></td>
-										<td>Senin – Rabu</td>
-										<td>13.00 – 15.00</td>
-										<td>dr. Hadijah, Sp.M</td>
-									</tr>
-
-									<tr>
-										<td></td>
-										<td>Klinik Paru</td>
-										<td>Senin – Jum’at</td>
-										<td>14.30 – 16.00</td>
-										<td>dr. Nur Janah,Sp.P, FISR</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>Klinik THT</td>
-										<td>Senin – Rabu</td>
-										<td>16.00 – 18.00</td>
-										<td>dr. Shofiah Sari, Sp.THT-KL</td>
-									</tr>
-
-									<tr>
-										<td></td>
-										<td>Klinik Rehabilitasi Medik</td>
-										<td>Senin - Kamis<br>&nbsp;Program Terapi Rutin</td>
-										<td>14.30 – 16.00</td>
-										<td>dr. Nur Yulia Sari, Sp.KFR</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td></td>
-										<td>&nbsp;Konsultasi</td>
-										<td>14.30 – 15.30</td>
-										<td>dr. Nur Yulia Sari, Sp.KFR</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td></td>
-										<td>Jum’at<br>&nbsp;Program Terapi Rutin</td>
-										<td>10.00 – 12.00</td>
-										<td>dr. Nur Yulia Sari, Sp.KFR</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td></td>
-										<td>&nbsp;Konsultasi</td>
-										<td>11.00 – 12.00</td>
-										<td>dr. Nur Yulia Sari, Sp.KFR</td>
-									</tr>
-
-									<tr>
-										<td></td>
-										<td>Klinik Gigi Spesialis Bedah Mulut</td>
-										<td>Senin - Sabtu</td>
-										<td>18.00 – 20.00</td>
-										<td>drg. Mario Agung Asmara, Sp.BMM</td>
-									</tr>
-
-									<tr>
-										<td></td>
-										<td>Klinik Gigi</td>
-										<td>Senin - Jum’at</td>
-										<td>09.00 – 13.00</td>
-										<td>drg. Harinda Wahyu K.</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td></td>
-										<td>Senin - Rabu</td>
-										<td>15.00 – 18.00</td>
-										<td>drg. Nurul Husna</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td></td>
-										<td>Senin, Kamis, Jum’at</td>
-										<td>15.00 – 18.00</td>
-										<td>drg. Irna Noviantria</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>Klinik Gigi Anak</td>
-										<td>Senin - Kamis</td>
-										<td>13.00 – 15.00</td>
-										<td>drg. Ike Ratna Dewi, Sp. KGA, M. Kes</td>
-									</tr>
-
+									@endforeach
 								</tbody>
 							</table>
 						</div>

@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use DB;
 use App\JadwalPoli;
+use App\Dokter;
+use App\Kategori;
+use App\Poli;
 use Illuminate\Support\Facades\Validator;
 
 class JadwalPoliController extends Controller
@@ -17,46 +20,67 @@ class JadwalPoliController extends Controller
     }
     public function index()
     {
-        $jadwal_polis1 = JadwalPoli::all()->where('id_kategori', '=', 1);
-        $jadwal_polis2 = JadwalPoli::all()->where('id_kategori', '=', 2);
+        $jadwal_polis1 = JadwalPoli::all()->where('id_kategori', '=', 2);
+        $jadwal_polis2 = JadwalPoli::all()->where('id_kategori', '=', 3);
         return view('admin.jadwal_poli.index', compact('jadwal_polis1', 'jadwal_polis2'));
     }
     public function create()
     {
-        return view('admin.artikel.create');
+      $dokters = Dokter::all();
+      $polis = Poli::all();
+      $kategoris = Kategori::all();
+      return view('admin.jadwal_poli.create', compact('dokters','polis','kategoris'));
     }
     public function store(Request $request)
     {
 
-        $artikels = new Artikel;
-        $artikels['judul'] = $request->input('judul');
-        $artikels['tanggal'] = $request->input('tanggal');
-        $artikels['aktif'] = $request->input('aktif');
-        $artikels['text'] = $request->input('text');
-        $artikels['id_admin'] = "";
-        $artikels->save();
-        return redirect(route('artikel.index'));
+      $validator = Validator::make($request->all(), [
+          'kategori' => 'required',
+          'poli' => 'required',
+          'hari' => 'required',
+          'jam' => 'required',
+      ]);
+
+      if ($validator->fails()) {
+          return back()
+                      ->withErrors($validator)
+                      ->withInput();
+      }
+
+      $jadwalpolis = new JadwalPoli;
+      $jadwalpolis['id_kategori'] = $request->input('kategori');
+      $jadwalpolis['id_poli'] = $request->input('poli');
+      $jadwalpolis['id_dokter'] = $request->input('dokter');
+      $jadwalpolis['hari'] = $request->input('hari');
+      $jadwalpolis['jam'] = $request->input('jam');
+      $jadwalpolis->save();
+      return redirect(route('jadwal_poli.index'));
 
     }
-    public function edit($id_artikel)
+    public function edit($id)
     {
-        $artikels = Artikel::find($id_artikel);
-        return view('admin.artikel.edit',compact('artikels'));
+        $jadwalpolis = JadwalPoli::find($id);
+        $dokters = Dokter::all();
+        $polis = Poli::all();
+        $kategoris = Kategori::all();
+        return view('admin.jadwal_poli.edit',compact('jadwal_polis','dokters','polis','kategoris'));
     }
-    public function update(Request $request, $id_artikel)
+    public function update(Request $request, $id)
     {
-        $artikels = Artikel::find($id_artikel);
-        $artikels['judul'] = $request->input('judul');
-        $artikels['tanggal'] = $request->input('tanggal');
-        $artikels['aktif'] = $request->input('aktif');
-        $artikels['text'] = $request->input('text');
-        $artikels['id_admin'] = "";
-        $artikels->save();
-        return redirect(route('artikel.index'));
+      DB::table('dm_dokter')
+      ->where('id', $id)
+      ->update([
+        'id_kategori' => $request->input('kategori'),
+        'id_poli' => $request->input('poli'),
+        'id_dokter' => $request->input('dokter'),
+        'hari' => $request->input('hari'),
+        'jam' => $request->input('jam')
+      ]);
+      return redirect(route('jadwal_poli.index'));
     }
     public function destroy($id_artikel)
     {
-        $artikels = Artikel::find($id_artikel)->delete();
-        return redirect(route('artikel.index'));
+        $artikels = JadwalPoli::find($id_artikel)->delete();
+        return redirect(route('jadwal_poli.index'));
     }
 }

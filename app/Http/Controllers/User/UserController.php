@@ -19,6 +19,9 @@ use App\Status;
 use App\RjPoli;
 use App\Mail\UserRegist;
 use App\Mail\UserReserv;
+use App\Perusahaan;
+use App\JadwalPoli;
+use App\Poli;
 use DB;
 use Mail;
 
@@ -38,6 +41,18 @@ class UserController extends Controller
       $dokters = Dokter::all();
       $spesialis = Spesialis::all();
       return view('user.dokter',compact('dokters','spesialis'));
+    }
+    public function jadwal_poli()
+    {
+      $jadwal_polis1 = JadwalPoli::all()->where('id_kategori', '=', 2);
+      $jadwal_polis2 = JadwalPoli::all()->where('id_kategori', '=', 3);
+      return view('user.jadwal_poli', compact('jadwal_polis1', 'jadwal_polis2'));
+    }
+
+    public function perusahaan_kerjasama()
+    {
+      $perusahaan_kerjasamas = Perusahaan::all();
+      return view('user.perusahaan_kerjasama', compact('perusahaan_kerjasamas'));
     }
 
     public function infosehat()

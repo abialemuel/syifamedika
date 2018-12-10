@@ -5,7 +5,7 @@
 <head>
 	<meta name="viewport" content="width=device-width" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Daftar Perusahaan - Mitra RS Syifa Medika</title>
+	<title>Daftar Perusahaan Kerjasama - Syifa Medika</title>
 	<link rel="icon" href="user/images/logo1.png">
 	<link rel="stylesheet" href="user/css/foundation.min.css">
 	<link rel="stylesheet" href="user/css/normalize.css">
@@ -28,27 +28,27 @@
 <body>
 @include('user/header')
 <script type="text/javascript">
+	document.getElementById("kerjasama").classList.add("active")
+	document.getElementById("infosehat").classList.remove("active")
 	document.getElementById("beranda").classList.remove("active")
 	document.getElementById("profil").classList.remove("active")
 	document.getElementById("rj").classList.remove("active")
 	document.getElementById("bpjs").classList.remove("active")
 	document.getElementById("ri").classList.remove("active")
-	document.getElementById("info").classList.remove("active")
 	document.getElementById("jadwal").classList.remove("active")
-	document.getElementById("kerjasama").classList.add("active")
 </script>
 
 <div class="main-content-top">
 	<div class="main-wrapper">
 		<div class="row">
 			<div class="large-6 columns">
-				<h2>Daftar Perusahaan - Mitra RS Syifa Medika</h2>
+				<h2>Daftar Perusahaan Kerjasama</h2>
 			</div>
 			<div class="large-6 columns">
 				<ul class="breadcrumbs right">
 					<li>Posisi Anda: </li>
 					<li><a href="index.html">Beranda</a></li>
-					<li><span>Daftar Perusahaan Kerjasama</span></li>
+					<li><span>Perusahaan Kerjasama</span></li>
 				</ul>
 			</div>
 		</div>
@@ -58,28 +58,16 @@
 <div class="main-wrapper">
 	<div class="content_wrapper">
 		<div class="row">
+			@foreach ($perusahaan_kerjasamas as $dt=>$perusahaan)
 			<div class="large-12 columns">
 				<ul class="portfolio-content large-block-grid-4">
-					@foreach ($dokters as $dt=>$dokter)
-						@if ($doktype = $dokter->spesialis['nama_spesialis']=='Umum')
-							<li data-id="{{ $dt }}" data-type="Umum">
-						@else
-							<li data-id="{{ $dt }}" data-type="Spesialis">
-						@endif
 							<div class="view view-one">
-								<img src="{{$dokter->foto}}" alt="" />
-								<div class="mask">
-									{{-- <p>Researchers can identify modifications to the chemical structure.</p> --}}
-									<a href="{{$dokter->foto}}" class="picon-zoom" rel="prettyPhoto" title="{{$dokter->nama_dokter}}">
-										<i class="icon-zoom-in icon-large"></i>
-									</a>
-								</div>
+								<img src="{{$perusahaan->path}}" style="height:250px; width:250px;" alt="" />
 							</div>
 							<div class="project-info">
-								<h3>{{ $dokter->nama_dokter }}</h3>
-								<p>{{ $dokter->spesialis['nama_spesialis'] }}</p>
+								<h3>{{ $perusahaan->nama_perusahaan }}</h3>
 							</div>
-						</li>
+							<br>
 					@endforeach
 				</ul>
 			</div>

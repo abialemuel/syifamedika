@@ -3,12 +3,12 @@
         @section('breadcrumb')
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Artikel</h1>
+            <h1 class="m-0 text-dark">Jadwal Poli</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Home</a></li>
-              <li class="breadcrumb-item"><a href="{{ route('artikel.index') }}">Artikel</a></li>
+              <li class="breadcrumb-item"><a href="{{ route('jadwal_poli.index') }}">Jadwal Poli</a></li>
               <li class="breadcrumb-item active">Tambah</li>
             </ol>
           </div><!-- /.col -->
@@ -22,11 +22,11 @@
           <div class="col-md-12">
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Tambah Artikel</h3>
+                <h3 class="card-title">Buat Jadwal Poli</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form  action="{{ url('/private/artikel/tambah') }}" method="POST">
+              <form  action="{{ url('/private/jadwal-poli/tambah') }}" method="POST">
                 @csrf
                 <div class="card-body">
                   @foreach ($errors->all() as $error)
@@ -36,45 +36,47 @@
                        {{ $error }}
                     </div>
                   @endforeach
+
                   <div class="row">
-                    <div class="col-md-4 form-group">
-                      <label for="exampleInputEmail1">Judul</label>
-                      <input name="judul" type="text" value="" class="form-control" id="exampleInputEmail1" placeholder="Judul">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-3 form-group">
-                      <label>Tanggal</label>
-                      <input name="tanggal" type="date" value="" class="form-control" id="exampleInputEmail1">
-                    </div>
-                    <div class="col-md-2 form-group">
-                      <label>Status</label>
-                      <select class="form-control" style="width: 100%;" name="aktif">
-                        <option value="1">Aktif</option>
-                        <option value="0">Tidak Aktif</option>
+                      <div class="col-md-6 form-group">
+                      <label>Kategori</label>
+                      <select class="form-control" style="width: 100%;" name="kategori">
+                        @foreach ($kategoris as $kategori)
+                        <option value="{{$kategori->id}}">{{ $kategori -> nama_kategori}}</option>
+                        @endforeach
                       </select>
                     </div>
                   </div>
-
                   <div class="row">
-                    <div class="col-md-12 form-group">
-                      <div class="card-tools">
-                        <label for="exampleInputEmail1">Text</label>
-                        <button type="button" class="btn btn-tool btn-sm" data-widget="collapse" data-toggle="tooltip"
-                                title="Collapse">
-                          <i class="fa fa-minus"></i></button>
-                        <button type="button" class="btn btn-tool btn-sm" data-widget="remove" data-toggle="tooltip"
-                                title="Remove">
-                          <i class="fa fa-times"></i></button>
-                      </div>
-                    <!-- /. tools -->
-                  <!-- /.card-header -->
-                      <div class="card-body pad">
-                        <div class="mb-3">
-                          <textarea name="text" class="textarea" placeholder="Place some text here"
-                                    style="width: 100%; height: 500px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-                        </div>
-                      </div>
+                    <div class="col-md-6 form-group">
+                      <label>Klinik</label>
+                      <select class="form-control" style="width: 100%;" name="poli">
+                        @foreach ($polis as $poli)
+                        <option value="{{$poli->id_poli}}">{{ $poli -> nama_poli}}</option>
+                        @endforeach
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <label>Dokter</label>
+                      <select class="form-control" style="width: 100%;" name="dokter">
+                        @foreach ($dokters as $dokter)
+                        <option value="{{$dokter->id_dokter}}">{{ $dokter -> nama_dokter}}</option>
+                        @endforeach
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <label>Hari</label>
+                      <input name="hari" type="text" value="" class="form-control" id="exampleInputEmail1" placeholder="e.g. Senin, Selasa, Rabu / Senin, Kamis">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <label>Jam</label>
+                      <input name="jam" type="text" value="" class="form-control" id="exampleInputEmail1" placeholder="e.g 10.00 - 16.30 / 17.45 - 19.00">
                     </div>
                   </div>
                 <!-- /.card-body -->

@@ -14,9 +14,10 @@ class PerusahaanKerjasama extends Migration
     public function up()
     {
         //
-        Schema::create('ls_perusahaan_kerjasama', function (Blueprint $table) {
-            $table->string('nama');
-            $table->string('path_gambar');
+        Schema::create('perusahaan_kerjasama', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('nama_perusahaan');
+            $table->string('path');
         });
     }
 
@@ -28,6 +29,6 @@ class PerusahaanKerjasama extends Migration
     public function down()
     {
         //
-        Schema::dropIfExists('ls_perusahaan_kerjasama');
+        Schema::dropIfExists('perusahaan_kerjasama');
     }
 }

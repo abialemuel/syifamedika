@@ -119,7 +119,7 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="{{ route('artikel.create') }}" class="nav-link">
+              <a href="{{ route('jadwal_poli.create') }}" class="nav-link">
                 <i class="fa fa-plus-square nav-icon"></i>
                 <p>Tambah</p>
               </a>
